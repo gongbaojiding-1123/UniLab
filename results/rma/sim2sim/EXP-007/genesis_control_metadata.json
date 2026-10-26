@@ -1,0 +1,73 @@
+{
+  "format": "genesis-go2-control-diagnostics-v1",
+  "source": "Genesis public RigidEntity APIs; no private solver fields",
+  "joint_order": [
+    "FL_hip",
+    "FL_thigh",
+    "FL_calf",
+    "FR_hip",
+    "FR_thigh",
+    "FR_calf",
+    "RL_hip",
+    "RL_thigh",
+    "RL_calf",
+    "RR_hip",
+    "RR_thigh",
+    "RR_calf"
+  ],
+  "physics_dt_s": 0.01,
+  "physics_steps_per_action": 2,
+  "force_lower_nm": [
+    -23.700000762939453,
+    -23.700000762939453,
+    -45.43000030517578,
+    -23.700000762939453,
+    -23.700000762939453,
+    -45.43000030517578,
+    -23.700000762939453,
+    -23.700000762939453,
+    -45.43000030517578,
+    -23.700000762939453,
+    -23.700000762939453,
+    -45.43000030517578
+  ],
+  "force_upper_nm": [
+    23.700000762939453,
+    23.700000762939453,
+    45.43000030517578,
+    23.700000762939453,
+    23.700000762939453,
+    45.43000030517578,
+    23.700000762939453,
+    23.700000762939453,
+    45.43000030517578,
+    23.700000762939453,
+    23.700000762939453,
+    45.43000030517578
+  ],
+  "foot_geom_ids": {
+    "FL": 8,
+    "FR": 13,
+    "RL": 18,
+    "RR": 23
+  },
+  "floor_geom_id": 0,
+  "control_pre_api_nm": "get_dofs_control_force() after command, BEFORE scene.step(): clipped control computed from pre-step state; not measured motor torque",
+  "pd_demand_pre_estimate_nm": "kp*(target-q_pre)-kv*qd_pre; algebraic estimate, not measured effort",
+  "internal_post_api_nm": "get_dofs_force() AFTER scene.step(): solver internal generalized force; not isolated motor torque; do NOT compare with motor limits",
+  "contact": "Foot SPHERE against static plane only; solver contacts from latest scene.step(); invalid capacity entries masked; includes both A/B pair directions",
+  "loaded_point_speed_xy_m_s": "max horizontal contact-point velocity on foot among contacts with upward force >1 N; uses post-step link twist and reported contact point; empty when not loaded; a slip indicator, not proof of solver friction failure",
+  "sampling": "pre control / post state and contacts every physics step, before any episode reset",
+  "performance": "Opt-in diagnostic GPU readbacks and CSV writes add evaluation overhead; ordinary replay and training do not import this module",
+  "seed": 123,
+  "command": [
+    0.5,
+    0.0,
+    0.0
+  ],
+  "nominal": true,
+  "output": "/home/abc/my_unilab/runs/rma/control_diagnostics/EXP-007/genesis_seed123.control.csv",
+  "model_sha256": "5dd0c739f3b2343551050b588bb94151898169311e161c5fe7ec73fb1d686f80",
+  "complete": true,
+  "rows": 2000
+}

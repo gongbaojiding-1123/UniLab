@@ -1,0 +1,355 @@
+{
+  "replay_rows": 1000,
+  "control_rows": 2000,
+  "mean_vx_m_s": 0.4440692088683136,
+  "vx_rmse_m_s": 0.19689283562435492,
+  "bad_orientation_resets": 0,
+  "timeouts": 1,
+  "joints": {
+    "FL_hip": {
+      "post_error_rmse_rad": 0.15451995410138777,
+      "max_abs_post_error_rad": 0.530968427658081,
+      "max_control_pre_limit_fraction": 0.7943633794784546,
+      "control_pre_near_limit_fraction_ge_0_95": 0.0,
+      "pd_estimate_outside_limits_fraction": 0.0
+    },
+    "FL_thigh": {
+      "post_error_rmse_rad": 0.26010159227811425,
+      "max_abs_post_error_rad": 0.6632949113845825,
+      "max_control_pre_limit_fraction": 0.9788582921028137,
+      "control_pre_near_limit_fraction_ge_0_95": 0.002,
+      "pd_estimate_outside_limits_fraction": 0.0
+    },
+    "FL_calf": {
+      "post_error_rmse_rad": 0.2760592788965808,
+      "max_abs_post_error_rad": 0.47244465351104736,
+      "max_control_pre_limit_fraction": 0.3636089265346527,
+      "control_pre_near_limit_fraction_ge_0_95": 0.0,
+      "pd_estimate_outside_limits_fraction": 0.0
+    },
+    "FR_hip": {
+      "post_error_rmse_rad": 0.13035723459493886,
+      "max_abs_post_error_rad": 0.3749322295188904,
+      "max_control_pre_limit_fraction": 0.5536973476409912,
+      "control_pre_near_limit_fraction_ge_0_95": 0.0,
+      "pd_estimate_outside_limits_fraction": 0.0
+    },
+    "FR_thigh": {
+      "post_error_rmse_rad": 0.1381703192565059,
+      "max_abs_post_error_rad": 0.47617363929748535,
+      "max_control_pre_limit_fraction": 0.6946714520454407,
+      "control_pre_near_limit_fraction_ge_0_95": 0.0,
+      "pd_estimate_outside_limits_fraction": 0.0
+    },
+    "FR_calf": {
+      "post_error_rmse_rad": 0.15891441521747574,
+      "max_abs_post_error_rad": 0.3566979169845581,
+      "max_control_pre_limit_fraction": 0.270687460899353,
+      "control_pre_near_limit_fraction_ge_0_95": 0.0,
+      "pd_estimate_outside_limits_fraction": 0.0
+    },
+    "RL_hip": {
+      "post_error_rmse_rad": 0.13302416964700453,
+      "max_abs_post_error_rad": 0.3510743975639343,
+      "max_control_pre_limit_fraction": 0.5184643268585205,
+      "control_pre_near_limit_fraction_ge_0_95": 0.0,
+      "pd_estimate_outside_limits_fraction": 0.0
+    },
+    "RL_thigh": {
+      "post_error_rmse_rad": 0.12032242836258768,
+      "max_abs_post_error_rad": 0.33051788806915283,
+      "max_control_pre_limit_fraction": 0.48545458912849426,
+      "control_pre_near_limit_fraction_ge_0_95": 0.0,
+      "pd_estimate_outside_limits_fraction": 0.0
+    },
+    "RL_calf": {
+      "post_error_rmse_rad": 0.1819525178526835,
+      "max_abs_post_error_rad": 0.41349780559539795,
+      "max_control_pre_limit_fraction": 0.3216419219970703,
+      "control_pre_near_limit_fraction_ge_0_95": 0.0,
+      "pd_estimate_outside_limits_fraction": 0.0
+    },
+    "RR_hip": {
+      "post_error_rmse_rad": 0.056217527193874406,
+      "max_abs_post_error_rad": 0.20468713343143463,
+      "max_control_pre_limit_fraction": 0.3471022844314575,
+      "control_pre_near_limit_fraction_ge_0_95": 0.0,
+      "pd_estimate_outside_limits_fraction": 0.0
+    },
+    "RR_thigh": {
+      "post_error_rmse_rad": 0.1252485975663735,
+      "max_abs_post_error_rad": 0.40851545333862305,
+      "max_control_pre_limit_fraction": 0.6389204263687134,
+      "control_pre_near_limit_fraction_ge_0_95": 0.0,
+      "pd_estimate_outside_limits_fraction": 0.0
+    },
+    "RR_calf": {
+      "post_error_rmse_rad": 0.20552521875785695,
+      "max_abs_post_error_rad": 0.4119502305984497,
+      "max_control_pre_limit_fraction": 0.3167535066604614,
+      "control_pre_near_limit_fraction_ge_0_95": 0.0,
+      "pd_estimate_outside_limits_fraction": 0.0
+    }
+  },
+  "contacts": {
+    "FL": {
+      "ground_contact_fraction": 0.829,
+      "loaded_contact_fraction": 0.81,
+      "loaded_point_speed_mean_m_s": 0.1047006331502405,
+      "loaded_point_speed_p95_m_s": 0.678882506489753
+    },
+    "FR": {
+      "ground_contact_fraction": 0.5785,
+      "loaded_contact_fraction": 0.5455,
+      "loaded_point_speed_mean_m_s": 0.12844719892702722,
+      "loaded_point_speed_p95_m_s": 1.0684967041015625
+    },
+    "RL": {
+      "ground_contact_fraction": 0.877,
+      "loaded_contact_fraction": 0.8525,
+      "loaded_point_speed_mean_m_s": 0.2672207178089641,
+      "loaded_point_speed_p95_m_s": 1.4001465797424317
+    },
+    "RR": {
+      "ground_contact_fraction": 0.592,
+      "loaded_contact_fraction": 0.5685,
+      "loaded_point_speed_mean_m_s": 0.012743934879343418,
+      "loaded_point_speed_p95_m_s": 0.04117111638188386
+    }
+  },
+  "reference_windows": [
+    {
+      "reference_window_s": [
+        2.5,
+        3.5
+      ],
+      "minimum_time_s": 3.22,
+      "vx_m_s": -0.056334711611270905,
+      "tilt_deg": 1.6235325937652951,
+      "RR_calf_action": -0.9891594648361206,
+      "max_control_limit_fraction_in_action": 0.7408864498138428,
+      "RR_calf_post_errors_rad": [
+        -0.18226778507232666,
+        -0.07788205146789551
+      ],
+      "loaded_legs_by_substep": [
+        [
+          "FL",
+          "FR",
+          "RL"
+        ],
+        [
+          "FR",
+          "RL"
+        ]
+      ],
+      "loaded_point_speed_xy_by_substep": [
+        {
+          "FL": 3.0983402729034424,
+          "FR": 0.0010209677275270224,
+          "RL": 0.0005228825029917061,
+          "RR": null
+        },
+        {
+          "FL": null,
+          "FR": 0.0010830144165083766,
+          "RL": 0.0004492255102377385,
+          "RR": null
+        }
+      ]
+    },
+    {
+      "reference_window_s": [
+        9.5,
+        10.1
+      ],
+      "minimum_time_s": 10.1,
+      "vx_m_s": 0.5089552402496338,
+      "tilt_deg": 1.0396699167165213,
+      "RR_calf_action": 0.7048780918121338,
+      "max_control_limit_fraction_in_action": 0.289510041475296,
+      "RR_calf_post_errors_rad": [
+        0.17775392532348633,
+        0.1747760772705078
+      ],
+      "loaded_legs_by_substep": [
+        [
+          "FL",
+          "RR"
+        ],
+        [
+          "FL",
+          "RL",
+          "RR"
+        ]
+      ],
+      "loaded_point_speed_xy_by_substep": [
+        {
+          "FL": 0.0027798034716397524,
+          "FR": null,
+          "RL": null,
+          "RR": 0.002177966758608818
+        },
+        {
+          "FL": 0.002624247223138809,
+          "FR": null,
+          "RL": 0.402891606092453,
+          "RR": 0.0019879627507179976
+        }
+      ]
+    },
+    {
+      "reference_window_s": [
+        11.5,
+        12.1
+      ],
+      "minimum_time_s": 11.86,
+      "vx_m_s": 0.48387718200683594,
+      "tilt_deg": 0.6145304692043024,
+      "RR_calf_action": -0.9974659085273743,
+      "max_control_limit_fraction_in_action": 0.5590506792068481,
+      "RR_calf_post_errors_rad": [
+        -0.03952980041503906,
+        0.020672321319580078
+      ],
+      "loaded_legs_by_substep": [
+        [
+          "FR",
+          "RL"
+        ],
+        [
+          "FR",
+          "RL"
+        ]
+      ],
+      "loaded_point_speed_xy_by_substep": [
+        {
+          "FL": null,
+          "FR": 0.004351855255663395,
+          "RL": 0.001142263994552195,
+          "RR": null
+        },
+        {
+          "FL": null,
+          "FR": 0.0030986573547124863,
+          "RL": 0.001401888788677752,
+          "RR": null
+        }
+      ]
+    }
+  ],
+  "detected_low_speed_events": [
+    {
+      "minimum_time_s": 3.22,
+      "vx_m_s": -0.056334711611270905,
+      "tilt_deg": 1.6235325937652951,
+      "RR_calf_action": -0.9891594648361206,
+      "max_control_limit_fraction_in_action": 0.7408864498138428,
+      "RR_calf_post_errors_rad": [
+        -0.18226778507232666,
+        -0.07788205146789551
+      ],
+      "loaded_legs_by_substep": [
+        [
+          "FL",
+          "FR",
+          "RL"
+        ],
+        [
+          "FR",
+          "RL"
+        ]
+      ],
+      "loaded_point_speed_xy_by_substep": [
+        {
+          "FL": 3.0983402729034424,
+          "FR": 0.0010209677275270224,
+          "RL": 0.0005228825029917061,
+          "RR": null
+        },
+        {
+          "FL": null,
+          "FR": 0.0010830144165083766,
+          "RL": 0.0004492255102377385,
+          "RR": null
+        }
+      ]
+    },
+    {
+      "minimum_time_s": 16.34,
+      "vx_m_s": -0.055605918169021606,
+      "tilt_deg": 9.335404441162572,
+      "RR_calf_action": -0.9932426810264587,
+      "max_control_limit_fraction_in_action": 0.9410157799720764,
+      "RR_calf_post_errors_rad": [
+        0.00717926025390625,
+        0.03779566287994385
+      ],
+      "loaded_legs_by_substep": [
+        [
+          "FL",
+          "FR",
+          "RL"
+        ],
+        [
+          "FL",
+          "FR",
+          "RL"
+        ]
+      ],
+      "loaded_point_speed_xy_by_substep": [
+        {
+          "FL": 0.0002525156014598906,
+          "FR": 0.00019564962713047862,
+          "RL": 0.7763635516166687,
+          "RR": null
+        },
+        {
+          "FL": 0.0003721989633049816,
+          "FR": 0.0002421367826173082,
+          "RL": 0.09898262470960617,
+          "RR": null
+        }
+      ]
+    },
+    {
+      "minimum_time_s": 16.92,
+      "vx_m_s": -0.12848544120788574,
+      "tilt_deg": 1.1408957956530446,
+      "RR_calf_action": -0.9954789280891418,
+      "max_control_limit_fraction_in_action": 0.7273190021514893,
+      "RR_calf_post_errors_rad": [
+        -0.0002467632293701172,
+        -0.0009542703628540039
+      ],
+      "loaded_legs_by_substep": [
+        [
+          "FL",
+          "FR",
+          "RL"
+        ],
+        [
+          "FL",
+          "FR",
+          "RL"
+        ]
+      ],
+      "loaded_point_speed_xy_by_substep": [
+        {
+          "FL": 0.10372944921255112,
+          "FR": 0.000696416711434722,
+          "RL": 4.177718437858857e-05,
+          "RR": null
+        },
+        {
+          "FL": 0.21482209861278534,
+          "FR": 0.0006575961015187204,
+          "RL": 6.69527507852763e-05,
+          "RR": null
+        }
+      ]
+    }
+  ],
+  "event_selection": "Three lowest vx samples after 2 s with vx <0.2 m/s, separated by at least 0.5 s; descriptive events, not independent statistical trials",
+  "interpretation": "Contact-point speed and action-bound proximity are indicators, not causal proof. Control force is a pre-step API computation, not measured motor torque. Generalized internal force is not isolated actuator torque. Fixed reference windows may shift between GPU runs."
+}
