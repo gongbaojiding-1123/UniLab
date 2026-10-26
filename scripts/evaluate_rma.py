@@ -21,6 +21,14 @@ def main():
     p.add_argument("--device", default="cpu")
     p.add_argument("--task", choices=RMA_TASKS, default=DEFAULT_TASK)
     p.add_argument(
+        "--sim2sim-nominal",
+        action="store_true",
+        help=(
+            "Use deterministic home reset and nominal gains/friction/payload for "
+            "a controlled Genesis comparison"
+        ),
+    )
+    p.add_argument(
         "--command",
         nargs=3,
         type=float,
@@ -97,7 +105,15 @@ def main():
         environment_options["task"] = args.task
     if args.command is not None:
         environment_options["command"] = args.command
-    raw, env = build_environment(args.num_envs, cfg, args.device, args.seed, **environment_options)
+    if args.sim2sim_nominal:
+        environment_options["sim2sim_nominal"] = True
+    raw, env = build_environment(
+        args.num_envs,
+        cfg,
+        args.device,
+        args.seed,
+        **environment_options,
+    )
     returns = torch.zeros(args.num_envs, device=args.device)
     completed, completed_lengths, tracking = [], [], []
     partial_returns = torch.zeros(args.num_envs, device=args.device)
@@ -116,6 +132,12 @@ def main():
 
             runtime = TensorRTWorker(args.tensorrt_worker, args.engine, cfg)
         obs, critic, priv = env.reset()
+        if args.sim2sim_nominal:
+            # init_state staggers initial timeout counters for training.
+            # Evaluation must start a full episode at step zero.
+            raw.set_episode_length_buf(
+                torch.zeros(args.num_envs, dtype=torch.int64, device=raw.device)
+            )
         if args.trace_dir is not None:
             from unilab_rma.evaluation_trace import EvaluationTrace
 
@@ -207,6 +229,13 @@ def main():
         }
         if args.command is not None:
             report["command_override"] = args.command
+        if args.sim2sim_nominal:
+            report["evaluation_mode"] = "sim2sim_nominal_v2"
+            report["nominal_parameters"] = {
+                "actuator_kp": 35.0, "actuator_kd": 0.0,
+                "robot_sliding_friction": 1.0, "added_base_mass_kg": 0.0,
+                "initial_episode_counter": 0, "observation_noise": False,
+            }
         if args.task != DEFAULT_TASK:
             report["task"] = args.task
         if diagnostics is not None:
