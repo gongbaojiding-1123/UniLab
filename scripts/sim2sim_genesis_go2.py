@@ -56,6 +56,7 @@ def cli():
  p.add_argument("--reset-mode",choices=["unilab","home"],default="unilab"); p.add_argument("--observation-noise",action=argparse.BooleanOptionalAction,default=True)
  p.add_argument("--sim2sim-nominal",action="store_true",help="Match MuJoCo evaluation: home, zero noise, friction=1, kv=0, training sensor conventions")
  p.add_argument("--control-diagnostics",action="store_true",help="Opt-in physics-step contact/control telemetry to separate .control.csv and .control.json files")
+ p.add_argument("--physics-substeps",type=int,default=1,help="Genesis solver substeps per 0.01 s physics step; policy period remains 0.02 s")
  p.add_argument("--render",action="store_true"); p.add_argument("--realtime",action="store_true"); p.add_argument("--output",type=Path); return p
 class PolicyReplay:
  def __init__(self,torch,scene,robot,c,sess,args):
@@ -114,7 +115,7 @@ def main():
  a=cli().parse_args()
  if a.sim2sim_nominal:
   a.reset_mode="home"; a.observation_noise=False
- if a.steps<1 or not all(math.isfinite(x) for x in a.command): raise SystemExit("Invalid --steps or command")
+ if a.steps<1 or a.physics_substeps<1 or not all(math.isfinite(x) for x in a.command): raise SystemExit("Invalid --steps, physics-substeps or command")
  c=read_contract(a.model); sess=ort.InferenceSession(str(a.model),providers=["CPUExecutionProvider"])
  shapes={x.name:x.shape for x in sess.get_inputs()}
  if shapes!={"observation":[1,49],"history":[1,50,49]}: raise ValueError(f"Bad ONNX input shapes: {shapes}")
@@ -123,7 +124,7 @@ def main():
  gs.init(backend=gs.gpu if a.device=="gpu" else gs.cpu,precision="32",logging_level="warning",seed=a.seed)
  try:
   rigid=gs.options.RigidOptions(enable_self_collision=True,enable_torsional_friction=True,enable_rolling_friction=True,friction_cone=gs.friction_cone.elliptic,integrator=gs.integrator.approximate_implicitfast)
-  scene=gs.Scene(show_viewer=a.render,sim_options=gs.options.SimOptions(dt=c["dt"],substeps=1),rigid_options=rigid)
+  scene=gs.Scene(show_viewer=a.render,sim_options=gs.options.SimOptions(dt=c["dt"],substeps=a.physics_substeps),rigid_options=rigid)
   robot=scene.add_entity(gs.morphs.MJCF(file=str(SCENE.resolve()))); scene.build(n_envs=1)
   actual=[x.name for x in robot.joints if x.name in c["joints"]]
   if actual!=c["joints"]: raise ValueError(f"Genesis joint order differs: {actual}")
@@ -154,7 +155,7 @@ def main():
    "obs/history/action_shapes":[[1,49],[1,50,49],[1,12]],"observation_fields":c["meta"]["observation_fields"],"policy_joints":J,"genesis_joints":actual,"genesis_dof_indices":policy.di,
    "mujoco_actuator_order":c["acts"],"policy_to_mujoco_actuator_indices":c["mapping"],"home_joint_angles":policy.default.tolist(),
    "genesis_kp":policy.kp.tolist(),"genesis_kv":policy.kv.tolist(),"joint_damping":policy.damping.tolist(),
-   "action_scale":.25,"sim_dt_s":c["dt"],"policy_dt_s":.02,"physics_steps_per_action":c["nsub"],
+   "action_scale":.25,"sim_dt_s":c["dt"],"policy_dt_s":.02,"physics_steps_per_action":c["nsub"],"genesis_solver_substeps":a.physics_substeps,
    "reset_mode":a.reset_mode,"evaluation_mode":"sim2sim_nominal_v2" if a.sim2sim_nominal else "legacy_replay","gravity_observation":"negative world site z-axis (training contract)" if a.sim2sim_nominal else "body-frame gravity (legacy)","velocity_reference":"IMU site" if a.sim2sim_nominal else "base origin","history_reset":"zero-pad then append current obs; gait phase persists","noise":"U(-.2,.2) on first 30 values" if a.observation_noise else "off",
    "differences":["MJCF home keyframe applied explicitly; sensor values reconstructed from state","No reset PD-gain, friction or payload randomization","Contact solvers and integration remain engine-specific","Nominal mode matches negative framezaxis training observation; legacy mode does not","Interface checks do not imply equal trajectories"],
    "control_diagnostics":str(policy.diagnostics.path.resolve()) if policy.diagnostics is not None else None,
