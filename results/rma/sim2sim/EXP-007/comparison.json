@@ -1,0 +1,38 @@
+{
+  "format": "unilab-rma-sim2sim-comparison-v1",
+  "protocol": {
+    "checkpoint": "student_mapping_v1_500.pt / matching ONNX",
+    "task": "go2_joystick_flat/rma_forward",
+    "command": [0.5, 0.0, 0.0],
+    "seed": 123,
+    "policy_steps": 1000,
+    "num_envs": 1,
+    "policy_period_s": 0.02,
+    "nominal": {
+      "home_reset": true,
+      "zero_initial_velocity": true,
+      "observation_noise": false,
+      "friction": 1.0,
+      "added_base_mass_kg": 0.0,
+      "actuator_kp": 35.0,
+      "actuator_kd": 0.0
+    }
+  },
+  "metrics": {
+    "mujoco": {
+      "mean_vx_m_s": 0.55138948494941,
+      "vx_rmse_m_s": 0.11375569429588679,
+      "mean_vy_m_s": 0.023139239531699787,
+      "mean_yaw_rate_rad_s": -0.0866801185098302,
+      "terminations": 0
+    },
+    "genesis": {
+      "mean_vx_m_s": 0.4440692088683136,
+      "vx_rmse_m_s": 0.19689283562435492,
+      "mean_vy_m_s": null,
+      "mean_yaw_rate_rad_s": null,
+      "terminations": 0
+    }
+  },
+  "interpretation": "Under this single nominal replay, Genesis has lower mean forward speed and higher forward-velocity RMSE than MuJoCo. This is an engine-level observation, not a causal diagnosis or a robustness claim. Genesis contact/control telemetry is available in this directory; MuJoCo currently has velocity, action, joint-state and reward-term trace but no matching actuator/contact sidecar."
+}

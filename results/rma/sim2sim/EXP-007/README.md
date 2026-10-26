@@ -11,6 +11,11 @@
 | `plots/action_and_control.png` | 动作幅值、计算控制力矩限幅比例和角度误差 |
 | `traces/genesis.csv.gz` | 1000 个策略步的主回放数据 |
 | `traces/genesis_control.csv.gz` | 2000 个物理子步的控制/接触 sidecar |
+| `comparison.json` | MuJoCo 与 Genesis 的同协议速度摘要 |
+
+## MuJoCo 对照
+
+MuJoCo 的同协议 trace 位于 [`mujoco/`](mujoco/)，包括 `summary.json`、`run_config.json`、逐步数据和三张快速检查图。当前单次回放的前向速度为：MuJoCo `0.5514 m/s`、Genesis `0.4441 m/s`；速度 RMSE 为 MuJoCo `0.1138 m/s`、Genesis `0.1969 m/s`。这说明 Genesis 的本次轨迹跟踪误差更大，但 MuJoCo 还没有加入与 Genesis 完全同口径的执行器/接触 sidecar，因此不能据此定位根因。
 
 解压数据只用于离线检查；完整未压缩 CSV 保留在 WSL 原始运行目录，不提交训练权重、ONNX、TensorRT engine 或训练日志。
 
