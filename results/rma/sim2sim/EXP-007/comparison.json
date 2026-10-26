@@ -24,7 +24,15 @@
       "vx_rmse_m_s": 0.11375569429588679,
       "mean_vy_m_s": 0.023139239531699787,
       "mean_yaw_rate_rad_s": -0.0866801185098302,
-      "terminations": 0
+      "terminations": 0,
+      "control_samples": 12000,
+      "max_abs_mapping_residual_rad": 0.0,
+      "torque_measurement": "unavailable through current public backend API",
+      "position_error_rmse_rad_after_warmup": {
+        "FL_thigh_joint": 0.23721501056695687,
+        "FL_calf_joint": 0.2664395815814508,
+        "RR_calf_joint": 0.1964616335038024
+      }
     },
     "genesis": {
       "mean_vx_m_s": 0.4440692088683136,
@@ -34,5 +42,5 @@
       "terminations": 0
     }
   },
-  "interpretation": "Under this single nominal replay, Genesis has lower mean forward speed and higher forward-velocity RMSE than MuJoCo. This is an engine-level observation, not a causal diagnosis or a robustness claim. Genesis contact/control telemetry is available in this directory; MuJoCo currently has velocity, action, joint-state and reward-term trace but no matching actuator/contact sidecar."
+  "interpretation": "Under this single nominal replay, Genesis has lower mean forward speed and higher forward-velocity RMSE than MuJoCo. This is an engine-level observation, not a causal diagnosis or a robustness claim. Both sides now have position-control diagnostics; Genesis also has contact telemetry. Neither side exposes an isolated measured motor torque through the public API used here."
 }
