@@ -1,0 +1,5 @@
+TensorRT engine loaded; IO checked; warm-up complete
+MOCK ROBOT ONLY; TensorRT policy; 50 Hz policy / 1000 Hz PD requested
+PD ticks=9998, policy ticks=500, stale ticks=1, PD deadline misses=3, policy deadline misses=0
+Commands published=500, consumed=500, max |action|=1, max |target-q0|=0.25 rad, max |torque|=40.3245 N m
+TensorRT calls=500, mean inference=0.538972 ms, max inference=2.30445 ms

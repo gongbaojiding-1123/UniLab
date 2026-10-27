@@ -1,0 +1,184 @@
+{
+  "policy": "student",
+  "seed": 123,
+  "completed_episodes": 1,
+  "mean_completed_episode_return": 39.05461120605469,
+  "mean_completed_episode_length_steps": 1000.0,
+  "mean_step_reward": 0.03905463782092557,
+  "planar_velocity_rmse_m_per_s": 0.14148678648396795,
+  "unfinished_episodes": 0,
+  "mean_unfinished_episode_return": null,
+  "student_latent_mse_vs_teacher": 0.1013120396247541,
+  "student_action_rmse_vs_teacher": 0.08536740729704839,
+  "terminations": 0,
+  "total_transitions": 1000,
+  "command_override": [
+    0.7,
+    0.0,
+    0.0
+  ],
+  "evaluation_mode": "sim2sim_nominal_v2",
+  "nominal_parameters": {
+    "actuator_kp": 35.0,
+    "actuator_kd": 0.0,
+    "robot_sliding_friction": 1.0,
+    "added_base_mass_kg": 0.0,
+    "initial_episode_counter": 0,
+    "observation_noise": false
+  },
+  "task": "go2_joystick_flat/rma_forward",
+  "diagnostics": {
+    "velocity_axes": [
+      "vx_m_per_s",
+      "vy_m_per_s",
+      "yaw_rate_rad_per_s"
+    ],
+    "velocity_frame": "robot body; clean critic local_linvel xy and gyro z",
+    "initial_command_env0": [
+      0.699999988079071,
+      0.0,
+      0.0
+    ],
+    "mean_command": [
+      0.699999988079071,
+      0.0,
+      0.0
+    ],
+    "mean_measured_velocity": [
+      0.7687095296643675,
+      -0.037478298274612826,
+      0.041636917491825444
+    ],
+    "tracking_rmse_by_axis": [
+      0.12820047003056637,
+      0.059859420832683155,
+      0.15168680390742595
+    ],
+    "mean_absolute_yaw_rate_rad_per_s": 0.11845660758819213,
+    "weighted_reward_terms_before_dt": {
+      "tracking_lin_vel": 1.8803634114265442,
+      "tracking_ang_vel": 0.18060644733533263,
+      "lin_vel_z": -0.03547740548934432,
+      "ang_vel_xy": -0.06397706610024943,
+      "base_height": -0.03147382451425074,
+      "action_rate": -0.015277346841525286,
+      "similar_to_default": -0.15149125769734384,
+      "contact": 0.13031999583169818,
+      "swing_feet_z": 0.05913894622400403
+    },
+    "reward_terms_note": "weighted terms BEFORE control-dt scaling; not per-step rewards"
+  },
+  "inference_backend": "tensorrt_cpp",
+  "tensorrt_action_rmse_vs_pytorch": 6.848844534673001e-08,
+  "tensorrt_action_max_abs_error_vs_pytorch": 5.066394805908203e-07,
+  "trace": {
+    "directory": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/deployment/20261027_212144/evaluation/eval_yp2n5uwo",
+    "full": {
+      "transitions": 1000,
+      "mean_measured_velocity": [
+        0.7687095296643675,
+        -0.037478298274612826,
+        0.041636917491825444
+      ],
+      "tracking_rmse_by_axis": [
+        0.12820047003056637,
+        0.059859420832683155,
+        0.15168680390742595
+      ]
+    },
+    "after_startup_window": {
+      "transitions": 900,
+      "mean_measured_velocity": [
+        0.7845827941099802,
+        -0.03859486243446857,
+        0.04494782380219274
+      ],
+      "tracking_rmse_by_axis": [
+        0.11794055494761768,
+        0.05846730934808762,
+        0.15143736618376433
+      ]
+    },
+    "action_target_joint_order": [
+      "FL_hip_joint",
+      "FL_thigh_joint",
+      "FL_calf_joint",
+      "FR_hip_joint",
+      "FR_thigh_joint",
+      "FR_calf_joint",
+      "RL_hip_joint",
+      "RL_thigh_joint",
+      "RL_calf_joint",
+      "RR_hip_joint",
+      "RR_thigh_joint",
+      "RR_calf_joint"
+    ],
+    "normalized_action_min": [
+      -0.9876582622528076,
+      -0.9999187588691711,
+      -0.9951003789901733,
+      -0.9714962244033813,
+      -0.9994456171989441,
+      -0.9997380971908569,
+      -0.9065961241722107,
+      -0.9988345503807068,
+      -0.9996849894523621,
+      -0.9971387982368469,
+      -0.9943125247955322,
+      -0.9999999403953552
+    ],
+    "normalized_action_max": [
+      0.8397665023803711,
+      0.9999496340751648,
+      0.9999992847442627,
+      0.9374884963035583,
+      0.9980854392051697,
+      0.9999953508377075,
+      0.7199447154998779,
+      0.901344895362854,
+      0.9987280964851379,
+      0.5862555503845215,
+      0.9964645504951477,
+      0.9970242977142334
+    ],
+    "normalized_action_rms": [
+      0.6788561961341422,
+      0.7541827918653305,
+      0.8844516861422052,
+      0.6271422898691489,
+      0.7668694203471371,
+      0.8976550652174864,
+      0.5553919281221263,
+      0.6242471140297947,
+      0.8682454465767884,
+      0.7611825190373102,
+      0.7271549495572538,
+      0.7977173177345542
+    ],
+    "normalized_action_near_bound_fraction": [
+      0.037,
+      0.319,
+      0.563,
+      0.054,
+      0.354,
+      0.557,
+      0.0,
+      0.06,
+      0.529,
+      0.142,
+      0.046,
+      0.382
+    ],
+    "mean_weighted_reward_rates_before_dt": {
+      "tracking_lin_vel": 1.8803634114265442,
+      "tracking_ang_vel": 0.18060644733533263,
+      "lin_vel_z": -0.03547740548934432,
+      "ang_vel_xy": -0.06397706610024943,
+      "base_height": -0.03147382451425074,
+      "action_rate": -0.015277346841525286,
+      "similar_to_default": -0.15149125769734384,
+      "contact": 0.13031999583169818,
+      "swing_feet_z": 0.05913894622400403
+    }
+  }
+}

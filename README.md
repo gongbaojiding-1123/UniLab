@@ -8,7 +8,8 @@ Contract-driven infrastructure for robot learning across physics backends and ha
 
 > **Fork experiment: Go2 RMA locomotion.** See the [experiment portfolio](docs/rma/README.md)
 > for teacher/student code, reproducible evaluation data, learning curves and C++ mock deployment.
-> Current forward-speed tracking has not reached the target; failures and reproduction limits are documented.
+> EXP-010 records improved teacher tracking, student replay in MuJoCo/Genesis, and TensorRT/C++ mock checks.
+> See the [experiment index](experiments/rma/README.md) for results and limits; real-robot deployment is untested.
 
 <p align="center">
   <a href="https://github.com/unilabsim/UniLab/actions/workflows/ci.yml"><img src="https://github.com/unilabsim/UniLab/actions/workflows/ci.yml/badge.svg" alt="CI"></a>

@@ -8,7 +8,8 @@ DEFAULT_TASK = "go2_joystick_flat/rma"
 FORWARD_TASK = "go2_joystick_flat/rma_forward"
 NO_POSE_TASK = "go2_joystick_flat/rma_forward_no_pose"
 TIGHT_TRACKING_TASK = "go2_joystick_flat/rma_forward_tight_tracking"
-RMA_TASKS = (DEFAULT_TASK, FORWARD_TASK, NO_POSE_TASK, TIGHT_TRACKING_TASK)
+WIDE_SPEED_TASK = "go2_joystick_flat/rma_forward_wide_speed"
+RMA_TASKS = (DEFAULT_TASK, FORWARD_TASK, NO_POSE_TASK, TIGHT_TRACKING_TASK, WIDE_SPEED_TASK)
 
 
 def command_overrides(command):

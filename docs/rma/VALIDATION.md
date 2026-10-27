@@ -1,6 +1,39 @@
 # RMA 分支验证记录
 
-日期：2026-10-23。
+## 2026-10-27：EXP-008 确认与 EXP-009/010 归档
+
+本轮新增 EXP-009 历史速度扫描、EXP-010 单变量配置和归档、实验总索引，并更新入口页与当前步骤。
+PR 基线为 `docs/exp007-genesis-control-diagnostics`，不修改上游框架或现有运行环境。
+
+在 GitHub 工作副本目录中使用现有环境：
+
+```bash
+env VIRTUAL_ENV=/home/abc/unilab--/.venv uv run --active --no-sync python \
+  -m unittest discover -s tests/rma -p 'test_*.py'
+env VIRTUAL_ENV=/home/abc/unilab--/.venv uv run --active --no-sync ruff check \
+  scripts/archive_exp009.py scripts/archive_exp010.py \
+  rsl_rl/unilab_rma/evaluation_diagnostics.py rsl_rl/unilab_rma/evaluation_trace.py \
+  tests/rma/test_speed_range_config.py
+git diff --check
+```
+
+- 53 项 RMA 测试通过。归档工作没有启动新的正式训练或物理回放。
+- EXP-009 共 13 次、EXP-010 共 34 次完整评估；逐步重算的 RMSE 与原报告一致。
+- 353 份已复制/压缩输入的 SHA256 验证通过；实验入口和相关页面的 58 个相对链接检查通过。
+- `.gitattributes` 对两个新证据目录禁止行尾转换；历史空白保留，不进行 whitespace 修复。Ruff 也排除这两个冻结证据目录，避免 `make check` 自动改写其哈希。
+- PT、ONNX、TensorRT engine、资产和完整 TensorBoard events 没有加入 Git；EXP-010 的模型路径和哈希记录在 manifest 中。
+- EXP-009 历史 Genesis 日志未保存模型哈希，不用归档时的文件伪造训练时证明。
+
+全仓 `make test-all` 在 `/tmp/exp010-publication-validation-*` 的完整源码副本中执行：
+`UV_PROJECT_ENVIRONMENT=/home/abc/unilab--/.venv UV_NO_SYNC=1 make test-all`，并设置副本的 `src/rsl_rl/scripts` 为 PYTHONPATH。
+自动格式化仅作用于临时副本，未改写归档证据；mypy 通过，Pyright 仍报告 10 项未修改框架模块的错误，包含现有 `unisim` 缺失的能力字段和可选值检查。
+由于前置类型检查失败，后续全仓测试未运行，不能报告成全仓通过。
+完整本地日志为工作区 `outputs/exp010_publication_make_test_all.log`。
+PR 保持 Draft，未执行合并，也未升级依赖或改写原训练目录来消除门禁错误。
+
+以下保留早期验证，不能将其中的“尚未训练/尚未回放”当作 2026-10-27 的当前状态。
+
+## 2026-10-23：历史验证
 
 本轮新增：47 项 RMA unittest 通过；已有 EXP-003 三组 CSV 成功生成九张图。
 1 环境 × 500 步新增控制诊断与原评估器的 transitions.csv 逐字节一致。

@@ -37,11 +37,11 @@ MuJoCo 的同协议对照为平均前向速度 `0.5514 m/s`、前向速度 RMSE 
 
 ## 复查
 
-结果文件见 [`results/rma/sim2sim/EXP-007`](../results/rma/sim2sim/EXP-007/README.md)。核心图表：
+结果文件见 [`results/rma/sim2sim/EXP-007`](../../results/rma/sim2sim/EXP-007/README.md)。核心图表：
 
-- [`contact_and_velocity.png`](../results/rma/sim2sim/EXP-007/plots/contact_and_velocity.png)
-- [`joint_tracking.png`](../results/rma/sim2sim/EXP-007/plots/joint_tracking.png)
-- [`action_and_control.png`](../results/rma/sim2sim/EXP-007/plots/action_and_control.png)
+- [`contact_and_velocity.png`](../../results/rma/sim2sim/EXP-007/plots/contact_and_velocity.png)
+- [`joint_tracking.png`](../../results/rma/sim2sim/EXP-007/plots/joint_tracking.png)
+- [`action_and_control.png`](../../results/rma/sim2sim/EXP-007/plots/action_and_control.png)
 
 离线分析命令：
 

@@ -2,17 +2,16 @@
 
 基于 UniLab 的 Go2 强化学习运动控制实验：教师 PPO、历史观测适应、模型导出与 C++ 模拟部署。
 
-> 当前状态：工程组件已有测试与运行记录；教师尚未学会稳定跟踪 0.5 m/s 前进指令。
-> 本仓库保留失败结果和可复现的诊断，不声称完成鲁棒行走、真机部署或跨物理引擎泛化。
+> 更新：2026-10-27。EXP-010 已归档：扩大训练速度范围后，本轮教师改善，学生完成 MuJoCo/Genesis 名义回放及 TensorRT/C++ mock 验证。
+> 全部记录见 [实验索引 EXP-000—010](../../experiments/rma/README.md)。目前仅一个训练种子，没有真机或硬实时验证。
 
 ## 这个项目解决什么问题
 
 目标是研究如何让四足机器人按速度指令运动，以及如何通过历史观测估计摩擦、负载相关的隐变量。
-当前第一项任务是定位“策略原地踏步但没有向前移动”的原因。
+早期“原地踏步”问题经过控制映射修复和后续训练已有进展，失败记录仍保留，避免只展示成功结果。
 
 **不知道下一步做什么时，先看 [项目工作流与当前步骤](PROJECT_WORKFLOW.md)。**
-当前运行副本的目标映射已修复；先建立修复后基线，再执行
-[std 单变量实验与修改教程](../../experiments/rma/EXP-005_tracking_width.md)。
+当前先审阅 [EXP-010 证据包](../../results/rma/EXP-010/README.md)，再规划 EXP-011；不要按历史教程重复长训。
 
 ```mermaid
 flowchart LR
@@ -32,7 +31,26 @@ flowchart LR
 本分支在 UniLab fork 中加入增量实验层，保留 `unilab` 导入，不修改上游项目的归属。
 训练脚本使用项目内的独立 PPO 实现，不是官方 RSL-RL 的训练入口。
 
-## 已观察到的结果
+## 当前结果：EXP-010
+
+唯一训练变量为指令范围 `[0.3, 0.6] → [0.3, 0.8]`；scale=0.25、奖励和预算固定。
+两组教师分别从头训练，均为训练 seed 42，64 环境、3000 次更新。
+
+| 0.7 m/s 指令下的组别 | 平均 vx (m/s) | 平面速度 RMSE (m/s) | 异常终止 |
+| --- | ---: | ---: | ---: |
+| baseline 教师，MuJoCo nominal | 0.3652 | 0.5249 | 5 |
+| wide_speed 教师，MuJoCo nominal | 0.6644 | 0.1130 | 0 |
+| wide_speed 学生，MuJoCo nominal | 0.7687 | 0.1415 | 0 |
+| wide_speed 学生，Genesis nominal，三次均值 | 0.7137 | 0.1034 | 三次均为 0 |
+
+教师的三个 nominal eval seed 数值完全相同，不能当作三个独立训练或不同初始条件。
+学生在 MuJoCo 高速超调；随机化三次样本又存在欠速，不能只用表中名义条件宣称全面鲁棒。
+0.3/0.5 m/s、训练曲线、逐步轨迹和模型哈希见 [归档](../../results/rma/EXP-010/README.md)。
+
+TensorRT 与 PyTorch 同状态动作 RMSE 约 `6.85e-8`；10 秒 C++ 测试属于 mock，仍有 3 次 PD deadline miss。
+完整结果和局限见 [EXP-010](../../experiments/rma/EXP-010_forward_speed_coverage.md)。
+
+## 历史结果：早期失败基线
 
 所有评估固定机体系指令 `(0.5, 0, 0)`，每个种子使用 8 个环境、每环境 1000 个控制步。
 
@@ -55,7 +73,7 @@ flowchart LR
 ![前进配置教师训练曲线](../../results/rma/figures/forward_v1_training.png)
 
 原始数值、训练记录及分析见 [results](../../results/rma/) 和 [实验记录](../../experiments/rma/)。
-曲线展示奖励而非实际速度；当前训练器尚未逐步记录前向速度曲线。
+以上历史曲线展示训练奖励；后续评估已加入逐步速度、动作和奖励分项，见 EXP-002 及 EXP-010。
 
 ## 代码结构
 
@@ -76,7 +94,7 @@ docs/                使用说明、接口契约与复现边界
 完整说明见 [复现指南](REPRODUCING.md) 和 [验证记录](VALIDATION.md)。
 逐步记录、画图与 Issue/PR 的分工见 [实验操作指南](EXPERIMENT_WORKFLOW.md)。
 
-已发布的实测数据基于本地 UniLab 1.3.3 工作副本、MuJoCo CPU 物理环境和 PyTorch。
+实测数据基于本地 UniLab 1.3.3 工作副本。MuJoCo 评估与 Genesis 独立回放使用不同环境；版本和设备以各次日志为准。
 本 fork 基线为 UniLab 1.3.4，基线 commit 与关键文件差异见 [provenance.json](../../results/rma/provenance.json)。
 原始运行副本未携带 Git 历史，且部分配置/运行时文件与 fork 不同；因此不能把旧实测冒充为当前分支端到端验证。
 不建议为了运行本仓库直接升级已经验证过的仿真环境。
@@ -105,13 +123,13 @@ uv run --no-sync python scripts/evaluate_rma.py \
 
 ## 接下来如何改进
 
-1. 保留当前基线，补齐逐步速度、动作饱和和 PPO 更新诊断。
-2. 在一致训练预算下分别检验指令范围、摆腿奖励和速度跟踪权重。
-3. 教师速度跟踪通过后，比较学生自身 rollout 与教师表现。
-4. 将 ONNX / TensorRT 的数值一致性与任务表现分别验收。
+1. 固定 EXP-010 的模型、scale=0.25 与 Genesis substeps=2，保留全部旧结果。
+2. EXP-011 先定义一个问题，例如随机化条件下高速欠速；预先写下变量与验收标准。
+3. 若研究泛化，增加独立初始条件、指令切换或物理条件测试；若研究训练稳定性，增加独立训练种子。
+4. 全仓门禁仍受现有依赖/类型问题阻塞，保持审阅状态，不把局部测试当作全仓通过。
 
 本仓库当前不是自动课程调度器；现有 `rma_forward` 是静态前进任务配置。
-详细设计见 [下一项实验](../../experiments/rma/EXP-002_diagnosis_plan.md)。
+当前阶段见 [工作流](PROJECT_WORKFLOW.md)，历史诊断方案见 [EXP-002](../../experiments/rma/EXP-002_diagnosis_plan.md)。
 
 ## 来源与贡献范围
 

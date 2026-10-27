@@ -1,0 +1,2158 @@
+{
+  "archived_at_utc": "2026-10-27T13:46:52.009643+00:00",
+  "input_files": [
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed123/eval_522e2fxd/run_config.json",
+      "sha256": "6531dd1f1c0afae32e5146cee049e7d090e8f208d4ec4260b2a2fb32188e6343",
+      "bytes": 4426,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed123/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed123/eval_522e2fxd/summary.json",
+      "sha256": "8fda03784ca42617ce85ffd2a44bfffd8db07d303ab3fe500724ec60d9037e20",
+      "bytes": 4841,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed123/summary.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed123/eval_522e2fxd/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce",
+      "bytes": 7412,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed123/task_source_snapshot/base.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed123/eval_522e2fxd/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9",
+      "bytes": 489,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed123/task_source_snapshot/mujoco.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed123/eval_522e2fxd/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1",
+      "bytes": 1425,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed123/task_source_snapshot/rma.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed123/eval_522e2fxd/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c",
+      "bytes": 440,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed123/task_source_snapshot/rma_forward.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed123/eval_522e2fxd/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63",
+      "bytes": 188,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed123/task_source_snapshot/rma_forward_no_pose.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed123/eval_522e2fxd/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89",
+      "bytes": 282,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed123/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed123/eval_522e2fxd/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96",
+      "bytes": 309,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed123/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed123/eval_522e2fxd/transitions.csv",
+      "sha256": "984418059e4687bd427b0b94b6d89d1d940651440a57f68aaa5bc81349ee72b1",
+      "bytes": 1135411,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed123/transitions.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed456/eval_b0sjr4fh/run_config.json",
+      "sha256": "b8d55fd5aebdd8057695510d3c58b98829457561b0e140afd12e7bdb4e9b9639",
+      "bytes": 4426,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed456/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed456/eval_b0sjr4fh/summary.json",
+      "sha256": "33c8e95b5cb984acc65c22abca00d6d2fbb17597eb07b7a8f3e78c1e4f1e48f1",
+      "bytes": 4841,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed456/summary.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed456/eval_b0sjr4fh/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce",
+      "bytes": 7412,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed456/task_source_snapshot/base.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed456/eval_b0sjr4fh/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9",
+      "bytes": 489,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed456/task_source_snapshot/mujoco.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed456/eval_b0sjr4fh/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1",
+      "bytes": 1425,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed456/task_source_snapshot/rma.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed456/eval_b0sjr4fh/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c",
+      "bytes": 440,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed456/task_source_snapshot/rma_forward.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed456/eval_b0sjr4fh/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63",
+      "bytes": 188,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed456/task_source_snapshot/rma_forward_no_pose.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed456/eval_b0sjr4fh/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89",
+      "bytes": 282,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed456/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed456/eval_b0sjr4fh/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96",
+      "bytes": 309,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed456/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed456/eval_b0sjr4fh/transitions.csv",
+      "sha256": "984418059e4687bd427b0b94b6d89d1d940651440a57f68aaa5bc81349ee72b1",
+      "bytes": 1135411,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed456/transitions.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed789/eval_gydz_0fh/run_config.json",
+      "sha256": "444ee3a18ba4155d7f102392594d282615029e67b3669074df87187569a86366",
+      "bytes": 4426,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed789/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed789/eval_gydz_0fh/summary.json",
+      "sha256": "98610cf0bbe29fe3b355a142c73653b26528bd1e131a69d8810c40f320a100ed",
+      "bytes": 4841,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed789/summary.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed789/eval_gydz_0fh/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce",
+      "bytes": 7412,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed789/task_source_snapshot/base.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed789/eval_gydz_0fh/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9",
+      "bytes": 489,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed789/task_source_snapshot/mujoco.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed789/eval_gydz_0fh/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1",
+      "bytes": 1425,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed789/task_source_snapshot/rma.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed789/eval_gydz_0fh/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c",
+      "bytes": 440,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed789/task_source_snapshot/rma_forward.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed789/eval_gydz_0fh/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63",
+      "bytes": 188,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed789/task_source_snapshot/rma_forward_no_pose.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed789/eval_gydz_0fh/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89",
+      "bytes": 282,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed789/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed789/eval_gydz_0fh/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96",
+      "bytes": 309,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed789/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.3_seed789/eval_gydz_0fh/transitions.csv",
+      "sha256": "984418059e4687bd427b0b94b6d89d1d940651440a57f68aaa5bc81349ee72b1",
+      "bytes": 1135411,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.3_seed789/transitions.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed123/eval_uw7263po/run_config.json",
+      "sha256": "fd48e4337ee4886311e7b16886b47e5f390ab349fb4fb96f6da670b075183fb9",
+      "bytes": 4426,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed123/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed123/eval_uw7263po/summary.json",
+      "sha256": "a038b57562e132da58ad7432ba07df82ff15f3486a248410ba24a912c410eedd",
+      "bytes": 4796,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed123/summary.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed123/eval_uw7263po/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce",
+      "bytes": 7412,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed123/task_source_snapshot/base.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed123/eval_uw7263po/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9",
+      "bytes": 489,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed123/task_source_snapshot/mujoco.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed123/eval_uw7263po/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1",
+      "bytes": 1425,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed123/task_source_snapshot/rma.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed123/eval_uw7263po/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c",
+      "bytes": 440,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed123/task_source_snapshot/rma_forward.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed123/eval_uw7263po/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63",
+      "bytes": 188,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed123/task_source_snapshot/rma_forward_no_pose.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed123/eval_uw7263po/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89",
+      "bytes": 282,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed123/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed123/eval_uw7263po/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96",
+      "bytes": 309,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed123/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed123/eval_uw7263po/transitions.csv",
+      "sha256": "cf0d95cf2e12536234cdefefea66a9b7433701198f4b21e5b4c0183e851e5a8a",
+      "bytes": 1095469,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed123/transitions.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed456/eval_pd5jk3iz/run_config.json",
+      "sha256": "bbef3ba3bc1d2d59515d2fa8109031668b26b0f2f76c3f82fe961f8cd19488be",
+      "bytes": 4426,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed456/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed456/eval_pd5jk3iz/summary.json",
+      "sha256": "edb38eaf891b910add01630bc11179b3d84fdc7f692a87dfc4a9a95f5c8b780b",
+      "bytes": 4796,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed456/summary.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed456/eval_pd5jk3iz/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce",
+      "bytes": 7412,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed456/task_source_snapshot/base.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed456/eval_pd5jk3iz/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9",
+      "bytes": 489,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed456/task_source_snapshot/mujoco.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed456/eval_pd5jk3iz/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1",
+      "bytes": 1425,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed456/task_source_snapshot/rma.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed456/eval_pd5jk3iz/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c",
+      "bytes": 440,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed456/task_source_snapshot/rma_forward.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed456/eval_pd5jk3iz/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63",
+      "bytes": 188,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed456/task_source_snapshot/rma_forward_no_pose.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed456/eval_pd5jk3iz/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89",
+      "bytes": 282,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed456/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed456/eval_pd5jk3iz/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96",
+      "bytes": 309,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed456/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed456/eval_pd5jk3iz/transitions.csv",
+      "sha256": "cf0d95cf2e12536234cdefefea66a9b7433701198f4b21e5b4c0183e851e5a8a",
+      "bytes": 1095469,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed456/transitions.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed789/eval_mhqn1num/run_config.json",
+      "sha256": "f99cf032970ce0839ab584e5e4f0e8fc08e05e25e8f4b6be7ed7cda57f0ae1d2",
+      "bytes": 4426,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed789/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed789/eval_mhqn1num/summary.json",
+      "sha256": "a115d7269b6b928ddcf20d8c89470e71c6dd583f975d5b71356206c646a3590e",
+      "bytes": 4796,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed789/summary.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed789/eval_mhqn1num/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce",
+      "bytes": 7412,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed789/task_source_snapshot/base.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed789/eval_mhqn1num/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9",
+      "bytes": 489,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed789/task_source_snapshot/mujoco.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed789/eval_mhqn1num/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1",
+      "bytes": 1425,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed789/task_source_snapshot/rma.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed789/eval_mhqn1num/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c",
+      "bytes": 440,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed789/task_source_snapshot/rma_forward.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed789/eval_mhqn1num/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63",
+      "bytes": 188,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed789/task_source_snapshot/rma_forward_no_pose.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed789/eval_mhqn1num/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89",
+      "bytes": 282,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed789/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed789/eval_mhqn1num/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96",
+      "bytes": 309,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed789/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.5_seed789/eval_mhqn1num/transitions.csv",
+      "sha256": "cf0d95cf2e12536234cdefefea66a9b7433701198f4b21e5b4c0183e851e5a8a",
+      "bytes": 1095469,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.5_seed789/transitions.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed123/eval_60uczd7r/run_config.json",
+      "sha256": "506923e52db555ea25cfd32d21bb3a0dee6d365d15b00cb22dfed749fdf614bc",
+      "bytes": 4426,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed123/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed123/eval_60uczd7r/summary.json",
+      "sha256": "c842780fd6e18446b879615055503d4cba840ccb9b171ff31845c64d5a0cd9cc",
+      "bytes": 4823,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed123/summary.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed123/eval_60uczd7r/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce",
+      "bytes": 7412,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed123/task_source_snapshot/base.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed123/eval_60uczd7r/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9",
+      "bytes": 489,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed123/task_source_snapshot/mujoco.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed123/eval_60uczd7r/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1",
+      "bytes": 1425,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed123/task_source_snapshot/rma.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed123/eval_60uczd7r/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c",
+      "bytes": 440,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed123/task_source_snapshot/rma_forward.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed123/eval_60uczd7r/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63",
+      "bytes": 188,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed123/task_source_snapshot/rma_forward_no_pose.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed123/eval_60uczd7r/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89",
+      "bytes": 282,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed123/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed123/eval_60uczd7r/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96",
+      "bytes": 309,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed123/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed123/eval_60uczd7r/transitions.csv",
+      "sha256": "a4e2742169cb30f696df9cadfbe00be0ad49f546b45b9ef79b85637096c1fde6",
+      "bytes": 1116229,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed123/transitions.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed456/eval_2rzvs6fj/run_config.json",
+      "sha256": "e276c1d8b77c0c097739620e2116a087786d40eff2b9706a28b8146d85931f6e",
+      "bytes": 4426,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed456/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed456/eval_2rzvs6fj/summary.json",
+      "sha256": "ea8df66d850f3c004efc19518ef04d16dfa38e97ac5646b82ab2f7ecc06a62a8",
+      "bytes": 4823,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed456/summary.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed456/eval_2rzvs6fj/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce",
+      "bytes": 7412,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed456/task_source_snapshot/base.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed456/eval_2rzvs6fj/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9",
+      "bytes": 489,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed456/task_source_snapshot/mujoco.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed456/eval_2rzvs6fj/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1",
+      "bytes": 1425,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed456/task_source_snapshot/rma.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed456/eval_2rzvs6fj/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c",
+      "bytes": 440,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed456/task_source_snapshot/rma_forward.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed456/eval_2rzvs6fj/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63",
+      "bytes": 188,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed456/task_source_snapshot/rma_forward_no_pose.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed456/eval_2rzvs6fj/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89",
+      "bytes": 282,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed456/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed456/eval_2rzvs6fj/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96",
+      "bytes": 309,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed456/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed456/eval_2rzvs6fj/transitions.csv",
+      "sha256": "a4e2742169cb30f696df9cadfbe00be0ad49f546b45b9ef79b85637096c1fde6",
+      "bytes": 1116229,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed456/transitions.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed789/eval_g7s1ld3_/run_config.json",
+      "sha256": "5e696e95920e039cf5ca66440e6a11fe1fa8018c19c9fd4fe1024eb15a098f47",
+      "bytes": 4426,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed789/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed789/eval_g7s1ld3_/summary.json",
+      "sha256": "48fcaa30a22b3c3630b3e9285da63a95910f0accc03d85bacb767fb706106ae2",
+      "bytes": 4823,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed789/summary.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed789/eval_g7s1ld3_/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce",
+      "bytes": 7412,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed789/task_source_snapshot/base.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed789/eval_g7s1ld3_/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9",
+      "bytes": 489,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed789/task_source_snapshot/mujoco.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed789/eval_g7s1ld3_/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1",
+      "bytes": 1425,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed789/task_source_snapshot/rma.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed789/eval_g7s1ld3_/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c",
+      "bytes": 440,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed789/task_source_snapshot/rma_forward.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed789/eval_g7s1ld3_/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63",
+      "bytes": 188,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed789/task_source_snapshot/rma_forward_no_pose.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed789/eval_g7s1ld3_/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89",
+      "bytes": 282,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed789/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed789/eval_g7s1ld3_/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96",
+      "bytes": 309,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed789/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/baseline_vx0.7_seed789/eval_g7s1ld3_/transitions.csv",
+      "sha256": "a4e2742169cb30f696df9cadfbe00be0ad49f546b45b9ef79b85637096c1fde6",
+      "bytes": 1116229,
+      "archived": "evaluations/mujoco_teacher_baseline_nominal_vx0.7_seed789/transitions.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed123/eval_ch7xfh6_/run_config.json",
+      "sha256": "72a10a216596328cb7f067e4fe55ea31e1055cf800a2a0e0528ac852092a5756",
+      "bytes": 4430,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed123/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed123/eval_ch7xfh6_/summary.json",
+      "sha256": "389f39927479984798acd3de91e72c8437b98b8a3a425d5de269c2bcdd77cb98",
+      "bytes": 4845,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed123/summary.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed123/eval_ch7xfh6_/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce",
+      "bytes": 7412,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed123/task_source_snapshot/base.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed123/eval_ch7xfh6_/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9",
+      "bytes": 489,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed123/task_source_snapshot/mujoco.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed123/eval_ch7xfh6_/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1",
+      "bytes": 1425,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed123/task_source_snapshot/rma.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed123/eval_ch7xfh6_/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c",
+      "bytes": 440,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed123/task_source_snapshot/rma_forward.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed123/eval_ch7xfh6_/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63",
+      "bytes": 188,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed123/task_source_snapshot/rma_forward_no_pose.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed123/eval_ch7xfh6_/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89",
+      "bytes": 282,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed123/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed123/eval_ch7xfh6_/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96",
+      "bytes": 309,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed123/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed123/eval_ch7xfh6_/transitions.csv",
+      "sha256": "8baa88028f9dbe49e2b50f41ca01edb2d9b61d6ff753c9cccc362504c9c0bc78",
+      "bytes": 1133630,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed123/transitions.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed456/eval__gr1h2dh/run_config.json",
+      "sha256": "0e9fb64412cde07090d3334869c45fb42c525bd50780f91e9366827624cebfce",
+      "bytes": 4430,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed456/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed456/eval__gr1h2dh/summary.json",
+      "sha256": "71dc13c49fd618ca31a71131b95481e813065dc498e2901b66ae78aeae2c8806",
+      "bytes": 4845,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed456/summary.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed456/eval__gr1h2dh/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce",
+      "bytes": 7412,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed456/task_source_snapshot/base.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed456/eval__gr1h2dh/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9",
+      "bytes": 489,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed456/task_source_snapshot/mujoco.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed456/eval__gr1h2dh/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1",
+      "bytes": 1425,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed456/task_source_snapshot/rma.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed456/eval__gr1h2dh/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c",
+      "bytes": 440,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed456/task_source_snapshot/rma_forward.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed456/eval__gr1h2dh/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63",
+      "bytes": 188,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed456/task_source_snapshot/rma_forward_no_pose.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed456/eval__gr1h2dh/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89",
+      "bytes": 282,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed456/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed456/eval__gr1h2dh/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96",
+      "bytes": 309,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed456/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed456/eval__gr1h2dh/transitions.csv",
+      "sha256": "8baa88028f9dbe49e2b50f41ca01edb2d9b61d6ff753c9cccc362504c9c0bc78",
+      "bytes": 1133630,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed456/transitions.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed789/eval_s4ao9bxa/run_config.json",
+      "sha256": "318439ea0f371a38fbbd6ed1753d758ab7cc6c4ca1e742cc77140366b2506a64",
+      "bytes": 4430,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed789/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed789/eval_s4ao9bxa/summary.json",
+      "sha256": "e4b5fd07c7e9e0957c184cff555a920d0da2595cf6a6124cbbee32196ba9e481",
+      "bytes": 4845,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed789/summary.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed789/eval_s4ao9bxa/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce",
+      "bytes": 7412,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed789/task_source_snapshot/base.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed789/eval_s4ao9bxa/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9",
+      "bytes": 489,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed789/task_source_snapshot/mujoco.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed789/eval_s4ao9bxa/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1",
+      "bytes": 1425,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed789/task_source_snapshot/rma.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed789/eval_s4ao9bxa/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c",
+      "bytes": 440,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed789/task_source_snapshot/rma_forward.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed789/eval_s4ao9bxa/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63",
+      "bytes": 188,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed789/task_source_snapshot/rma_forward_no_pose.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed789/eval_s4ao9bxa/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89",
+      "bytes": 282,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed789/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed789/eval_s4ao9bxa/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96",
+      "bytes": 309,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed789/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.3_seed789/eval_s4ao9bxa/transitions.csv",
+      "sha256": "8baa88028f9dbe49e2b50f41ca01edb2d9b61d6ff753c9cccc362504c9c0bc78",
+      "bytes": 1133630,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.3_seed789/transitions.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed123/eval_rt72upab/run_config.json",
+      "sha256": "15f5076099bf9074ae9239c0ef97f924ad6829d57154d075946646afb936bd5c",
+      "bytes": 4430,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed123/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed123/eval_rt72upab/summary.json",
+      "sha256": "32accc8abf5d75d71c49078b99a8f4dde32786161fe875e9d20598f21312b282",
+      "bytes": 4811,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed123/summary.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed123/eval_rt72upab/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce",
+      "bytes": 7412,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed123/task_source_snapshot/base.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed123/eval_rt72upab/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9",
+      "bytes": 489,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed123/task_source_snapshot/mujoco.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed123/eval_rt72upab/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1",
+      "bytes": 1425,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed123/task_source_snapshot/rma.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed123/eval_rt72upab/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c",
+      "bytes": 440,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed123/task_source_snapshot/rma_forward.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed123/eval_rt72upab/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63",
+      "bytes": 188,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed123/task_source_snapshot/rma_forward_no_pose.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed123/eval_rt72upab/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89",
+      "bytes": 282,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed123/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed123/eval_rt72upab/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96",
+      "bytes": 309,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed123/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed123/eval_rt72upab/transitions.csv",
+      "sha256": "e903d7ada91f58cd5779fbb212d386efbf0888521bcfa3d723a3d31772f42507",
+      "bytes": 1098015,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed123/transitions.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed456/eval_iudhkn98/run_config.json",
+      "sha256": "130e2218cc117ccd9930a4ae828ac24c32d80efedd1dc0161334a1387df9e034",
+      "bytes": 4430,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed456/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed456/eval_iudhkn98/summary.json",
+      "sha256": "4f2f1fca699e3cf7a68494f37462be95b3c9b00affcd5328b9719a66b40bdea6",
+      "bytes": 4811,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed456/summary.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed456/eval_iudhkn98/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce",
+      "bytes": 7412,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed456/task_source_snapshot/base.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed456/eval_iudhkn98/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9",
+      "bytes": 489,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed456/task_source_snapshot/mujoco.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed456/eval_iudhkn98/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1",
+      "bytes": 1425,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed456/task_source_snapshot/rma.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed456/eval_iudhkn98/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c",
+      "bytes": 440,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed456/task_source_snapshot/rma_forward.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed456/eval_iudhkn98/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63",
+      "bytes": 188,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed456/task_source_snapshot/rma_forward_no_pose.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed456/eval_iudhkn98/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89",
+      "bytes": 282,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed456/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed456/eval_iudhkn98/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96",
+      "bytes": 309,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed456/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed456/eval_iudhkn98/transitions.csv",
+      "sha256": "e903d7ada91f58cd5779fbb212d386efbf0888521bcfa3d723a3d31772f42507",
+      "bytes": 1098015,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed456/transitions.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed789/eval_5w_dsgvv/run_config.json",
+      "sha256": "a38d0abe816d42037415f68e7a9f2277f40d1f64a3c58197ad6cfee2431c484e",
+      "bytes": 4430,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed789/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed789/eval_5w_dsgvv/summary.json",
+      "sha256": "e12e2d81d38a2c0cfe9a261767038392c3ee259d209ee767361c5f421e67b455",
+      "bytes": 4811,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed789/summary.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed789/eval_5w_dsgvv/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce",
+      "bytes": 7412,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed789/task_source_snapshot/base.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed789/eval_5w_dsgvv/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9",
+      "bytes": 489,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed789/task_source_snapshot/mujoco.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed789/eval_5w_dsgvv/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1",
+      "bytes": 1425,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed789/task_source_snapshot/rma.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed789/eval_5w_dsgvv/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c",
+      "bytes": 440,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed789/task_source_snapshot/rma_forward.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed789/eval_5w_dsgvv/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63",
+      "bytes": 188,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed789/task_source_snapshot/rma_forward_no_pose.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed789/eval_5w_dsgvv/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89",
+      "bytes": 282,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed789/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed789/eval_5w_dsgvv/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96",
+      "bytes": 309,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed789/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.5_seed789/eval_5w_dsgvv/transitions.csv",
+      "sha256": "e903d7ada91f58cd5779fbb212d386efbf0888521bcfa3d723a3d31772f42507",
+      "bytes": 1098015,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.5_seed789/transitions.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed123/eval_bnrxefw8/run_config.json",
+      "sha256": "bfd4cbd6a2baab0ed740b850f8316f958a17602a0810fe92dd46079e791a3185",
+      "bytes": 4430,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed123/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed123/eval_bnrxefw8/summary.json",
+      "sha256": "c755ab76872d2cace5858de17719e7a3370635fb43261addbcd3a6ac81ec02a3",
+      "bytes": 4838,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed123/summary.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed123/eval_bnrxefw8/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce",
+      "bytes": 7412,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed123/task_source_snapshot/base.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed123/eval_bnrxefw8/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9",
+      "bytes": 489,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed123/task_source_snapshot/mujoco.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed123/eval_bnrxefw8/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1",
+      "bytes": 1425,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed123/task_source_snapshot/rma.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed123/eval_bnrxefw8/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c",
+      "bytes": 440,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed123/task_source_snapshot/rma_forward.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed123/eval_bnrxefw8/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63",
+      "bytes": 188,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed123/task_source_snapshot/rma_forward_no_pose.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed123/eval_bnrxefw8/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89",
+      "bytes": 282,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed123/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed123/eval_bnrxefw8/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96",
+      "bytes": 309,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed123/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed123/eval_bnrxefw8/transitions.csv",
+      "sha256": "4dc533eb1e15235cc7eab73d3911a44b1484bc9f95b6d120ebaa3ece9da8df86",
+      "bytes": 1124227,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed123/transitions.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed456/eval_bkm_9dk8/run_config.json",
+      "sha256": "700e52151af74b1cd5af34cec1f9dbae971c01252965c79fa70701790bf87d3f",
+      "bytes": 4430,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed456/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed456/eval_bkm_9dk8/summary.json",
+      "sha256": "96f0cdd20d5cbb742e343e256ec6469a82147aa5ae62effa02a443c7e307f692",
+      "bytes": 4838,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed456/summary.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed456/eval_bkm_9dk8/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce",
+      "bytes": 7412,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed456/task_source_snapshot/base.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed456/eval_bkm_9dk8/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9",
+      "bytes": 489,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed456/task_source_snapshot/mujoco.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed456/eval_bkm_9dk8/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1",
+      "bytes": 1425,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed456/task_source_snapshot/rma.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed456/eval_bkm_9dk8/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c",
+      "bytes": 440,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed456/task_source_snapshot/rma_forward.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed456/eval_bkm_9dk8/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63",
+      "bytes": 188,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed456/task_source_snapshot/rma_forward_no_pose.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed456/eval_bkm_9dk8/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89",
+      "bytes": 282,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed456/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed456/eval_bkm_9dk8/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96",
+      "bytes": 309,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed456/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed456/eval_bkm_9dk8/transitions.csv",
+      "sha256": "4dc533eb1e15235cc7eab73d3911a44b1484bc9f95b6d120ebaa3ece9da8df86",
+      "bytes": 1124227,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed456/transitions.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed789/eval_8al6di08/run_config.json",
+      "sha256": "ed2974b828c7666d9f9244fb4c800895e40ea5197af565cdda1ec0c31c5e9fff",
+      "bytes": 4430,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed789/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed789/eval_8al6di08/summary.json",
+      "sha256": "26fb276203ca50b5c084b9ec1cecdb2ad6ac3473a68fb4b0fc4e5797454db16d",
+      "bytes": 4838,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed789/summary.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed789/eval_8al6di08/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce",
+      "bytes": 7412,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed789/task_source_snapshot/base.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed789/eval_8al6di08/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9",
+      "bytes": 489,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed789/task_source_snapshot/mujoco.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed789/eval_8al6di08/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1",
+      "bytes": 1425,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed789/task_source_snapshot/rma.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed789/eval_8al6di08/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c",
+      "bytes": 440,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed789/task_source_snapshot/rma_forward.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed789/eval_8al6di08/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63",
+      "bytes": 188,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed789/task_source_snapshot/rma_forward_no_pose.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed789/eval_8al6di08/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89",
+      "bytes": 282,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed789/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed789/eval_8al6di08/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96",
+      "bytes": 309,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed789/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/three_seeds_20261027_195658/wide_speed_vx0.7_seed789/eval_8al6di08/transitions.csv",
+      "sha256": "4dc533eb1e15235cc7eab73d3911a44b1484bc9f95b6d120ebaa3ece9da8df86",
+      "bytes": 1124227,
+      "archived": "evaluations/mujoco_teacher_wide_speed_nominal_vx0.7_seed789/transitions.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.3/eval_4vumf0fl/run_config.json",
+      "sha256": "f69688b33f310b019b7a1cb6560249779c57fd79028007285643836dc97e4f05",
+      "bytes": 4418,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.3_seed123/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.3/eval_4vumf0fl/summary.json",
+      "sha256": "7707c5e5189fa8e7147fe0178d9e75fee01eee6d5b4ae4d3e951fe8851091a52",
+      "bytes": 4856,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.3_seed123/summary.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.3/eval_4vumf0fl/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce",
+      "bytes": 7412,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.3_seed123/task_source_snapshot/base.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.3/eval_4vumf0fl/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9",
+      "bytes": 489,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.3_seed123/task_source_snapshot/mujoco.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.3/eval_4vumf0fl/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1",
+      "bytes": 1425,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.3_seed123/task_source_snapshot/rma.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.3/eval_4vumf0fl/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c",
+      "bytes": 440,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.3_seed123/task_source_snapshot/rma_forward.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.3/eval_4vumf0fl/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63",
+      "bytes": 188,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.3_seed123/task_source_snapshot/rma_forward_no_pose.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.3/eval_4vumf0fl/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89",
+      "bytes": 282,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.3_seed123/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.3/eval_4vumf0fl/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96",
+      "bytes": 309,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.3_seed123/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.3/eval_4vumf0fl/transitions.csv",
+      "sha256": "0806afaceae268d88fbebb4edd7afb15e81d64b872cf6a39010c9a594bd0d6e2",
+      "bytes": 1133908,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.3_seed123/transitions.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.5/eval_v__k1m10/run_config.json",
+      "sha256": "074cf4739f77232dc32c97e25a052c7b321b392f7b3736ca00290cc8cfc4ae8d",
+      "bytes": 4418,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.5_seed123/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.5/eval_v__k1m10/summary.json",
+      "sha256": "a8c9f082d29f1dfdbfb8371d29fcd92212ed9e6576c048dbd6dc4ad00861955a",
+      "bytes": 4820,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.5_seed123/summary.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.5/eval_v__k1m10/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce",
+      "bytes": 7412,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.5_seed123/task_source_snapshot/base.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.5/eval_v__k1m10/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9",
+      "bytes": 489,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.5_seed123/task_source_snapshot/mujoco.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.5/eval_v__k1m10/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1",
+      "bytes": 1425,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.5_seed123/task_source_snapshot/rma.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.5/eval_v__k1m10/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c",
+      "bytes": 440,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.5_seed123/task_source_snapshot/rma_forward.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.5/eval_v__k1m10/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63",
+      "bytes": 188,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.5_seed123/task_source_snapshot/rma_forward_no_pose.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.5/eval_v__k1m10/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89",
+      "bytes": 282,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.5_seed123/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.5/eval_v__k1m10/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96",
+      "bytes": 309,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.5_seed123/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.5/eval_v__k1m10/transitions.csv",
+      "sha256": "8607fc8a07403d6252c9742e24531898028af74680cdb25dbd8db385501d1e60",
+      "bytes": 1097909,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.5_seed123/transitions.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.7/eval_3av42w04/run_config.json",
+      "sha256": "ff0eb1f1824aa22d8a1a0c965b931206fd884d14c81c044b11e6ea0b8814471b",
+      "bytes": 4418,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.7_seed123/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.7/eval_3av42w04/summary.json",
+      "sha256": "9fd4f27a086b5ea0cbb36d1e31e184f999efd16409056948aff17ee4859f8d92",
+      "bytes": 4839,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.7_seed123/summary.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.7/eval_3av42w04/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce",
+      "bytes": 7412,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.7_seed123/task_source_snapshot/base.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.7/eval_3av42w04/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9",
+      "bytes": 489,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.7_seed123/task_source_snapshot/mujoco.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.7/eval_3av42w04/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1",
+      "bytes": 1425,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.7_seed123/task_source_snapshot/rma.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.7/eval_3av42w04/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c",
+      "bytes": 440,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.7_seed123/task_source_snapshot/rma_forward.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.7/eval_3av42w04/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63",
+      "bytes": 188,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.7_seed123/task_source_snapshot/rma_forward_no_pose.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.7/eval_3av42w04/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89",
+      "bytes": 282,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.7_seed123/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.7/eval_3av42w04/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96",
+      "bytes": 309,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.7_seed123/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_20261027_203430/vx0.7/eval_3av42w04/transitions.csv",
+      "sha256": "2da8bd285444bd10b4e7c23ecb623245bbbc77df85bf458c002ff4af88fad72b",
+      "bytes": 1123603,
+      "archived": "evaluations/mujoco_student_student_nominal_vx0.7_seed123/transitions.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed123/eval_sw7qziwu/run_config.json",
+      "sha256": "31b37c1f73c10e7a40f5a7ec078306ada835ffbcdf7062e94b021617f726a3df",
+      "bytes": 4428,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed123/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed123/eval_sw7qziwu/summary.json",
+      "sha256": "40cead8732d48b7116dec2df0dcae029be5fffe69f4f6aa7526aeaccb35719f2",
+      "bytes": 4623,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed123/summary.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed123/eval_sw7qziwu/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce",
+      "bytes": 7412,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed123/task_source_snapshot/base.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed123/eval_sw7qziwu/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9",
+      "bytes": 489,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed123/task_source_snapshot/mujoco.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed123/eval_sw7qziwu/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1",
+      "bytes": 1425,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed123/task_source_snapshot/rma.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed123/eval_sw7qziwu/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c",
+      "bytes": 440,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed123/task_source_snapshot/rma_forward.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed123/eval_sw7qziwu/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63",
+      "bytes": 188,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed123/task_source_snapshot/rma_forward_no_pose.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed123/eval_sw7qziwu/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89",
+      "bytes": 282,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed123/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed123/eval_sw7qziwu/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96",
+      "bytes": 309,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed123/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed123/eval_sw7qziwu/transitions.csv",
+      "sha256": "c161d83375eae25e0e7be48caf80d7f3b08fad2e0813afd27a8ef917494cfe8d",
+      "bytes": 1125163,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed123/transitions.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed456/eval_zu9sba3m/run_config.json",
+      "sha256": "09a975a2e3d549f58f880e96fb89d53f445763a11893df7d803e1589cb8beec2",
+      "bytes": 4428,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed456/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed456/eval_zu9sba3m/summary.json",
+      "sha256": "d7584ad7ef7fb16f27c708193f7668325223d9803cf83db8ff0006fec30e470a",
+      "bytes": 4628,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed456/summary.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed456/eval_zu9sba3m/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce",
+      "bytes": 7412,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed456/task_source_snapshot/base.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed456/eval_zu9sba3m/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9",
+      "bytes": 489,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed456/task_source_snapshot/mujoco.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed456/eval_zu9sba3m/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1",
+      "bytes": 1425,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed456/task_source_snapshot/rma.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed456/eval_zu9sba3m/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c",
+      "bytes": 440,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed456/task_source_snapshot/rma_forward.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed456/eval_zu9sba3m/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63",
+      "bytes": 188,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed456/task_source_snapshot/rma_forward_no_pose.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed456/eval_zu9sba3m/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89",
+      "bytes": 282,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed456/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed456/eval_zu9sba3m/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96",
+      "bytes": 309,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed456/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed456/eval_zu9sba3m/transitions.csv",
+      "sha256": "62289ae5c82a750b7cb0869c6be898bef737bb9f7e9bd044dd2b5b954a69611c",
+      "bytes": 1122743,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed456/transitions.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed789/eval_fezn5vqk/run_config.json",
+      "sha256": "258fcb911484fcb22e0746b1142c8d6d89549580bc5f8521569d8cdf43d52891",
+      "bytes": 4428,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed789/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed789/eval_fezn5vqk/summary.json",
+      "sha256": "64b82471d7ce448198590c4a0772d28c7aaaf49374024edc7f28bcaa06301ed9",
+      "bytes": 4623,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed789/summary.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed789/eval_fezn5vqk/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce",
+      "bytes": 7412,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed789/task_source_snapshot/base.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed789/eval_fezn5vqk/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9",
+      "bytes": 489,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed789/task_source_snapshot/mujoco.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed789/eval_fezn5vqk/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1",
+      "bytes": 1425,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed789/task_source_snapshot/rma.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed789/eval_fezn5vqk/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c",
+      "bytes": 440,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed789/task_source_snapshot/rma_forward.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed789/eval_fezn5vqk/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63",
+      "bytes": 188,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed789/task_source_snapshot/rma_forward_no_pose.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed789/eval_fezn5vqk/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89",
+      "bytes": 282,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed789/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed789/eval_fezn5vqk/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96",
+      "bytes": 309,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed789/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/evaluations/student_wide_speed_robust_20261027_204527/seed789/eval_fezn5vqk/transitions.csv",
+      "sha256": "a736294e68e675315a62436bc44203f25eee2cfa25be045c50f15b62fe30c6f2",
+      "bytes": 1124322,
+      "archived": "evaluations/mujoco_student_student_randomized_vx0.7_seed789/transitions.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/deployment/20261027_212144/evaluation/eval_yp2n5uwo/run_config.json",
+      "sha256": "6258150d964d1e1c8c09f1853d61633aa067f8d85a0f5fece84d233337d86940",
+      "bytes": 4492,
+      "archived": "evaluations/mujoco_tensorrt_tensorrt_nominal_vx0.7_seed123/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/deployment/20261027_212144/evaluation/eval_yp2n5uwo/summary.json",
+      "sha256": "0c93607012cf0f7d4a4c805a577404e4ac61113ce475e39ebd0ab754a9c9bc6f",
+      "bytes": 5004,
+      "archived": "evaluations/mujoco_tensorrt_tensorrt_nominal_vx0.7_seed123/summary.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/deployment/20261027_212144/evaluation/eval_yp2n5uwo/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce",
+      "bytes": 7412,
+      "archived": "evaluations/mujoco_tensorrt_tensorrt_nominal_vx0.7_seed123/task_source_snapshot/base.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/deployment/20261027_212144/evaluation/eval_yp2n5uwo/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9",
+      "bytes": 489,
+      "archived": "evaluations/mujoco_tensorrt_tensorrt_nominal_vx0.7_seed123/task_source_snapshot/mujoco.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/deployment/20261027_212144/evaluation/eval_yp2n5uwo/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1",
+      "bytes": 1425,
+      "archived": "evaluations/mujoco_tensorrt_tensorrt_nominal_vx0.7_seed123/task_source_snapshot/rma.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/deployment/20261027_212144/evaluation/eval_yp2n5uwo/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c",
+      "bytes": 440,
+      "archived": "evaluations/mujoco_tensorrt_tensorrt_nominal_vx0.7_seed123/task_source_snapshot/rma_forward.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/deployment/20261027_212144/evaluation/eval_yp2n5uwo/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63",
+      "bytes": 188,
+      "archived": "evaluations/mujoco_tensorrt_tensorrt_nominal_vx0.7_seed123/task_source_snapshot/rma_forward_no_pose.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/deployment/20261027_212144/evaluation/eval_yp2n5uwo/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89",
+      "bytes": 282,
+      "archived": "evaluations/mujoco_tensorrt_tensorrt_nominal_vx0.7_seed123/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/deployment/20261027_212144/evaluation/eval_yp2n5uwo/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96",
+      "bytes": 309,
+      "archived": "evaluations/mujoco_tensorrt_tensorrt_nominal_vx0.7_seed123/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/deployment/20261027_212144/evaluation/eval_yp2n5uwo/transitions.csv",
+      "sha256": "c05abae0caecd7d8488bc9a16dc120cb14fbc380cb8d25f59e87f28ecd1b2051",
+      "bytes": 1123513,
+      "archived": "evaluations/mujoco_tensorrt_tensorrt_nominal_vx0.7_seed123/transitions.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/genesis/20261027_210733/vx0.3_seed123.csv",
+      "sha256": "88e41d8605148c890794411f8d231ffef9ba5ae2dd472baba5211b5ca1166e93",
+      "bytes": 638883,
+      "archived": "genesis/vx0.3_seed123.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/genesis/20261027_210733/vx0.3_seed123.log",
+      "sha256": "b6aebfeb2cf93dbe290fb7bf02e18aa564830e8202c6a862d7fcb0ea4f5c1e50",
+      "bytes": 3850,
+      "archived": "genesis/vx0.3_seed123.txt",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/genesis/20261027_210733/vx0.3_seed456.csv",
+      "sha256": "2700682bc361a2a86948ceef3c157b504e5595c47d243e77064d728faa2d30e8",
+      "bytes": 638732,
+      "archived": "genesis/vx0.3_seed456.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/genesis/20261027_210733/vx0.3_seed456.log",
+      "sha256": "5a959abdb3785f89ec22c8f106859bce07ee60fc13167f3142464fae188340c6",
+      "bytes": 3849,
+      "archived": "genesis/vx0.3_seed456.txt",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/genesis/20261027_210733/vx0.3_seed789.csv",
+      "sha256": "b8bca373d2affd302c7e8db0cb8177fa1705c0fc5ffc6f262c1448fa6869d318",
+      "bytes": 638928,
+      "archived": "genesis/vx0.3_seed789.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/genesis/20261027_210733/vx0.3_seed789.log",
+      "sha256": "149f79d4b9958630d83aeba9522256e0a17a0384e25a9ac1b917fcbd839fa091",
+      "bytes": 3850,
+      "archived": "genesis/vx0.3_seed789.txt",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/genesis/20261027_210733/vx0.5_seed123.csv",
+      "sha256": "f7687d4e7dbb21dc12f4da077783872702fc3eaa931795aed3fb165809c43237",
+      "bytes": 638584,
+      "archived": "genesis/vx0.5_seed123.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/genesis/20261027_210733/vx0.5_seed123.log",
+      "sha256": "9d5171264b1629b9e0c39d39df70cef8d00ad9cc54ff754c950be5390633cfe4",
+      "bytes": 3848,
+      "archived": "genesis/vx0.5_seed123.txt",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/genesis/20261027_210733/vx0.5_seed456.csv",
+      "sha256": "7bb3d813254064003b41ffd5acb67101ff6dfcfe0b4dbe25d3ed409119782dfa",
+      "bytes": 638498,
+      "archived": "genesis/vx0.5_seed456.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/genesis/20261027_210733/vx0.5_seed456.log",
+      "sha256": "ac4c2307fc500525fd6e00a0d85b581101afe0e64b0364e1314ccdf15b60c700",
+      "bytes": 3851,
+      "archived": "genesis/vx0.5_seed456.txt",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/genesis/20261027_210733/vx0.5_seed789.csv",
+      "sha256": "23d005525285a4754547de48f981bd02237f3aa2902e11e1d8871dd1d14a4291",
+      "bytes": 638465,
+      "archived": "genesis/vx0.5_seed789.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/genesis/20261027_210733/vx0.5_seed789.log",
+      "sha256": "156c9da924f4bcf3188feb9effbdb42cc010a77009712caa43cf35d1b8360e77",
+      "bytes": 3851,
+      "archived": "genesis/vx0.5_seed789.txt",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/genesis/20261027_210733/vx0.7_seed123.csv",
+      "sha256": "84e8661b52ef479b86e99f1f669d2eee88835ec6b2d09a91c39323582ebbe047",
+      "bytes": 640481,
+      "archived": "genesis/vx0.7_seed123.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/genesis/20261027_210733/vx0.7_seed123.log",
+      "sha256": "f20348b572ed539650e67b4a0973c3851012d8a284c1f8f15dd0d23b754e0855",
+      "bytes": 3849,
+      "archived": "genesis/vx0.7_seed123.txt",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/genesis/20261027_210733/vx0.7_seed456.csv",
+      "sha256": "4a66d63e0ff6ceaafdbcd4bae260ac0ec19a6364c1405cf3db5bb7f08e0b18d8",
+      "bytes": 640372,
+      "archived": "genesis/vx0.7_seed456.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/genesis/20261027_210733/vx0.7_seed456.log",
+      "sha256": "184b2f3ec965b89dfbb76626a4e18532d4dc257d5ea1c484d2376a62f38a7f3d",
+      "bytes": 3848,
+      "archived": "genesis/vx0.7_seed456.txt",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/genesis/20261027_210733/vx0.7_seed789.csv",
+      "sha256": "37b5dfac81c27c2681b1feecf4035cb0203bb6b258d25d936e2f88bf6367f211",
+      "bytes": 640702,
+      "archived": "genesis/vx0.7_seed789.csv.gz",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/genesis/20261027_210733/vx0.7_seed789.log",
+      "sha256": "29fcc570970d21ae4d051374d9b2f68e89a6d02a2a86042fe19de774e1297890",
+      "bytes": 3849,
+      "archived": "genesis/vx0.7_seed789.txt",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/logs/baseline/20261027_160752_9rn3veql/metrics.csv",
+      "sha256": "f9b418931e6bb44f17ce66597b121acd0d0b29b0e882b644838efb813f61fbc9",
+      "bytes": 293468,
+      "archived": "training/baseline/20261027_160752_9rn3veql/metrics.csv",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/logs/baseline/20261027_160752_9rn3veql/run_config.json",
+      "sha256": "b5f3389bdf9003876fa8a34dd18032da91c9ad5b77a90bc4fbb53eb52a18d316",
+      "bytes": 960,
+      "archived": "training/baseline/20261027_160752_9rn3veql/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/logs/student_wide_speed/20261027_201654_aafflbb0/metrics.csv",
+      "sha256": "d5243713bdbaf0a304f05d0d32403d1cc3deb872ab00724580229eb9cca922cc",
+      "bytes": 288648,
+      "archived": "training/student_wide_speed/20261027_201654_aafflbb0/metrics.csv",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/logs/student_wide_speed/20261027_201654_aafflbb0/run_config.json",
+      "sha256": "89939bc2a04208ffca1085c8c6a052fa4a3f352f8060a17a683681856c5c3fa4",
+      "bytes": 1047,
+      "archived": "training/student_wide_speed/20261027_201654_aafflbb0/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/logs/wide_speed/20261027_163954_zkufkp1f/metrics.csv",
+      "sha256": "b42823e61c2c2980c488ef15072aa46e31ed65f944dc27e08e64686da30fc984",
+      "bytes": 292223,
+      "archived": "training/wide_speed/20261027_163954_zkufkp1f/metrics.csv",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/logs/wide_speed/20261027_163954_zkufkp1f/run_config.json",
+      "sha256": "8c5a15ff30051d65a5a9e1be70b7049d0ae2f82ce4e85eaa9eb3285f7bfa8586",
+      "bytes": 979,
+      "archived": "training/wide_speed/20261027_163954_zkufkp1f/run_configuration.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/deployment/20261027_212144/build_engine.log",
+      "sha256": "9d33bcc8285873c7217c976bd9c977578ecdd26313547eab5814cd5791258ff8",
+      "bytes": 60689,
+      "archived": "deployment/build_engine.txt",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/deployment/20261027_212144/control_loop_20261027_213422.log",
+      "sha256": "a178002d16994c5b3f15608a7c40584c0e3ddbac0e07604b048e395fad5f80f4",
+      "bytes": 396,
+      "archived": "deployment/control_loop_20261027_213422.txt",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/deployment/20261027_212144/evaluation.log",
+      "sha256": "553e8063d110b363d833259ae2414f3099ceb6b8233cc0578bf20934d5000efb",
+      "bytes": 5408,
+      "archived": "deployment/evaluation.txt",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/student_wide_speed.json",
+      "sha256": "49809a1d4ce532d740f8d0d369f8bf6a8ada89cb8a70dd5fb5b06a74581fb7f7",
+      "bytes": 1681,
+      "archived": "deployment/onnx_metadata.json",
+      "role": "recorded_input"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/student_wide_speed.pt",
+      "sha256": "28785b298e5071d109ace124dc1c3388e2324fb8c5fda29087cfb829049ce5c5",
+      "bytes": 8356613,
+      "archived": null,
+      "role": "local_model_not_copied"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/teacher_baseline.pt",
+      "sha256": "d143ff1a05548fb801bcbb69393b36bcbc97c8a92c21eed08d7aaea947436bba",
+      "bytes": 3886219,
+      "archived": null,
+      "role": "local_model_not_copied"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/teacher_wide_speed.pt",
+      "sha256": "1ebc0ed4b130f5fb1215d9bb4c68b8b208d2d7a5129dd4eaa9e21ef982fc46be",
+      "bytes": 3886397,
+      "archived": null,
+      "role": "local_model_not_copied"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/student_wide_speed.onnx",
+      "sha256": "5e4fbb29145287f14ec3858cb50826ea9628b663a83382010862df2ad3097c2c",
+      "bytes": 2845225,
+      "archived": null,
+      "role": "local_model_not_copied"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/deployment/20261027_212144/student_wide_speed_fp16.engine",
+      "sha256": "f86fbeb8da243c55fedb9ebb01790086990700ff0447169e1294dc8ced0b77a8",
+      "bytes": 2922740,
+      "archived": null,
+      "role": "local_model_not_copied"
+    },
+    {
+      "source": "/home/abc/my_unilab/scripts/train_rma.py",
+      "sha256": "a324025d073a5e726fdcc7133d620e67277f27bb2e0e919a22e6f5bdc4f89b7b",
+      "bytes": 6213,
+      "archived": "source_at_archive/scripts/train_rma.py",
+      "role": "current_source_not_historical_proof"
+    },
+    {
+      "source": "/home/abc/my_unilab/scripts/evaluate_rma.py",
+      "sha256": "6b0a7435b5fe4c4e08184dcb975299f36204573284b045f4ace92a4675a0c830",
+      "bytes": 11699,
+      "archived": "source_at_archive/scripts/evaluate_rma.py",
+      "role": "current_source_not_historical_proof"
+    },
+    {
+      "source": "/home/abc/my_unilab/scripts/export_onnx.py",
+      "sha256": "803ebb2f046509adf9ef82287fd5d55385be7cb55271535698f0c15d5cfbb8ce",
+      "bytes": 4105,
+      "archived": "source_at_archive/scripts/export_onnx.py",
+      "role": "current_source_not_historical_proof"
+    },
+    {
+      "source": "/home/abc/my_unilab/scripts/sim2sim_genesis_go2.py",
+      "sha256": "0dd6504a75c9731bcb206a55dd43eae1ab13c1b806b7c9f5e5a975185833de55",
+      "bytes": 14513,
+      "archived": "source_at_archive/scripts/sim2sim_genesis_go2.py",
+      "role": "current_source_not_historical_proof"
+    },
+    {
+      "source": "/home/abc/my_unilab/scripts/run_genesis_go2.sh",
+      "sha256": "377f4c334e04657cd190da81d96428142b69abcbfe4bab5893567af5aa58896f",
+      "bytes": 181,
+      "archived": "source_at_archive/scripts/run_genesis_go2.sh",
+      "role": "current_source_not_historical_proof"
+    },
+    {
+      "source": "/home/abc/my_unilab/rsl_rl/unilab_rma/runner.py",
+      "sha256": "546fa942db91e09dd14cebea7380467086924cfa7de973df72c4bfe8068f5961",
+      "bytes": 5084,
+      "archived": "source_at_archive/rsl_rl/unilab_rma/runner.py",
+      "role": "current_source_not_historical_proof"
+    },
+    {
+      "source": "/home/abc/my_unilab/rsl_rl/unilab_rma/ppo.py",
+      "sha256": "c2590bbe9e36189d194abfafc0725b326affcfcc67079443cb22e8ed1c4eb2aa",
+      "bytes": 2225,
+      "archived": "source_at_archive/rsl_rl/unilab_rma/ppo.py",
+      "role": "current_source_not_historical_proof"
+    },
+    {
+      "source": "/home/abc/my_unilab/rsl_rl/unilab_rma/actor_critic_rma.py",
+      "sha256": "f74d2bdf5d4a3d4a3be8141a907220560b1d72319f211578e7efe622dec74966",
+      "bytes": 2667,
+      "archived": "source_at_archive/rsl_rl/unilab_rma/actor_critic_rma.py",
+      "role": "current_source_not_historical_proof"
+    },
+    {
+      "source": "/home/abc/my_unilab/rsl_rl/unilab_rma/adaptation_module.py",
+      "sha256": "92765e6f59dd1b72c4c68cada421080ecc616451fbad93dd061f7ba89b93ae98",
+      "bytes": 2970,
+      "archived": "source_at_archive/rsl_rl/unilab_rma/adaptation_module.py",
+      "role": "current_source_not_historical_proof"
+    },
+    {
+      "source": "/home/abc/my_unilab/deploy_cpp/src/main_control_loop.cpp",
+      "sha256": "550c539f0836ecbbace5b7ab2afa7c5896aaa07272eabac753d6ed281c90b7c7",
+      "bytes": 9952,
+      "archived": "source_at_archive/deploy_cpp/src/main_control_loop.cpp",
+      "role": "current_source_not_historical_proof"
+    },
+    {
+      "source": "/home/abc/my_unilab/deploy_cpp/include/DoubleBuffer.hpp",
+      "sha256": "4575b644ebc89f50ed0a797d1f418283b3f4776714025de8cd2ba63f841d3be5",
+      "bytes": 2389,
+      "archived": "source_at_archive/deploy_cpp/include/DoubleBuffer.hpp",
+      "role": "current_source_not_historical_proof"
+    },
+    {
+      "source": "/home/abc/my_unilab/src/unilab/conf/ppo/task/go2_joystick_flat/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce",
+      "bytes": 7412,
+      "archived": "source_at_archive/config/base.yaml",
+      "role": "current_source_not_historical_proof"
+    },
+    {
+      "source": "/home/abc/my_unilab/src/unilab/conf/ppo/task/go2_joystick_flat/drake.yaml",
+      "sha256": "02caf9b60fed16711657a9d1d5aaed26d2e6138fcfb6ad7b5b5e90ca2851b3aa",
+      "bytes": 1094,
+      "archived": "source_at_archive/config/drake.yaml",
+      "role": "current_source_not_historical_proof"
+    },
+    {
+      "source": "/home/abc/my_unilab/src/unilab/conf/ppo/task/go2_joystick_flat/motrix.yaml",
+      "sha256": "6a5b004ca064d9a3c58ca0de057c7b933a66f7427bf06c16bae72db3691b3570",
+      "bytes": 650,
+      "archived": "source_at_archive/config/motrix.yaml",
+      "role": "current_source_not_historical_proof"
+    },
+    {
+      "source": "/home/abc/my_unilab/src/unilab/conf/ppo/task/go2_joystick_flat/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9",
+      "bytes": 489,
+      "archived": "source_at_archive/config/mujoco.yaml",
+      "role": "current_source_not_historical_proof"
+    },
+    {
+      "source": "/home/abc/my_unilab/src/unilab/conf/ppo/task/go2_joystick_flat/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1",
+      "bytes": 1425,
+      "archived": "source_at_archive/config/rma.yaml",
+      "role": "current_source_not_historical_proof"
+    },
+    {
+      "source": "/home/abc/my_unilab/src/unilab/conf/ppo/task/go2_joystick_flat/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c",
+      "bytes": 440,
+      "archived": "source_at_archive/config/rma_forward.yaml",
+      "role": "current_source_not_historical_proof"
+    },
+    {
+      "source": "/home/abc/my_unilab/src/unilab/conf/ppo/task/go2_joystick_flat/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63",
+      "bytes": 188,
+      "archived": "source_at_archive/config/rma_forward_no_pose.yaml",
+      "role": "current_source_not_historical_proof"
+    },
+    {
+      "source": "/home/abc/my_unilab/src/unilab/conf/ppo/task/go2_joystick_flat/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89",
+      "bytes": 282,
+      "archived": "source_at_archive/config/rma_forward_tight_tracking.yaml",
+      "role": "current_source_not_historical_proof"
+    },
+    {
+      "source": "/home/abc/my_unilab/src/unilab/conf/ppo/task/go2_joystick_flat/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96",
+      "bytes": 309,
+      "archived": "source_at_archive/config/rma_forward_wide_speed.yaml",
+      "role": "current_source_not_historical_proof"
+    },
+    {
+      "source": "/home/abc/my_unilab/src/unilab/conf/ppo/task/go2_joystick_flat/superdex.yaml",
+      "sha256": "006d6afe31cd32961657b23f7fc37b3e017c46ab267496646060eefb72ed8488",
+      "bytes": 1218,
+      "archived": "source_at_archive/config/superdex.yaml",
+      "role": "current_source_not_historical_proof"
+    },
+    {
+      "source": "/home/abc/my_unilab/src/unilab/assets/robots/go2/scene_flat.xml",
+      "sha256": "4a7041aac170b61c9b0f38fbcd3928a3ecd1ab20524c508459daca6f57a96006",
+      "bytes": 3766,
+      "archived": null,
+      "role": "current_asset_hash_not_historical_proof"
+    },
+    {
+      "source": "/home/abc/my_unilab/src/unilab/assets/robots/go2/go2.xml",
+      "sha256": "c3a7efa8a33962988cbccdb11ece1dbb071b252a7919fab13df7c1aff14ab554",
+      "bytes": 13065,
+      "archived": null,
+      "role": "current_asset_hash_not_historical_proof"
+    }
+  ],
+  "archive_interpreter_packages_now": {
+    "torch": "2.14.0+cu130",
+    "numpy": "2.2.6",
+    "mujoco": "3.11.0",
+    "onnx": "1.21.0",
+    "onnxruntime": "1.19.2",
+    "hydra-core": "1.3.2",
+    "genesis-world": "1.4.5",
+    "quadrants": "1.3.3"
+  },
+  "provenance": "Recorded run configs and evaluation source snapshots are preserved. Current source/config/assets and package versions were captured at archive time, not reconstructed training-time evidence. Models remain local; paths and SHA256 identify them."
+}
