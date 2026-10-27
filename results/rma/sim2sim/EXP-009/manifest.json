@@ -1,0 +1,276 @@
+{
+  "inputs": [
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_gpu/20261027_145453/vx0.3_seed123.csv",
+      "archived": "genesis/vx0.3_seed123.csv.gz",
+      "sha256": "22796b0d829788d27a6cf520043f21dca46c61ef397057f6380665aebd612ab5"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_gpu/20261027_145453/vx0.3_seed123.log",
+      "archived": "genesis/vx0.3_seed123.txt",
+      "sha256": "9e1c9e4a20428d06a64f573336c2d0623c4195504c9705219e32d5e92363bd8c"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_gpu/20261027_145453/vx0.3_seed456.csv",
+      "archived": "genesis/vx0.3_seed456.csv.gz",
+      "sha256": "941a01255530e8348c8cbcc33a02299317b77ee38ea4c51d653dd10e91521223"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_gpu/20261027_145453/vx0.3_seed456.log",
+      "archived": "genesis/vx0.3_seed456.txt",
+      "sha256": "6b319c2fb45ea73754cc7200b0c5a23d680a1f4d1b2d1b8bf7e1a5f147f8d737"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_gpu/20261027_145453/vx0.3_seed789.csv",
+      "archived": "genesis/vx0.3_seed789.csv.gz",
+      "sha256": "e1dd2e04e70b142f9763a4a4284a08a98c49b978f5badc09de7988460ac4d4dc"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_gpu/20261027_145453/vx0.3_seed789.log",
+      "archived": "genesis/vx0.3_seed789.txt",
+      "sha256": "e1562d99d315c7bfbc49882388a189fdd85eea0985d91edbbb8b982d87b460fa"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_gpu/20261027_145453/vx0.5_seed123.csv",
+      "archived": "genesis/vx0.5_seed123.csv.gz",
+      "sha256": "ccad69c42f1e0e37bb4073b8d7d8e2097aa5a6cf85904812c3bb51de42a4c8f7"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_gpu/20261027_145453/vx0.5_seed123.log",
+      "archived": "genesis/vx0.5_seed123.txt",
+      "sha256": "d08065ea087ac6bb2d832c1276a4c1a17f61584236dd11edfad0f97513d3f39a"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_gpu/20261027_145453/vx0.5_seed456.csv",
+      "archived": "genesis/vx0.5_seed456.csv.gz",
+      "sha256": "ccad69c42f1e0e37bb4073b8d7d8e2097aa5a6cf85904812c3bb51de42a4c8f7"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_gpu/20261027_145453/vx0.5_seed456.log",
+      "archived": "genesis/vx0.5_seed456.txt",
+      "sha256": "65263e28f701d16b2f33f90e42ecad1fdc656d88768fde51aa5778b3cc0d2bd8"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_gpu/20261027_145453/vx0.5_seed789.csv",
+      "archived": "genesis/vx0.5_seed789.csv.gz",
+      "sha256": "ab1c13e568a8d9f6ccf9dbac7ea16708fecd27e2c1061c89eaf7c46dfc24f65a"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_gpu/20261027_145453/vx0.5_seed789.log",
+      "archived": "genesis/vx0.5_seed789.txt",
+      "sha256": "2f075644270de24eb24f2808cfb96d1048124bf9dd7c8ecff2107516b7c9cdab"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_gpu/20261027_145453/vx0.7_seed123.csv",
+      "archived": "genesis/vx0.7_seed123.csv.gz",
+      "sha256": "f863412c3b40c683849dbbe83b7115eb7d84e28a3926cf0c43966cec1b063b47"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_gpu/20261027_145453/vx0.7_seed123.log",
+      "archived": "genesis/vx0.7_seed123.txt",
+      "sha256": "12d3c3024517a5c9165c1ba7c2c84b3e8815ab3a0c85f877789534ba4414ab01"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_gpu/20261027_145453/vx0.7_seed456.csv",
+      "archived": "genesis/vx0.7_seed456.csv.gz",
+      "sha256": "0816cdd719068b2c387623c094ee9235ab2a8b3ed91199639d4410fa3c83b1c3"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_gpu/20261027_145453/vx0.7_seed456.log",
+      "archived": "genesis/vx0.7_seed456.txt",
+      "sha256": "507f8eb167a205348ea4d9a6067655b30633ce4369df68bd8ef734412ec4b4cf"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_gpu/20261027_145453/vx0.7_seed789.csv",
+      "archived": "genesis/vx0.7_seed789.csv.gz",
+      "sha256": "2d45bef7a1772fbc3979a42c829fb9bc6766d5cf2ce68d5369dc6daa65a45c48"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_gpu/20261027_145453/vx0.7_seed789.log",
+      "archived": "genesis/vx0.7_seed789.txt",
+      "sha256": "b2232004d60c0f9cca8044c6c9e6cb1c13ad0c98fe634606263e0ef3e66f9c3c"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.3/eval_d_4tjy10/run_config.json",
+      "archived": "mujoco/mujoco_student_vx0.3_seed123/run_configuration.json",
+      "sha256": "9068229e7aea1659d36e6c5db554d8e3cab73a221839b4b0d8f5585ab044861a"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.3/eval_d_4tjy10/summary.json",
+      "archived": "mujoco/mujoco_student_vx0.3_seed123/summary.json",
+      "sha256": "691b8c3f4c267aed6e1963cc56e5dd3ec69ba4eaf3f02eb5f956de8d2927f344"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.3/eval_d_4tjy10/task_source_snapshot/base.yaml",
+      "archived": "mujoco/mujoco_student_vx0.3_seed123/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.3/eval_d_4tjy10/task_source_snapshot/mujoco.yaml",
+      "archived": "mujoco/mujoco_student_vx0.3_seed123/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.3/eval_d_4tjy10/task_source_snapshot/rma.yaml",
+      "archived": "mujoco/mujoco_student_vx0.3_seed123/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.3/eval_d_4tjy10/task_source_snapshot/rma_forward.yaml",
+      "archived": "mujoco/mujoco_student_vx0.3_seed123/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.3/eval_d_4tjy10/task_source_snapshot/rma_forward_no_pose.yaml",
+      "archived": "mujoco/mujoco_student_vx0.3_seed123/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.3/eval_d_4tjy10/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "archived": "mujoco/mujoco_student_vx0.3_seed123/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.3/eval_d_4tjy10/transitions.csv",
+      "archived": "mujoco/mujoco_student_vx0.3_seed123/transitions.csv.gz",
+      "sha256": "6077f21bdeef948cc8648f0aa690052e9c746c1174937ce41bd03e4a36a26e58"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.5/eval_72vfftwf/run_config.json",
+      "archived": "mujoco/mujoco_student_vx0.5_seed123/run_configuration.json",
+      "sha256": "d0e36e789b48d022cc63348916b93f4fd7ec38a74d7eb5fb09b9a6b9fc933da0"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.5/eval_72vfftwf/summary.json",
+      "archived": "mujoco/mujoco_student_vx0.5_seed123/summary.json",
+      "sha256": "058d7b1c5602d83fd9e74791aa0d6e8da65efb00e0094ba9b8581b427d35689e"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.5/eval_72vfftwf/task_source_snapshot/base.yaml",
+      "archived": "mujoco/mujoco_student_vx0.5_seed123/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.5/eval_72vfftwf/task_source_snapshot/mujoco.yaml",
+      "archived": "mujoco/mujoco_student_vx0.5_seed123/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.5/eval_72vfftwf/task_source_snapshot/rma.yaml",
+      "archived": "mujoco/mujoco_student_vx0.5_seed123/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.5/eval_72vfftwf/task_source_snapshot/rma_forward.yaml",
+      "archived": "mujoco/mujoco_student_vx0.5_seed123/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.5/eval_72vfftwf/task_source_snapshot/rma_forward_no_pose.yaml",
+      "archived": "mujoco/mujoco_student_vx0.5_seed123/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.5/eval_72vfftwf/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "archived": "mujoco/mujoco_student_vx0.5_seed123/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.5/eval_72vfftwf/transitions.csv",
+      "archived": "mujoco/mujoco_student_vx0.5_seed123/transitions.csv.gz",
+      "sha256": "1db4bb6f3453c954072acce0f869ff4ae8e0840a32988de5b59ded04be2ed1fe"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.7/eval_5dwcy8fe/run_config.json",
+      "archived": "mujoco/mujoco_student_vx0.7_seed123/run_configuration.json",
+      "sha256": "fbe5d6e489e547ad3131940462ed3e363dec10ccbc8f0e54193d9d335cd90230"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.7/eval_5dwcy8fe/summary.json",
+      "archived": "mujoco/mujoco_student_vx0.7_seed123/summary.json",
+      "sha256": "6cf4a7ce8a1ec56648270143ab0f5e79bdda4780860b63efb76617ca79a3ffee"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.7/eval_5dwcy8fe/task_source_snapshot/base.yaml",
+      "archived": "mujoco/mujoco_student_vx0.7_seed123/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.7/eval_5dwcy8fe/task_source_snapshot/mujoco.yaml",
+      "archived": "mujoco/mujoco_student_vx0.7_seed123/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.7/eval_5dwcy8fe/task_source_snapshot/rma.yaml",
+      "archived": "mujoco/mujoco_student_vx0.7_seed123/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.7/eval_5dwcy8fe/task_source_snapshot/rma_forward.yaml",
+      "archived": "mujoco/mujoco_student_vx0.7_seed123/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.7/eval_5dwcy8fe/task_source_snapshot/rma_forward_no_pose.yaml",
+      "archived": "mujoco/mujoco_student_vx0.7_seed123/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.7/eval_5dwcy8fe/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "archived": "mujoco/mujoco_student_vx0.7_seed123/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_mujoco/20261027_152218/vx0.7/eval_5dwcy8fe/transitions.csv",
+      "archived": "mujoco/mujoco_student_vx0.7_seed123/transitions.csv.gz",
+      "sha256": "76cb49059207cc2aac43cd0fb1bd92252c855f0866feb60fc9b78739e67398a3"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_teacher_check/check_1793086177724/eval_r1tf5i5x/run_config.json",
+      "archived": "mujoco/mujoco_teacher_vx0.7_seed123/run_configuration.json",
+      "sha256": "b9786841cf32861d166ede3076f9cfde4dac4234c018931433b46c1c6927e3b6"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_teacher_check/check_1793086177724/eval_r1tf5i5x/summary.json",
+      "archived": "mujoco/mujoco_teacher_vx0.7_seed123/summary.json",
+      "sha256": "17cefe20c9e16dec056c27ad380e79f94b6414d65cfdb48dc51ce18eb397382e"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_teacher_check/check_1793086177724/eval_r1tf5i5x/task_source_snapshot/base.yaml",
+      "archived": "mujoco/mujoco_teacher_vx0.7_seed123/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_teacher_check/check_1793086177724/eval_r1tf5i5x/task_source_snapshot/mujoco.yaml",
+      "archived": "mujoco/mujoco_teacher_vx0.7_seed123/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_teacher_check/check_1793086177724/eval_r1tf5i5x/task_source_snapshot/rma.yaml",
+      "archived": "mujoco/mujoco_teacher_vx0.7_seed123/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_teacher_check/check_1793086177724/eval_r1tf5i5x/task_source_snapshot/rma_forward.yaml",
+      "archived": "mujoco/mujoco_teacher_vx0.7_seed123/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_teacher_check/check_1793086177724/eval_r1tf5i5x/task_source_snapshot/rma_forward_no_pose.yaml",
+      "archived": "mujoco/mujoco_teacher_vx0.7_seed123/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_teacher_check/check_1793086177724/eval_r1tf5i5x/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "archived": "mujoco/mujoco_teacher_vx0.7_seed123/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_teacher_check/check_1793086177724/eval_r1tf5i5x/transitions.csv",
+      "archived": "mujoco/mujoco_teacher_vx0.7_seed123/transitions.csv.gz",
+      "sha256": "e43c61d7868b1b3a2e305a4e74ea9c715e8c087d5228ba91e50cd87c7485c9c6"
+    }
+  ],
+  "scope": "Recorded 1.3.3 GPU runs and MuJoCo checks only; CPU/1.4.5 retries excluded",
+  "limitations": "Genesis logs do not record model SHA256 or training-time git revision"
+}

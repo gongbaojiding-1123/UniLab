@@ -1,0 +1,19 @@
+{
+  "protocol": {
+    "simulator": "Genesis 1.3.3 GPU",
+    "checkpoint": "student_mapping_v1_500.onnx",
+    "genesis_solver_substeps": 2,
+    "steps": 1000,
+    "command": [0.5, 0.0, 0.0],
+    "sim2sim_nominal": true,
+    "render": false
+  },
+  "runs": [
+    {"seed": 123, "mean_vx_m_s": 0.5202466311156749, "planar_velocity_rmse_m_s": 0.10990809509448406, "terminations": 0},
+    {"seed": 456, "mean_vx_m_s": 0.5445518757216632, "planar_velocity_rmse_m_s": 0.09372425772123787, "terminations": 0},
+    {"seed": 789, "mean_vx_m_s": 0.5445518757216632, "planar_velocity_rmse_m_s": 0.09372425772123787, "terminations": 0},
+    {"seed": 101112, "mean_vx_m_s": 0.529863109394908, "planar_velocity_rmse_m_s": 0.1059392523744788, "terminations": 0},
+    {"seed": 131415, "mean_vx_m_s": 0.5252321986742318, "planar_velocity_rmse_m_s": 0.10986304899473942, "terminations": 0}
+  ],
+  "result": "All five runs completed 1000 steps without fall termination. Mean forward speed ranged from 0.5202 to 0.5446 m/s; planar velocity RMSE ranged from 0.0937 to 0.1099 m/s."
+}

@@ -7,7 +7,8 @@
 <p align="center">语言：简体中文 | <a href="README.md">English</a></p>
 
 > **本 fork 的 Go2 RMA 运动控制实验**：[查看项目展示与实验记录](docs/rma/README.md)。
-> 包含教师/学生代码、真实评估数据、训练曲线和 C++ mock 部署；当前前进速度跟踪尚未达标。
+> EXP-010 已记录教师跟踪改善、学生 MuJoCo/Genesis 回放与 TensorRT/C++ mock 验证。
+> [按编号查看全部实验](experiments/rma/README.md)；尚未进行真机部署或多训练种子复现。
 
 <p align="center">
   <a href="https://github.com/unilabsim/UniLab/actions/workflows/ci.yml"><img src="https://github.com/unilabsim/UniLab/actions/workflows/ci.yml/badge.svg" alt="CI"></a>

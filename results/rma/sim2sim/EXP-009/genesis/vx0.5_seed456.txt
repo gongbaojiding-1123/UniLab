@@ -1,0 +1,215 @@
+/home/abc/.venvs/genesis-go2/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/abc/.venvs/genesis-go2/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[38;5;226m[Genesis] [15:01:21] [WARNING] Neutral robot position (qpos0) exceeds joint limits.[0m
+GENESIS GO2 CONTRACT AUDIT
+{
+  "genesis": "1.3.3",
+  "physics": "gpu",
+  "policy_runtime": "ONNX Runtime CPU",
+  "obs/history/action_shapes": [
+    [
+      1,
+      49
+    ],
+    [
+      1,
+      50,
+      49
+    ],
+    [
+      1,
+      12
+    ]
+  ],
+  "observation_fields": [
+    [
+      "gyro",
+      3
+    ],
+    [
+      "projected_gravity",
+      3
+    ],
+    [
+      "joint_pos_rel",
+      12
+    ],
+    [
+      "joint_vel_rel",
+      12
+    ],
+    [
+      "last_action",
+      12
+    ],
+    [
+      "command",
+      3
+    ],
+    [
+      "gait_phase",
+      4
+    ]
+  ],
+  "policy_joints": [
+    "FL_hip_joint",
+    "FL_thigh_joint",
+    "FL_calf_joint",
+    "FR_hip_joint",
+    "FR_thigh_joint",
+    "FR_calf_joint",
+    "RL_hip_joint",
+    "RL_thigh_joint",
+    "RL_calf_joint",
+    "RR_hip_joint",
+    "RR_thigh_joint",
+    "RR_calf_joint"
+  ],
+  "genesis_joints": [
+    "FL_hip_joint",
+    "FL_thigh_joint",
+    "FL_calf_joint",
+    "FR_hip_joint",
+    "FR_thigh_joint",
+    "FR_calf_joint",
+    "RL_hip_joint",
+    "RL_thigh_joint",
+    "RL_calf_joint",
+    "RR_hip_joint",
+    "RR_thigh_joint",
+    "RR_calf_joint"
+  ],
+  "genesis_dof_indices": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "mujoco_actuator_order": [
+    "FR_hip",
+    "FR_thigh",
+    "FR_calf",
+    "FL_hip",
+    "FL_thigh",
+    "FL_calf",
+    "RR_hip",
+    "RR_thigh",
+    "RR_calf",
+    "RL_hip",
+    "RL_thigh",
+    "RL_calf"
+  ],
+  "policy_to_mujoco_actuator_indices": [
+    3,
+    4,
+    5,
+    0,
+    1,
+    2,
+    9,
+    10,
+    11,
+    6,
+    7,
+    8
+  ],
+  "home_joint_angles": [
+    0.0,
+    0.800000011920929,
+    -1.5,
+    0.0,
+    0.800000011920929,
+    -1.5,
+    0.0,
+    1.0,
+    -1.5,
+    0.0,
+    1.0,
+    -1.5
+  ],
+  "genesis_kp": [
+    35.0,
+    35.0,
+    35.0,
+    35.0,
+    35.0,
+    35.0,
+    35.0,
+    35.0,
+    35.0,
+    35.0,
+    35.0,
+    35.0
+  ],
+  "genesis_kv": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "joint_damping": [
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5
+  ],
+  "action_scale": 0.25,
+  "sim_dt_s": 0.01,
+  "policy_dt_s": 0.02,
+  "physics_steps_per_action": 2,
+  "genesis_solver_substeps": 2,
+  "reset_mode": "home",
+  "evaluation_mode": "sim2sim_nominal_v2",
+  "gravity_observation": "negative world site z-axis (training contract)",
+  "velocity_reference": "IMU site",
+  "history_reset": "zero-pad then append current obs; gait phase persists",
+  "noise": "off",
+  "differences": [
+    "MJCF home keyframe applied explicitly; sensor values reconstructed from state",
+    "No reset PD-gain, friction or payload randomization",
+    "Contact solvers and integration remain engine-specific",
+    "Nominal mode matches negative framezaxis training observation; legacy mode does not",
+    "Interface checks do not imply equal trajectories"
+  ],
+  "control_diagnostics": null,
+  "steps": 1000,
+  "completed_episodes": 1,
+  "command": [
+    0.5,
+    0.0,
+    0.0
+  ],
+  "mean_body_velocity": [
+    0.5013244804805145,
+    0.030469865792256315,
+    0.06088297778024571
+  ],
+  "planar_velocity_rmse_m_s": 0.18216321370772195,
+  "trace_csv": "/home/abc/my_unilab/runs/rma/sim2sim/EXP-009_gpu/20261027_145453/vx0.5_seed456.csv"
+}

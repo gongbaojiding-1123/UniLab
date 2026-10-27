@@ -10,6 +10,7 @@
 | `traces/substeps1_seed*.csv.gz` | 子步 1 的三个基线 trace |
 | `traces/substeps2_seed*.csv.gz` | 子步 2 的三个对照 trace |
 | `plots/` | 子步 2 seed 123 的速度/接触、关节跟踪、动作/控制图 |
+| `confirmation.json` | 后续五 seed 无渲染确认结果 |
 
 Genesis GPU 在 `qpos0` 初始姿态处输出的关节限位警告也出现在这次运行中；脚本随后明确应用 home keyframe 并执行零速度 reset。该提示记录为运行环境信息，不作为结果过滤依据。
 
