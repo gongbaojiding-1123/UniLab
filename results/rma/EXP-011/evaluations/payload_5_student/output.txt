@@ -1,0 +1,184 @@
+RMA friction geom selection from XML: ['base1', 'base2', 'base3', 'FL_hip_geom', 'FL_thigh_geom', 'FL_calf_geom1', 'FL_calf_geom2', 'FL', 'FR_hip_geom', 'FR_thigh_geom', 'FR_calf_geom1', 'FR_calf_geom2', 'FR', 'RL_hip_geom', 'RL_thigh_geom', 'RL_calf_geom1', 'RL_calf_geom2', 'RL', 'RR_hip_geom', 'RR_thigh_geom', 'RR_calf_geom1', 'RR_calf_geom2', 'RR']
+term: randomize_leg_mass set to None, skipping...
+{
+  "policy": "student",
+  "seed": 123,
+  "completed_episodes": 1,
+  "mean_completed_episode_return": 39.65397262573242,
+  "mean_completed_episode_length_steps": 1000.0,
+  "mean_step_reward": 0.03965392301697284,
+  "planar_velocity_rmse_m_per_s": 0.1398592322599676,
+  "unfinished_episodes": 0,
+  "mean_unfinished_episode_return": null,
+  "student_latent_mse_vs_teacher": 0.0265812463084294,
+  "student_action_rmse_vs_teacher": 0.042630424222844764,
+  "terminations": 0,
+  "total_transitions": 1000,
+  "command_override": [
+    0.7,
+    0.0,
+    0.0
+  ],
+  "evaluation_condition": "payload_5",
+  "controlled_parameters": {
+    "actuator_kp": 35.0,
+    "actuator_kd": 0.0,
+    "robot_sliding_friction": 1.0,
+    "added_base_mass_kg": 5.0,
+    "initial_episode_counter": 0,
+    "observation_noise": false,
+    "note": "Configured gains; friction/payload reset labels checked separately. Not measured torque."
+  },
+  "task": "go2_joystick_flat/rma_forward",
+  "diagnostics": {
+    "velocity_axes": [
+      "vx_m_per_s",
+      "vy_m_per_s",
+      "yaw_rate_rad_per_s"
+    ],
+    "velocity_frame": "robot body; clean critic local_linvel xy and gyro z",
+    "initial_command_env0": [
+      0.699999988079071,
+      0.0,
+      0.0
+    ],
+    "mean_command": [
+      0.699999988079071,
+      0.0,
+      0.0
+    ],
+    "mean_measured_velocity": [
+      0.6290537343807518,
+      0.004333815667516319,
+      -0.05069245729330578
+    ],
+    "tracking_rmse_by_axis": [
+      0.12920653006904684,
+      0.053537626181019385,
+      0.2302480362914936
+    ],
+    "mean_absolute_yaw_rate_rad_per_s": 0.1837129265109834,
+    "weighted_reward_terms_before_dt": {
+      "tracking_lin_vel": 1.8950581098496915,
+      "tracking_ang_vel": 0.16430444660782814,
+      "lin_vel_z": -0.019899999724182976,
+      "ang_vel_xy": -0.0658381173346279,
+      "base_height": -0.002162258713402544,
+      "action_rate": -0.014809170106498641,
+      "similar_to_default": -0.16340254725143313,
+      "contact": 0.13325999556854368,
+      "swing_feet_z": 0.05618569579720497
+    },
+    "reward_terms_note": "weighted terms BEFORE control-dt scaling; not per-step rewards"
+  },
+  "trace": {
+    "directory": "/home/abc/my_unilab/runs/rma/EXP-011/payload_screen_20261027_2232/payload_5_student/eval_wes299ka",
+    "full": {
+      "transitions": 1000,
+      "mean_measured_velocity": [
+        0.6290537343807518,
+        0.004333815667516319,
+        -0.05069245729330578
+      ],
+      "tracking_rmse_by_axis": [
+        0.12920653006904684,
+        0.053537626181019385,
+        0.2302480362914936
+      ]
+    },
+    "after_startup_window": {
+      "transitions": 900,
+      "mean_measured_velocity": [
+        0.6415552493267589,
+        0.0034399671029597,
+        -0.05648396412340743
+      ],
+      "tracking_rmse_by_axis": [
+        0.1095175120169494,
+        0.05224006986970168,
+        0.23290076170578425
+      ]
+    },
+    "action_target_joint_order": [
+      "FL_hip_joint",
+      "FL_thigh_joint",
+      "FL_calf_joint",
+      "FR_hip_joint",
+      "FR_thigh_joint",
+      "FR_calf_joint",
+      "RL_hip_joint",
+      "RL_thigh_joint",
+      "RL_calf_joint",
+      "RR_hip_joint",
+      "RR_thigh_joint",
+      "RR_calf_joint"
+    ],
+    "normalized_action_min": [
+      -0.9953216314315796,
+      -0.9999836683273315,
+      -0.9993562698364258,
+      -0.9920026063919067,
+      -0.9999130964279175,
+      -0.999962329864502,
+      -0.9561697244644165,
+      -0.9993067383766174,
+      -0.9999979138374329,
+      -0.9932076930999756,
+      -0.9951537847518921,
+      -0.9999998807907104
+    ],
+    "normalized_action_max": [
+      0.8414784073829651,
+      0.9999850392341614,
+      0.9999998807907104,
+      0.9952617883682251,
+      0.996553361415863,
+      0.999989926815033,
+      0.8116822838783264,
+      0.9832391142845154,
+      0.9992696046829224,
+      0.6480836272239685,
+      0.9973955750465393,
+      0.9996963143348694
+    ],
+    "normalized_action_rms": [
+      0.70990766075651,
+      0.7713045022718177,
+      0.9050026641741755,
+      0.7375002354258091,
+      0.7258071702258007,
+      0.915147127324716,
+      0.5903873627451797,
+      0.7037665361654458,
+      0.859382077556163,
+      0.7059185680776895,
+      0.773905264832648,
+      0.9187975772811114
+    ],
+    "normalized_action_near_bound_fraction": [
+      0.107,
+      0.282,
+      0.65,
+      0.168,
+      0.308,
+      0.618,
+      0.001,
+      0.219,
+      0.552,
+      0.082,
+      0.126,
+      0.637
+    ],
+    "mean_weighted_reward_rates_before_dt": {
+      "tracking_lin_vel": 1.8950581098496915,
+      "tracking_ang_vel": 0.16430444660782814,
+      "lin_vel_z": -0.019899999724182976,
+      "ang_vel_xy": -0.0658381173346279,
+      "base_height": -0.002162258713402544,
+      "action_rate": -0.014809170106498641,
+      "similar_to_default": -0.16340254725143313,
+      "contact": 0.13325999556854368,
+      "swing_feet_z": 0.05618569579720497
+    }
+  }
+}

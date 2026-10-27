@@ -1,3 +1,4 @@
 # Evidence hashes refer to exact source bytes, including historical whitespace.
 results/rma/EXP-010/** -text -whitespace
 results/rma/sim2sim/EXP-009/** -text -whitespace
+results/rma/EXP-011/** -text -whitespace

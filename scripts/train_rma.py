@@ -15,8 +15,19 @@ from unilab_rma.evaluation_diagnostics import DEFAULT_TASK, RMA_TASKS, command_o
 from unilab_rma.runner import train_student, train_teacher
 
 
-def build_environment(num_envs, cfg, device, seed=42, *, task=DEFAULT_TASK, command=None):
+def build_environment(
+    num_envs,
+    cfg,
+    device,
+    seed=42,
+    *,
+    task=DEFAULT_TASK,
+    command=None,
+    sim2sim_nominal=False,
+    evaluation_condition=None,
+):
     from hydra import compose, initialize_config_dir
+    from unilab_rma.evaluation_conditions import condition_overrides
     from unilab_rma.scene_contract import prepare_scene
 
     from unilab.base.config_adapter import BackendAdapter, create_env
@@ -27,6 +38,7 @@ def build_environment(num_envs, cfg, device, seed=42, *, task=DEFAULT_TASK, comm
     overrides = [f"task={task}"]
     if command is not None:
         overrides.extend(command_overrides(command))
+    overrides.extend(condition_overrides(evaluation_condition, sim2sim_nominal=sim2sim_nominal))
     with initialize_config_dir(config_dir=str(ROOT / "src/unilab/conf/ppo"), version_base=None):
         composed = compose(config_name="config", overrides=overrides)
     ensure_registries()

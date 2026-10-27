@@ -16,6 +16,7 @@
 | [EXP-008](EXP-008_genesis_solver_substeps.md) | Genesis substeps 1 → 2 | 三组配对与五 seed 确认，支持固定为 2 |
 | [EXP-009](EXP-009_speed_generalization.md) | 旧策略 0.3 / 0.5 / 0.7 m/s 扫描 | 高速异常也出现在 MuJoCo 教师，不能仅归因于跨引擎 |
 | [EXP-010](EXP-010_forward_speed_coverage.md) | 训练指令范围 [0.3, 0.6] → [0.3, 0.8] | 一训练种子下教师改善；学生、跨引擎、导出和 mock 均有记录 |
+| [EXP-011](EXP-011_payload_diagnosis.md) | 冻结 teacher/student，固定负载 0 / 2.5 / 5 kg | 仅评估负载敏感性，不扩大训练速度范围；指标与结论见记录 |
 
 ## 当前完成到哪里
 
@@ -24,7 +25,8 @@ EXP-010 已完成本轮归档，见 [结果入口](../../results/rma/EXP-010/REA
 不需要为了补图片或补文档重跑长训。
 
 当前结果只支持已测试的名义条件和少量随机化样本，不能声称多训练种子复现、真机部署或硬实时通过。
-下一项实验另编号 EXP-011，先确定一个问题和验收标准，再改代码或开始训练；候选为高速随机化欠速的诊断。
+EXP-011 已选择固定负载诊断，先定位随机化高速欠速；训练速度范围保持 `[0.3, 0.8]`。
+六组回放现已完成；5 kg 时 teacher/student 都欠速，见 [证据入口](../../results/rma/EXP-011/README.md)。后续优先检查 PD 增益条件，不直接开始更宽速度长训。
 操作顺序见 [项目工作流](../../docs/rma/PROJECT_WORKFLOW.md)。
 
 ## 如何在 GitHub 找到记录

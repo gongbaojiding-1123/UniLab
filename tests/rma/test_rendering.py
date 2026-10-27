@@ -238,6 +238,25 @@ class EvaluationRenderingTests(unittest.TestCase):
                 self.evaluate(raw, env, "--render")
         self.assertTrue(raw.closed)
 
+    def test_controlled_payload_option_checks_labels_and_reports_condition(self):
+        raw, env = PlaybackEnv(), SyntheticEnv()
+        raw.device = "cpu"
+        counters = []
+        raw.set_episode_length_buf = lambda values: counters.append(values.clone())
+        original_observations = env.observations
+
+        def observations():
+            obs, critic, priv = original_observations()
+            priv[:, 1] = 2.5
+            return obs, critic, priv
+
+        env.observations = observations
+        report = self.evaluate(raw, env, "--eval-condition", "payload_2p5")
+        self.assertEqual(report["controlled_parameters"]["added_base_mass_kg"], 2.5)
+        self.assertEqual(report["evaluation_condition"], "payload_2p5")
+        self.assertTrue(torch.equal(counters[0], torch.zeros(1, dtype=torch.int64)))
+        self.assertTrue(raw.closed)
+
     def test_tensorrt_actions_drive_environment_and_runtime_is_closed(self):
         raw, env = PlaybackEnv(), SyntheticEnv()
 

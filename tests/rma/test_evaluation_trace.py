@@ -67,6 +67,7 @@ class EvaluationTraceTests(unittest.TestCase):
                 torch.tensor([True, False]),
                 torch.zeros(2, dtype=torch.bool),
                 raw.reward_manager,
+                privileged=torch.tensor([[0.4, 5.0], [1.25, 0.0]]),
             )
             trace.record(
                 before,
@@ -83,6 +84,9 @@ class EvaluationTraceTests(unittest.TestCase):
                 rows = list(csv.DictReader(stream))
             metadata = json.loads((trace.directory / "run_config.json").read_text())
             self.assertEqual(len(rows), 4)
+            self.assertAlmostEqual(float(rows[0]["robot_friction_coeff"]), 0.4, places=6)
+            self.assertEqual(float(rows[0]["added_base_mass_kg"]), 5.0)
+            self.assertEqual(float(rows[1]["added_base_mass_kg"]), 0.0)
             self.assertAlmostEqual(float(rows[0]["before_vx_m_s"]), 0.1)
             self.assertAlmostEqual(float(rows[0]["after_vx_m_s"]), 0.25)
             self.assertEqual(rows[2]["episode_id"], "1")

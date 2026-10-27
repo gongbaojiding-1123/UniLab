@@ -4,13 +4,13 @@
 `/home/abc/my_unilab`；不要覆盖虚拟环境或全部同步 fork。
 训练/评估显式使用现有 UniLab 环境；Genesis 使用独立环境的 `scripts/run_genesis_go2.sh`。
 
-## 当前步骤：归档、审阅，再规划 EXP-011
+## 当前步骤：读 EXP-011 结果，再检查 PD 增益
 
 1. 已完成 EXP-010 两组教师、学生、ONNX、Genesis 回放、TensorRT 与 C++ mock；无需重复长训。
 2. 从 [实验索引](../../experiments/rma/README.md) 查看全部编号；从 [EXP-010 归档](../../results/rma/EXP-010/README.md) 看曲线和逐步数据。
-3. 本轮审阅分支为 `feat/exp010-speed-coverage-archive`，基线为 `docs/exp007-genesis-control-diagnostics`。网页只显示所选分支，推送不等于合并到 `main`。
-4. 保留 scale=0.25、Genesis substeps=2、当前模型和原始运行目录。后续另编号 EXP-011。
-5. EXP-011 建议先诊断随机化条件下的 0.7 m/s 欠速；先写假设、唯一变量与指标阈值，再决定是否训练，不立即同时改 scale、奖励和预算。
+3. EXP-010 在 PR #3 审阅。EXP-011 本地分支为 `feat/exp011-payload-diagnosis`，基线为 `feat/exp010-speed-coverage-archive`。网页只显示所选分支，推送不等于合并到 `main`。
+4. 保留 scale=0.25、Genesis substeps=2、当前模型和原始运行目录。后续新变量另编号 EXP-012。
+5. [EXP-011](../../experiments/rma/EXP-011_payload_diagnosis.md) 已比较同一 checkpoint 的 teacher/student，在 0 / 2.5 / 5 kg 下各回放一次。六次无异常终止，5 kg 时两者均欠速；先看已生成图表，再独立检查 PD 增益条件，暂不扩大训练区间。
 
 EXP-010 只有训练 seed 42；nominal eval seed 不等于独立训练或独立物理条件。
 没有真机或硬实时验证；完整门禁的已知阻塞见 [验证记录](VALIDATION.md)。

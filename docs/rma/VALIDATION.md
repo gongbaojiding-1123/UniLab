@@ -1,5 +1,37 @@
 # RMA 分支验证记录
 
+## 2026-10-27：EXP-011 固定负载诊断
+
+新增 Hydra `rma_eval` 条件组、`--eval-condition`、真实摩擦/负载 trace 列及串行诊断/分析脚本。
+训练默认不选择该配置组；没有新增训练、安装依赖或修改模型参数。
+
+验证命令（GitHub 工作副本，现有 WSL UniLab 环境）：
+
+```bash
+env VIRTUAL_ENV=/home/abc/unilab--/.venv uv run --active --no-sync python \
+  -m unittest discover -s tests/rma -p 'test_*.py'
+env VIRTUAL_ENV=/home/abc/unilab--/.venv uv run --active --no-sync python \
+  -m unittest discover -s tests/rma -p test_rendering.py -k controlled_payload
+env VIRTUAL_ENV=/home/abc/unilab--/.venv uv run --active --no-sync ruff check \
+  scripts/train_rma.py scripts/evaluate_rma.py scripts/run_exp011_payload.py \
+  scripts/analyze_rma_payload.py scripts/archive_exp011.py \
+  rsl_rl/unilab_rma/evaluation_conditions.py rsl_rl/unilab_rma/evaluation_trace.py \
+  tests/rma/test_evaluation_conditions.py tests/rma/test_evaluation_trace.py tests/rma/test_rendering.py
+```
+
+- 全套 57 项 RMA 测试通过；随后新增的受控参数 CLI 回归测试单独运行 1 项通过。Ruff 和 diff 空白检查通过。
+- 单变量解析测试确认仅质量分布改变；默认训练随机化、速度范围和动作缩放保持原值；兼容旧 nominal 开关。
+- 在原 1.3.3 运行环境中完成 10 步冒烟及六组正式 1000 步回放。六组均无异常终止，全部 6000 行的实际摩擦和负载标签检查通过。
+- 逐步 RMSE 与原报告一致；零负载 teacher/student 重现 EXP-010 指标，误差小于 `2e-8`。
+- 新归档 95 份输入的 SHA256、相关文档链接与筛查阈值检查通过。图已人工查看。仅一个固定 seed，结论不扩展到所有负载/摩擦/初始状态。
+- WSL 源码按文件/函数增量同步，原件和哈希备份于 `runs/rma/EXP-011/code_sync_20261027_223012`；保留原 UniLab/Genesis 环境。
+
+全仓 `make check` 与 `make test` 在 `/tmp/exp011-validation-*` 的独立源码副本执行，设置
+`UV_PROJECT_ENVIRONMENT=/home/abc/unilab--/.venv UV_NO_SYNC=1` 与副本 `src/rsl_rl/scripts` 的 PYTHONPATH。
+Mypy 通过；Pyright 仍有 10 个既有框架类型错误。全仓测试仍因已安装 UniSim 缺失 `TensorResetRandomizationPayload` 在收集阶段失败。
+日志：工作区 `outputs/exp011_make_check.log`、`outputs/exp011_make_test.log`。这些阻塞未通过升级环境或修改原训练框架绕过。
+本轮没有合并 PR，也不宣称整个 fork 的 1.3.4 运行兼容性通过。
+
 ## 2026-10-27：EXP-008 确认与 EXP-009/010 归档
 
 本轮新增 EXP-009 历史速度扫描、EXP-010 单变量配置和归档、实验总索引，并更新入口页与当前步骤。

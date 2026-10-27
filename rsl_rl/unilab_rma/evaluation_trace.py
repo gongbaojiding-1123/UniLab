@@ -82,6 +82,7 @@ class EvaluationTrace:
         fields += [f"joint_pos_rel_{i}_rad" for i in range(12)]
         fields += [f"joint_vel_rel_{i}_rad_s" for i in range(12)]
         fields += [f"reward_rate/{name}" for name in self.names]
+        fields += ["robot_friction_coeff", "added_base_mass_kg"]
         root = Path(__file__).resolve().parents[2]
         try:
             revision = (
@@ -127,6 +128,8 @@ class EvaluationTrace:
         }
         source_paths = (
             "scripts/evaluate_rma.py",
+            "scripts/train_rma.py",
+            "rsl_rl/unilab_rma/evaluation_conditions.py",
             "rsl_rl/unilab_rma/evaluation_trace.py",
             "rsl_rl/unilab_rma/env_adapter.py",
             "src/unilab/envs/mdp/actions/actions.py",
@@ -137,6 +140,10 @@ class EvaluationTrace:
             "src/unilab/conf/ppo/task/go2_joystick_flat/rma_forward_no_pose.yaml",
             "src/unilab/conf/ppo/task/go2_joystick_flat/rma_forward_tight_tracking.yaml",
             "src/unilab/conf/ppo/task/go2_joystick_flat/rma_forward_wide_speed.yaml",
+        )
+        source_paths += tuple(
+            str(path.relative_to(root)).replace("\\", "/")
+            for path in sorted((root / "src/unilab/conf/ppo/rma_eval").glob("*.yaml"))
         )
         metadata["runtime_source_sha256"] = {
             name: hashlib.sha256((root / name).read_bytes()).hexdigest()
@@ -156,7 +163,24 @@ class EvaluationTrace:
         self._csv.writeheader()
         self._stream.flush()
 
-    def record(self, before, action, terminal, reward, terminated, truncated, reward_manager):
+    def record(
+        self,
+        before,
+        action,
+        terminal,
+        reward,
+        terminated,
+        truncated,
+        reward_manager,
+        *,
+        privileged=None,
+    ):
+        if privileged is not None:
+            privileged = privileged.detach().to(device="cpu", dtype=torch.float64)
+            if privileged.shape != (self.num_envs, 2) or not torch.isfinite(privileged).all():
+                raise ValueError(
+                    "Trace requires finite friction/payload labels of shape (num_envs, 2)"
+                )
         before = before.detach().to(device="cpu", dtype=torch.float64)
         after = terminal.detach().to(device="cpu", dtype=torch.float64)
         actions = action.detach().to(device="cpu", dtype=torch.float64)
@@ -191,6 +215,8 @@ class EvaluationTrace:
                 truncated=int(truncs[index]),
                 after_startup_window=int(in_window),
             )
+            if privileged is not None:
+                row["robot_friction_coeff"], row["added_base_mass_kg"] = privileged[index].tolist()
             for prefix, values in (
                 ("command", before[index, 42:45]),
                 ("next_command", after[index, 42:45]),

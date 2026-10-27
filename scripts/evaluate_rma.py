@@ -8,6 +8,7 @@ from pathlib import Path
 import torch
 from train_rma import build_environment
 from unilab_rma import ActorCriticRMA, AdaptationModule, HistoryBuffer, RMAConfig
+from unilab_rma.evaluation_conditions import PAYLOAD_KG, condition_parameters, validate_labels
 from unilab_rma.evaluation_diagnostics import DEFAULT_TASK, RMA_TASKS, EvaluationDiagnostics
 
 
@@ -20,6 +21,11 @@ def main():
     p.add_argument("--seed", type=int, default=123)
     p.add_argument("--device", default="cpu")
     p.add_argument("--task", choices=RMA_TASKS, default=DEFAULT_TASK)
+    p.add_argument(
+        "--eval-condition",
+        choices=tuple(PAYLOAD_KG),
+        help="Controlled evaluation: home reset, fixed gains/friction/payload and no noise",
+    )
     p.add_argument(
         "--sim2sim-nominal",
         action="store_true",
@@ -77,6 +83,9 @@ def main():
         help="Playback speed with --render: 1.0 is real time, 0.5 is half speed",
     )
     args = p.parse_args()
+    if args.eval_condition and args.sim2sim_nominal:
+        p.error("Choose --eval-condition or --sim2sim-nominal, not both")
+    condition = "nominal" if args.sim2sim_nominal else args.eval_condition
     if args.steps < 1 or args.num_envs < 1:
         p.error("steps and num-envs must be positive")
     if args.trace_warmup_steps < 0:
@@ -107,6 +116,8 @@ def main():
         environment_options["command"] = args.command
     if args.sim2sim_nominal:
         environment_options["sim2sim_nominal"] = True
+    if args.eval_condition:
+        environment_options["evaluation_condition"] = args.eval_condition
     raw, env = build_environment(
         args.num_envs,
         cfg,
@@ -132,12 +143,13 @@ def main():
 
             runtime = TensorRTWorker(args.tensorrt_worker, args.engine, cfg)
         obs, critic, priv = env.reset()
-        if args.sim2sim_nominal:
+        if condition is not None:
             # init_state staggers initial timeout counters for training.
             # Evaluation must start a full episode at step zero.
             raw.set_episode_length_buf(
                 torch.zeros(args.num_envs, dtype=torch.int64, device=raw.device)
             )
+            validate_labels(priv, condition)
         if args.trace_dir is not None:
             from unilab_rma.evaluation_trace import EvaluationTrace
 
@@ -161,6 +173,7 @@ def main():
             for _ in steps:
                 if trace is not None:
                     trace_before = critic
+                    trace_privileged = priv
                 if diagnostics is not None:
                     diagnostics.record_state(critic)
                 tracking.append((critic[:, 49:51] - obs[:, 42:44]).square().sum(-1).mean().item())
@@ -184,7 +197,14 @@ def main():
                 (obs, critic, priv), reward, term, trunc, terminal = env.step(action)
                 if trace is not None:
                     trace.record(
-                        trace_before, action, terminal[1], reward, term, trunc, raw.reward_manager
+                        trace_before,
+                        action,
+                        terminal[1],
+                        reward,
+                        term,
+                        trunc,
+                        raw.reward_manager,
+                        privileged=trace_privileged,
                     )
                 if diagnostics is not None:
                     diagnostics.record_rewards(raw.reward_manager)
@@ -192,6 +212,8 @@ def main():
                 partial_returns += reward
                 partial_lengths += 1
                 done = term | trunc
+                if condition is not None and done.any():
+                    validate_labels(priv, condition)
                 completed.extend(returns[done].tolist())
                 completed_lengths.extend(partial_lengths[done].tolist())
                 returns[done] = 0
@@ -229,12 +251,18 @@ def main():
         }
         if args.command is not None:
             report["command_override"] = args.command
+        if args.eval_condition:
+            report["evaluation_condition"] = args.eval_condition
+            report["controlled_parameters"] = condition_parameters(condition)
         if args.sim2sim_nominal:
             report["evaluation_mode"] = "sim2sim_nominal_v2"
             report["nominal_parameters"] = {
-                "actuator_kp": 35.0, "actuator_kd": 0.0,
-                "robot_sliding_friction": 1.0, "added_base_mass_kg": 0.0,
-                "initial_episode_counter": 0, "observation_noise": False,
+                "actuator_kp": 35.0,
+                "actuator_kd": 0.0,
+                "robot_sliding_friction": 1.0,
+                "added_base_mass_kg": 0.0,
+                "initial_episode_counter": 0,
+                "observation_noise": False,
             }
         if args.task != DEFAULT_TASK:
             report["task"] = args.task

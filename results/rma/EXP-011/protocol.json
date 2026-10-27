@@ -1,0 +1,26 @@
+{
+  "experiment": "EXP-011",
+  "seed": 123,
+  "steps": 1000,
+  "command": [
+    0.7,
+    0,
+    0
+  ],
+  "checkpoint": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/student_wide_speed.pt",
+  "checkpoint_sha256": "28785b298e5071d109ace124dc1c3388e2324fb8c5fda29087cfb829049ce5c5",
+  "paired_policy_note": "Both teacher and student are loaded from the SAME student checkpoint",
+  "cases": [
+    "nominal",
+    "payload_2p5",
+    "payload_5"
+  ],
+  "source_sha256": {
+    "scripts/evaluate_rma.py": "e21df842bfa54de798e75b153cc5983b4a17ab0c3436b97257d7707371585f11",
+    "scripts/train_rma.py": "00a125e96ef526c611999ab094beeaa6d143352f151813405f3d748926d8a667",
+    "src/unilab/conf/ppo/rma_eval/nominal.yaml": "ec421fae9d01a5c1376e9a5687995bb1abf8e50f1a18fe9a16da408a72c9b136",
+    "src/unilab/conf/ppo/rma_eval/payload_2p5.yaml": "9425212d53e5ee778ccc2ee2145bfe3bb2fae05daef783739b923373c12813b9",
+    "src/unilab/conf/ppo/rma_eval/payload_5.yaml": "99b128fe5fddbf78364aeee3e55abe7a42feac6568faea420496fec1904e3e7b"
+  },
+  "note": "One deterministic seed, controlled load screen; not a randomized robustness estimate"
+}

@@ -1,0 +1,133 @@
+{
+  "protocol": {
+    "experiment": "EXP-011",
+    "seed": 123,
+    "steps": 1000,
+    "command": [
+      0.7,
+      0,
+      0
+    ],
+    "checkpoint": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/student_wide_speed.pt",
+    "checkpoint_sha256": "28785b298e5071d109ace124dc1c3388e2324fb8c5fda29087cfb829049ce5c5",
+    "paired_policy_note": "Both teacher and student are loaded from the SAME student checkpoint",
+    "cases": [
+      "nominal",
+      "payload_2p5",
+      "payload_5"
+    ],
+    "source_sha256": {
+      "scripts/evaluate_rma.py": "e21df842bfa54de798e75b153cc5983b4a17ab0c3436b97257d7707371585f11",
+      "scripts/train_rma.py": "00a125e96ef526c611999ab094beeaa6d143352f151813405f3d748926d8a667",
+      "src/unilab/conf/ppo/rma_eval/nominal.yaml": "ec421fae9d01a5c1376e9a5687995bb1abf8e50f1a18fe9a16da408a72c9b136",
+      "src/unilab/conf/ppo/rma_eval/payload_2p5.yaml": "9425212d53e5ee778ccc2ee2145bfe3bb2fae05daef783739b923373c12813b9",
+      "src/unilab/conf/ppo/rma_eval/payload_5.yaml": "99b128fe5fddbf78364aeee3e55abe7a42feac6568faea420496fec1904e3e7b"
+    },
+    "note": "One deterministic seed, controlled load screen; not a randomized robustness estimate"
+  },
+  "metrics": [
+    {
+      "condition": "nominal",
+      "payload_kg": 0.0,
+      "policy": "teacher",
+      "steps": 1000,
+      "mean_vx": 0.6643588221371174,
+      "planar_rmse": 0.11297056581631192,
+      "terminations": 0,
+      "truncations": 1,
+      "window_steps": 900,
+      "window_mean_vx": 0.6742506362001102,
+      "window_planar_rmse": 0.09783126468776726,
+      "action_near_bound_fraction": 0.22316666666666668,
+      "student_action_rmse_vs_teacher": null,
+      "student_latent_mse_vs_teacher": null,
+      "trace": "/home/abc/my_unilab/runs/rma/EXP-011/payload_screen_20261027_2232/nominal_teacher/eval_7kcqd8kl"
+    },
+    {
+      "condition": "nominal",
+      "payload_kg": 0.0,
+      "policy": "student",
+      "steps": 1000,
+      "mean_vx": 0.7687095411978662,
+      "planar_rmse": 0.14148678966220968,
+      "terminations": 0,
+      "truncations": 1,
+      "window_steps": 900,
+      "window_mean_vx": 0.7845828081501854,
+      "window_planar_rmse": 0.1316373897012442,
+      "action_near_bound_fraction": 0.2535833333333333,
+      "student_action_rmse_vs_teacher": 0.08536740860393405,
+      "student_latent_mse_vs_teacher": 0.10131203664673376,
+      "trace": "/home/abc/my_unilab/runs/rma/EXP-011/payload_screen_20261027_2232/nominal_student/eval_phcm54eu"
+    },
+    {
+      "condition": "payload_2p5",
+      "payload_kg": 2.5,
+      "policy": "teacher",
+      "steps": 1000,
+      "mean_vx": 0.6397739585228265,
+      "planar_rmse": 0.1336661335955635,
+      "terminations": 0,
+      "truncations": 1,
+      "window_steps": 900,
+      "window_mean_vx": 0.6467726035581695,
+      "window_planar_rmse": 0.11965645157897649,
+      "action_near_bound_fraction": 0.2639166666666667,
+      "student_action_rmse_vs_teacher": null,
+      "student_latent_mse_vs_teacher": null,
+      "trace": "/home/abc/my_unilab/runs/rma/EXP-011/payload_screen_20261027_2232/payload_2p5_teacher/eval_gsx88mbu"
+    },
+    {
+      "condition": "payload_2p5",
+      "payload_kg": 2.5,
+      "policy": "student",
+      "steps": 1000,
+      "mean_vx": 0.7337861357070505,
+      "planar_rmse": 0.1559168300001927,
+      "terminations": 0,
+      "truncations": 1,
+      "window_steps": 900,
+      "window_mean_vx": 0.7504154029819701,
+      "window_planar_rmse": 0.14743170725283425,
+      "action_near_bound_fraction": 0.29683333333333334,
+      "student_action_rmse_vs_teacher": 0.1077182619138164,
+      "student_latent_mse_vs_teacher": 0.13087026170798344,
+      "trace": "/home/abc/my_unilab/runs/rma/EXP-011/payload_screen_20261027_2232/payload_2p5_student/eval_y6ssy4u3"
+    },
+    {
+      "condition": "payload_5",
+      "payload_kg": 5.0,
+      "policy": "teacher",
+      "steps": 1000,
+      "mean_vx": 0.6219471381306648,
+      "planar_rmse": 0.15708731016261043,
+      "terminations": 0,
+      "truncations": 1,
+      "window_steps": 900,
+      "window_mean_vx": 0.639029031958845,
+      "window_planar_rmse": 0.12816313441558558,
+      "action_near_bound_fraction": 0.30933333333333335,
+      "student_action_rmse_vs_teacher": null,
+      "student_latent_mse_vs_teacher": null,
+      "trace": "/home/abc/my_unilab/runs/rma/EXP-011/payload_screen_20261027_2232/payload_5_teacher/eval_pvp200r1"
+    },
+    {
+      "condition": "payload_5",
+      "payload_kg": 5.0,
+      "policy": "student",
+      "steps": 1000,
+      "mean_vx": 0.6290537343807518,
+      "planar_rmse": 0.13985923219288063,
+      "terminations": 0,
+      "truncations": 1,
+      "window_steps": 900,
+      "window_mean_vx": 0.6415552493267589,
+      "window_planar_rmse": 0.12133882453021365,
+      "action_near_bound_fraction": 0.3125,
+      "student_action_rmse_vs_teacher": 0.042630424222844764,
+      "student_latent_mse_vs_teacher": 0.0265812463084294,
+      "trace": "/home/abc/my_unilab/runs/rma/EXP-011/payload_screen_20261027_2232/payload_5_student/eval_wes299ka"
+    }
+  ],
+  "limits": "Deterministic one-seed load screen, not a robustness or causal mechanism proof; action bounds are not measured torque limits"
+}
