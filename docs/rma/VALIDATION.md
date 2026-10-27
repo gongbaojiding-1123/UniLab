@@ -1,5 +1,28 @@
 # RMA 分支验证记录
 
+## 2026-10-27：EXP-012 主动阻尼单变量诊断
+
+新增 `rma_eval/kd_0p5.yaml` 与三个薄入口，复用 EXP-011 的串行评估、分析和归档逻辑。
+训练默认、权重、scale 与 Genesis 配置保持原值。增量同步前以父提交 AST 对比运行源码，
+备份位于 `runs/rma/EXP-012/code_sync_20261027_230217`。
+
+```bash
+env VIRTUAL_ENV=/home/abc/unilab--/.venv uv run --active --no-sync python \
+  -m unittest discover -s tests/rma -p 'test_*.py'
+env VIRTUAL_ENV=/home/abc/unilab--/.venv uv run --active --no-sync python \
+  scripts/run_exp012_damping.py \
+  --checkpoint runs/rma/EXP-010/20261027_160750/student_wide_speed.pt \
+  --output-dir runs/rma/EXP-012/damping_screen_20261027_2304
+```
+
+- 59 项 RMA unittest 一次运行全部通过（114.487 s）；含完整 Hydra 解析仅 kd_range 改变的检查。
+- 真实运行 10 步冒烟及四组 1000 步评估通过。4000 行实际摩擦/质量标签、报告 RMSE、超时/异常终止及后段阈值核对通过。
+- nominal 两组重现 EXP-011；76 份归档输入 SHA256 和文档链接核对通过，图已查看。权重哈希不变。
+- 全仓门禁在临时完整源码副本 `/tmp/exp012-validation-RaCVqw` 执行，复用现有 venv，禁止同步依赖。Ruff 在副本重排 6 个已有文件并自动修正 3 项后通过，未回写这些无关更改；本轮 Python 文件单独 Ruff 检查通过。Mypy 通过；`make check` 被既有 Pyright 10 个错误、1 个警告阻塞；`make test` 在收集时因 `TensorResetRandomizationPayload` 缺失失败。
+- 具体日志：工作区 `outputs/exp012_make_check.log`、`outputs/exp012_make_test.log`。本轮未创建或合并 PR，不宣称全仓或真机通过。
+
+设计与结果见 [EXP-012](../../experiments/rma/EXP-012_damping_diagnosis.md)，可复查证据见 [归档](../../results/rma/EXP-012/README.md)。
+
 ## 2026-10-27：EXP-011 固定负载诊断
 
 新增 Hydra `rma_eval` 条件组、`--eval-condition`、真实摩擦/负载 trace 列及串行诊断/分析脚本。

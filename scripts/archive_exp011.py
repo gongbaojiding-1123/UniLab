@@ -7,7 +7,13 @@ import json
 from pathlib import Path
 
 
-def main():
+def main(
+    *,
+    expected_evaluations=6,
+    figure_name="payload_velocity.png",
+    scope="One deterministic seed, three fixed masses, frozen policies. No new training or robustness certification.",
+    archive_scripts=("scripts/run_exp011_payload.py", "scripts/analyze_rma_payload.py"),
+):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--run-dir", type=Path, required=True)
     parser.add_argument("--analysis-dir", type=Path, required=True)
@@ -22,8 +28,8 @@ def main():
     if not root.is_relative_to(runtime) or not Path(protocol["checkpoint"]).is_relative_to(runtime):
         parser.error("Runtime root must contain the recorded run and checkpoint")
     summaries = sorted(root.glob("*/eval_*/summary.json"))
-    if len(summaries) != 6:
-        parser.error("Expected the six completed controlled-load evaluations")
+    if len(summaries) != expected_evaluations:
+        parser.error(f"Expected {expected_evaluations} completed evaluations")
     checkpoint = Path(protocol["checkpoint"])
     if hashlib.sha256(checkpoint.read_bytes()).hexdigest() != protocol["checkpoint_sha256"]:
         parser.error("Local checkpoint changed since the screen")
@@ -56,14 +62,14 @@ def main():
                     relative = relative.with_name("run_configuration.json")
                 copy(source, relative)
         copy(root / (label + ".log"), Path("evaluations") / label / "output.txt")
-    for name in ("metrics.csv", "summary.json", "payload_velocity.png"):
+    for name in ("metrics.csv", "summary.json", figure_name):
         copy(analysis / name, Path(name))
     for name, expected in protocol["source_sha256"].items():
         path = runtime / name
         if hashlib.sha256(path.read_bytes()).hexdigest() != expected:
             raise ValueError(f"Recorded runtime source changed before archive: {path}")
         copy(path, Path("source_at_evaluation") / name)
-    for name in ("scripts/run_exp011_payload.py", "scripts/analyze_rma_payload.py"):
+    for name in archive_scripts:
         copy(runtime / name, Path("source_at_archive") / name)
     (out / "manifest.json").write_text(
         json.dumps(
@@ -73,14 +79,16 @@ def main():
                 checkpoint_sha256=protocol["checkpoint_sha256"],
                 original_run=str(root),
                 original_analysis=str(analysis),
-                scope="One deterministic seed, three fixed masses, frozen policies. No new training or robustness certification.",
+                scope=scope,
                 note="Source_at_evaluation hashes were recorded by the runner; orchestration source_at_archive is labeled separately.",
             ),
             indent=2,
         )
         + "\n"
     )
-    print(json.dumps(dict(archive=str(out), evaluations=6, inputs=len(inputs)), indent=2))
+    print(
+        json.dumps(dict(archive=str(out), evaluations=len(summaries), inputs=len(inputs)), indent=2)
+    )
 
 
 if __name__ == "__main__":

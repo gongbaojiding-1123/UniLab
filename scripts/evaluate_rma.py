@@ -8,7 +8,7 @@ from pathlib import Path
 import torch
 from train_rma import build_environment
 from unilab_rma import ActorCriticRMA, AdaptationModule, HistoryBuffer, RMAConfig
-from unilab_rma.evaluation_conditions import PAYLOAD_KG, condition_parameters, validate_labels
+from unilab_rma.evaluation_conditions import CONDITIONS, condition_parameters, validate_labels
 from unilab_rma.evaluation_diagnostics import DEFAULT_TASK, RMA_TASKS, EvaluationDiagnostics
 
 
@@ -23,7 +23,7 @@ def main():
     p.add_argument("--task", choices=RMA_TASKS, default=DEFAULT_TASK)
     p.add_argument(
         "--eval-condition",
-        choices=tuple(PAYLOAD_KG),
+        choices=tuple(CONDITIONS),
         help="Controlled evaluation: home reset, fixed gains/friction/payload and no noise",
     )
     p.add_argument(

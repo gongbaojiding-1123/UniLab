@@ -11,8 +11,15 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def main():
-    parser = argparse.ArgumentParser(description=__doc__)
+def main(
+    *,
+    experiment="EXP-011",
+    conditions=("nominal", "payload_2p5", "payload_5"),
+    analyzer="analyze_rma_payload.py",
+):
+    parser = argparse.ArgumentParser(
+        description=f"{experiment}: serial controlled teacher/student evaluation"
+    )
     parser.add_argument(
         "--checkpoint",
         type=Path,
@@ -29,24 +36,31 @@ def main():
         parser.error("Require an existing checkpoint, positive steps and a NEW output directory")
     if not args.dry_run:
         out.mkdir(parents=True)
-        paths = [ROOT / "scripts/evaluate_rma.py", ROOT / "scripts/train_rma.py"]
+        paths = [
+            ROOT / "scripts/evaluate_rma.py",
+            ROOT / "scripts/train_rma.py",
+            ROOT / "scripts/run_exp011_payload.py",
+            ROOT / "scripts" / analyzer,
+            ROOT / "scripts/analyze_rma_payload.py",
+            ROOT / "rsl_rl/unilab_rma/evaluation_conditions.py",
+        ]
         paths += sorted((ROOT / "src/unilab/conf/ppo/rma_eval").glob("*.yaml"))
         (out / "protocol.json").write_text(
             json.dumps(
                 dict(
-                    experiment="EXP-011",
+                    experiment=experiment,
                     seed=args.seed,
                     steps=args.steps,
                     command=[0.7, 0, 0],
                     checkpoint=str(checkpoint),
                     checkpoint_sha256=hashlib.sha256(checkpoint.read_bytes()).hexdigest(),
                     paired_policy_note="Both teacher and student are loaded from the SAME student checkpoint",
-                    cases=["nominal", "payload_2p5", "payload_5"],
+                    cases=list(conditions),
                     source_sha256={
                         str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest()
                         for p in paths
                     },
-                    note="One deterministic seed, controlled load screen; not a randomized robustness estimate",
+                    note="One deterministic seed, controlled condition screen; not a randomized robustness estimate",
                 ),
                 indent=2,
             )
@@ -55,7 +69,7 @@ def main():
     environment = dict(
         os.environ, OMP_NUM_THREADS="1", MKL_NUM_THREADS="1", OPENBLAS_NUM_THREADS="1"
     )
-    for condition in ("nominal", "payload_2p5", "payload_5"):
+    for condition in conditions:
         for policy in ("teacher", "student"):
             label = f"{condition}_{policy}"
             command = [
@@ -97,7 +111,7 @@ def main():
                 raise SystemExit(f"Stopped at {label}; see {out}")
     if not args.dry_run:
         subprocess.run(
-            [sys.executable, str(ROOT / "scripts/analyze_rma_payload.py"), "--input-dir", str(out)],
+            [sys.executable, str(ROOT / "scripts" / analyzer), "--input-dir", str(out)],
             cwd=ROOT,
             check=True,
             env=environment,

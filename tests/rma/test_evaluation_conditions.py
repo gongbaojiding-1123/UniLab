@@ -12,7 +12,12 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "scripts"))
 sys.path.insert(0, str(ROOT / "rsl_rl"))
 from inspect_rma_task import differences
-from unilab_rma.evaluation_conditions import PAYLOAD_KG, condition_overrides, validate_labels
+from unilab_rma.evaluation_conditions import (
+    CONDITIONS,
+    condition_overrides,
+    condition_parameters,
+    validate_labels,
+)
 
 
 def resolved(condition=None):
@@ -27,9 +32,8 @@ def resolved(condition=None):
 class EvaluationConditionTests(unittest.TestCase):
     def test_payload_changes_only_mass_distribution(self):
         reference = resolved("nominal")
-        for name, mass in PAYLOAD_KG.items():
-            if name == "nominal":
-                continue
+        for name in ("payload_2p5", "payload_5"):
+            mass = CONDITIONS[name][0]
             self.assertEqual(
                 differences(reference, resolved(name)),
                 [
@@ -61,6 +65,22 @@ class EvaluationConditionTests(unittest.TestCase):
                 ].values()
             )
         )
+
+    def test_derivative_gain_changes_only_kd_and_metadata_matches(self):
+        self.assertEqual(
+            differences(resolved("nominal"), resolved("kd_0p5")),
+            [
+                dict(
+                    path="env.events.pd_gains.params.kd_range",
+                    before=[0.0, 0.0],
+                    after=[0.5, 0.5],
+                )
+            ],
+        )
+        parameters = condition_parameters("kd_0p5")
+        self.assertEqual(parameters["actuator_kd"], 0.5)
+        self.assertEqual(parameters["added_base_mass_kg"], 0.0)
+        validate_labels(torch.tensor([[1.0, 0.0]]), "kd_0p5")
 
     def test_legacy_alias_and_conflicting_conditions(self):
         self.assertEqual(condition_overrides(sim2sim_nominal=True), condition_overrides("nominal"))

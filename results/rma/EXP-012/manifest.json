@@ -1,0 +1,390 @@
+{
+  "inputs": [
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/protocol.json",
+      "archived": "protocol.json",
+      "sha256": "803e596ff7c5829d27c96696f8ab5c62e342c7c8335fdf70b37598be3793ab87"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_student/eval_qkx89uf4/run_config.json",
+      "archived": "evaluations/kd_0p5_student/run_configuration.json",
+      "sha256": "c52a9a60614d24ecc40bfd290f79a41f283a68282ef073ca04ea94215344a1a3"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_student/eval_qkx89uf4/summary.json",
+      "archived": "evaluations/kd_0p5_student/summary.json",
+      "sha256": "1e963847ac82811f2fca9fb23bac63945bf42cfe8954a963ff786fbd0d1d5de6"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_student/eval_qkx89uf4/task_source_snapshot/base.yaml",
+      "archived": "evaluations/kd_0p5_student/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_student/eval_qkx89uf4/task_source_snapshot/kd_0p5.yaml",
+      "archived": "evaluations/kd_0p5_student/task_source_snapshot/kd_0p5.yaml",
+      "sha256": "a36ba63d44416cb54bcc8cca284d67f206744e04683f9e37840de84a0b1a69b9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_student/eval_qkx89uf4/task_source_snapshot/mujoco.yaml",
+      "archived": "evaluations/kd_0p5_student/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_student/eval_qkx89uf4/task_source_snapshot/nominal.yaml",
+      "archived": "evaluations/kd_0p5_student/task_source_snapshot/nominal.yaml",
+      "sha256": "ec421fae9d01a5c1376e9a5687995bb1abf8e50f1a18fe9a16da408a72c9b136"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_student/eval_qkx89uf4/task_source_snapshot/payload_2p5.yaml",
+      "archived": "evaluations/kd_0p5_student/task_source_snapshot/payload_2p5.yaml",
+      "sha256": "9425212d53e5ee778ccc2ee2145bfe3bb2fae05daef783739b923373c12813b9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_student/eval_qkx89uf4/task_source_snapshot/payload_5.yaml",
+      "archived": "evaluations/kd_0p5_student/task_source_snapshot/payload_5.yaml",
+      "sha256": "99b128fe5fddbf78364aeee3e55abe7a42feac6568faea420496fec1904e3e7b"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_student/eval_qkx89uf4/task_source_snapshot/rma.yaml",
+      "archived": "evaluations/kd_0p5_student/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_student/eval_qkx89uf4/task_source_snapshot/rma_forward.yaml",
+      "archived": "evaluations/kd_0p5_student/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_student/eval_qkx89uf4/task_source_snapshot/rma_forward_no_pose.yaml",
+      "archived": "evaluations/kd_0p5_student/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_student/eval_qkx89uf4/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "archived": "evaluations/kd_0p5_student/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_student/eval_qkx89uf4/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "archived": "evaluations/kd_0p5_student/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_student/eval_qkx89uf4/transitions.csv",
+      "archived": "evaluations/kd_0p5_student/transitions.csv.gz",
+      "sha256": "0a069996a48a49d35721fcd317f5fc7db9ab0fb1cba135842da8a4cc07207144"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_student.log",
+      "archived": "evaluations/kd_0p5_student/output.txt",
+      "sha256": "489d9ffd32145c94a4ddee6e71ee617466b465906043caf8f9d069d308f02b43"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_teacher/eval_ex410s0b/run_config.json",
+      "archived": "evaluations/kd_0p5_teacher/run_configuration.json",
+      "sha256": "3efe262d61e62b5aa66b7e1ccba571fd9cd842de6c6c845e0a4d1a21389fddcc"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_teacher/eval_ex410s0b/summary.json",
+      "archived": "evaluations/kd_0p5_teacher/summary.json",
+      "sha256": "1ff3daa9adf3f1333b1739206485c2091b434cae4d50a9b95fef3d0cd0e11296"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_teacher/eval_ex410s0b/task_source_snapshot/base.yaml",
+      "archived": "evaluations/kd_0p5_teacher/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_teacher/eval_ex410s0b/task_source_snapshot/kd_0p5.yaml",
+      "archived": "evaluations/kd_0p5_teacher/task_source_snapshot/kd_0p5.yaml",
+      "sha256": "a36ba63d44416cb54bcc8cca284d67f206744e04683f9e37840de84a0b1a69b9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_teacher/eval_ex410s0b/task_source_snapshot/mujoco.yaml",
+      "archived": "evaluations/kd_0p5_teacher/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_teacher/eval_ex410s0b/task_source_snapshot/nominal.yaml",
+      "archived": "evaluations/kd_0p5_teacher/task_source_snapshot/nominal.yaml",
+      "sha256": "ec421fae9d01a5c1376e9a5687995bb1abf8e50f1a18fe9a16da408a72c9b136"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_teacher/eval_ex410s0b/task_source_snapshot/payload_2p5.yaml",
+      "archived": "evaluations/kd_0p5_teacher/task_source_snapshot/payload_2p5.yaml",
+      "sha256": "9425212d53e5ee778ccc2ee2145bfe3bb2fae05daef783739b923373c12813b9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_teacher/eval_ex410s0b/task_source_snapshot/payload_5.yaml",
+      "archived": "evaluations/kd_0p5_teacher/task_source_snapshot/payload_5.yaml",
+      "sha256": "99b128fe5fddbf78364aeee3e55abe7a42feac6568faea420496fec1904e3e7b"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_teacher/eval_ex410s0b/task_source_snapshot/rma.yaml",
+      "archived": "evaluations/kd_0p5_teacher/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_teacher/eval_ex410s0b/task_source_snapshot/rma_forward.yaml",
+      "archived": "evaluations/kd_0p5_teacher/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_teacher/eval_ex410s0b/task_source_snapshot/rma_forward_no_pose.yaml",
+      "archived": "evaluations/kd_0p5_teacher/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_teacher/eval_ex410s0b/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "archived": "evaluations/kd_0p5_teacher/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_teacher/eval_ex410s0b/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "archived": "evaluations/kd_0p5_teacher/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_teacher/eval_ex410s0b/transitions.csv",
+      "archived": "evaluations/kd_0p5_teacher/transitions.csv.gz",
+      "sha256": "8beacece967897b8c222c98167a744295eb59a9bcc126f12e85f2186fbaee8a9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/kd_0p5_teacher.log",
+      "archived": "evaluations/kd_0p5_teacher/output.txt",
+      "sha256": "3078f2dd5ac3b7a6c94b4c477e18f4f0336e74a629ce458891aa12df7d0aad5a"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_student/eval_3cmqy_go/run_config.json",
+      "archived": "evaluations/nominal_student/run_configuration.json",
+      "sha256": "bcd8ff51ab100c5819b958cf50f0a8886f61799ff57eddb5729a90ad4bdc6b98"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_student/eval_3cmqy_go/summary.json",
+      "archived": "evaluations/nominal_student/summary.json",
+      "sha256": "1eaa3ff600c78b2758290a0f3cec8946bf621ce10ad2d6ec5eda6de2adb7a83f"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_student/eval_3cmqy_go/task_source_snapshot/base.yaml",
+      "archived": "evaluations/nominal_student/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_student/eval_3cmqy_go/task_source_snapshot/kd_0p5.yaml",
+      "archived": "evaluations/nominal_student/task_source_snapshot/kd_0p5.yaml",
+      "sha256": "a36ba63d44416cb54bcc8cca284d67f206744e04683f9e37840de84a0b1a69b9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_student/eval_3cmqy_go/task_source_snapshot/mujoco.yaml",
+      "archived": "evaluations/nominal_student/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_student/eval_3cmqy_go/task_source_snapshot/nominal.yaml",
+      "archived": "evaluations/nominal_student/task_source_snapshot/nominal.yaml",
+      "sha256": "ec421fae9d01a5c1376e9a5687995bb1abf8e50f1a18fe9a16da408a72c9b136"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_student/eval_3cmqy_go/task_source_snapshot/payload_2p5.yaml",
+      "archived": "evaluations/nominal_student/task_source_snapshot/payload_2p5.yaml",
+      "sha256": "9425212d53e5ee778ccc2ee2145bfe3bb2fae05daef783739b923373c12813b9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_student/eval_3cmqy_go/task_source_snapshot/payload_5.yaml",
+      "archived": "evaluations/nominal_student/task_source_snapshot/payload_5.yaml",
+      "sha256": "99b128fe5fddbf78364aeee3e55abe7a42feac6568faea420496fec1904e3e7b"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_student/eval_3cmqy_go/task_source_snapshot/rma.yaml",
+      "archived": "evaluations/nominal_student/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_student/eval_3cmqy_go/task_source_snapshot/rma_forward.yaml",
+      "archived": "evaluations/nominal_student/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_student/eval_3cmqy_go/task_source_snapshot/rma_forward_no_pose.yaml",
+      "archived": "evaluations/nominal_student/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_student/eval_3cmqy_go/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "archived": "evaluations/nominal_student/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_student/eval_3cmqy_go/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "archived": "evaluations/nominal_student/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_student/eval_3cmqy_go/transitions.csv",
+      "archived": "evaluations/nominal_student/transitions.csv.gz",
+      "sha256": "d342f819bc1c598c8b520024b4639ce9a0b9184c05d056be25f16157eb9722dd"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_student.log",
+      "archived": "evaluations/nominal_student/output.txt",
+      "sha256": "1629f6e11417e6e90aa61ffa7d877791d5f1aad62810ccde98dc71a72d860630"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_teacher/eval_kdnn1785/run_config.json",
+      "archived": "evaluations/nominal_teacher/run_configuration.json",
+      "sha256": "5485571bd897bee933ac6f46b16cd0baf56f7bb0c24aaf61d17317318ec26129"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_teacher/eval_kdnn1785/summary.json",
+      "archived": "evaluations/nominal_teacher/summary.json",
+      "sha256": "bb33b46df460ea5bc27a09f68733b7fd6856448c8ad596694b560f1b7f555a08"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_teacher/eval_kdnn1785/task_source_snapshot/base.yaml",
+      "archived": "evaluations/nominal_teacher/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_teacher/eval_kdnn1785/task_source_snapshot/kd_0p5.yaml",
+      "archived": "evaluations/nominal_teacher/task_source_snapshot/kd_0p5.yaml",
+      "sha256": "a36ba63d44416cb54bcc8cca284d67f206744e04683f9e37840de84a0b1a69b9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_teacher/eval_kdnn1785/task_source_snapshot/mujoco.yaml",
+      "archived": "evaluations/nominal_teacher/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_teacher/eval_kdnn1785/task_source_snapshot/nominal.yaml",
+      "archived": "evaluations/nominal_teacher/task_source_snapshot/nominal.yaml",
+      "sha256": "ec421fae9d01a5c1376e9a5687995bb1abf8e50f1a18fe9a16da408a72c9b136"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_teacher/eval_kdnn1785/task_source_snapshot/payload_2p5.yaml",
+      "archived": "evaluations/nominal_teacher/task_source_snapshot/payload_2p5.yaml",
+      "sha256": "9425212d53e5ee778ccc2ee2145bfe3bb2fae05daef783739b923373c12813b9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_teacher/eval_kdnn1785/task_source_snapshot/payload_5.yaml",
+      "archived": "evaluations/nominal_teacher/task_source_snapshot/payload_5.yaml",
+      "sha256": "99b128fe5fddbf78364aeee3e55abe7a42feac6568faea420496fec1904e3e7b"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_teacher/eval_kdnn1785/task_source_snapshot/rma.yaml",
+      "archived": "evaluations/nominal_teacher/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_teacher/eval_kdnn1785/task_source_snapshot/rma_forward.yaml",
+      "archived": "evaluations/nominal_teacher/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_teacher/eval_kdnn1785/task_source_snapshot/rma_forward_no_pose.yaml",
+      "archived": "evaluations/nominal_teacher/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_teacher/eval_kdnn1785/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "archived": "evaluations/nominal_teacher/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_teacher/eval_kdnn1785/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "archived": "evaluations/nominal_teacher/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_teacher/eval_kdnn1785/transitions.csv",
+      "archived": "evaluations/nominal_teacher/transitions.csv.gz",
+      "sha256": "a6d121877a3f82199d163fecc58b734cb6591b8de88531f7bd34a8e202c46fdd"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/nominal_teacher.log",
+      "archived": "evaluations/nominal_teacher/output.txt",
+      "sha256": "2ac566646b4ff3b4b23d6037783bdff3288e6b796e6b13c229bfe3c195ee6129"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/analysis_if5x808c/metrics.csv",
+      "archived": "metrics.csv",
+      "sha256": "321a75641d2bc9999c0dc2ce0092d689552bbddf78a2dbc43f62aa922b7fd5bb"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/analysis_if5x808c/summary.json",
+      "archived": "summary.json",
+      "sha256": "3bdab329f3d72538eb53b39fcf90031bc595c4b9a9a01584b0510cfd125dca1e"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/analysis_if5x808c/damping_velocity.png",
+      "archived": "damping_velocity.png",
+      "sha256": "5840488e7ad7c7f1ee450d34490993b53fc9fa699802ec25f2a2b43c0f0c8767"
+    },
+    {
+      "source": "/home/abc/my_unilab/scripts/evaluate_rma.py",
+      "archived": "source_at_evaluation/scripts/evaluate_rma.py",
+      "sha256": "7b0c1835b2ea04e073374a3a095db93d25a06c51debfb0b76d9c1fa4137213b1"
+    },
+    {
+      "source": "/home/abc/my_unilab/scripts/train_rma.py",
+      "archived": "source_at_evaluation/scripts/train_rma.py",
+      "sha256": "00a125e96ef526c611999ab094beeaa6d143352f151813405f3d748926d8a667"
+    },
+    {
+      "source": "/home/abc/my_unilab/scripts/run_exp011_payload.py",
+      "archived": "source_at_evaluation/scripts/run_exp011_payload.py",
+      "sha256": "1befdafb6fe2cad368552c7f6014215f40b256f9f0e1274aa571bbef61cd06ce"
+    },
+    {
+      "source": "/home/abc/my_unilab/scripts/analyze_rma_damping.py",
+      "archived": "source_at_evaluation/scripts/analyze_rma_damping.py",
+      "sha256": "e46aef49d9533a78621e1ad95aa7d0e4b1d1033cf636ba3570eaa4454add7479"
+    },
+    {
+      "source": "/home/abc/my_unilab/scripts/analyze_rma_payload.py",
+      "archived": "source_at_evaluation/scripts/analyze_rma_payload.py",
+      "sha256": "b7053085d1f363e3bd58d2f487785c6f70d0d413289313d0a1dc0abbbdb4d84a"
+    },
+    {
+      "source": "/home/abc/my_unilab/rsl_rl/unilab_rma/evaluation_conditions.py",
+      "archived": "source_at_evaluation/rsl_rl/unilab_rma/evaluation_conditions.py",
+      "sha256": "6f144ba755e87a0b28a6f6a50a9869d230b09150a2e952934cf9f4935844f6ae"
+    },
+    {
+      "source": "/home/abc/my_unilab/src/unilab/conf/ppo/rma_eval/kd_0p5.yaml",
+      "archived": "source_at_evaluation/src/unilab/conf/ppo/rma_eval/kd_0p5.yaml",
+      "sha256": "a36ba63d44416cb54bcc8cca284d67f206744e04683f9e37840de84a0b1a69b9"
+    },
+    {
+      "source": "/home/abc/my_unilab/src/unilab/conf/ppo/rma_eval/nominal.yaml",
+      "archived": "source_at_evaluation/src/unilab/conf/ppo/rma_eval/nominal.yaml",
+      "sha256": "ec421fae9d01a5c1376e9a5687995bb1abf8e50f1a18fe9a16da408a72c9b136"
+    },
+    {
+      "source": "/home/abc/my_unilab/src/unilab/conf/ppo/rma_eval/payload_2p5.yaml",
+      "archived": "source_at_evaluation/src/unilab/conf/ppo/rma_eval/payload_2p5.yaml",
+      "sha256": "9425212d53e5ee778ccc2ee2145bfe3bb2fae05daef783739b923373c12813b9"
+    },
+    {
+      "source": "/home/abc/my_unilab/src/unilab/conf/ppo/rma_eval/payload_5.yaml",
+      "archived": "source_at_evaluation/src/unilab/conf/ppo/rma_eval/payload_5.yaml",
+      "sha256": "99b128fe5fddbf78364aeee3e55abe7a42feac6568faea420496fec1904e3e7b"
+    },
+    {
+      "source": "/home/abc/my_unilab/scripts/run_exp012_damping.py",
+      "archived": "source_at_archive/scripts/run_exp012_damping.py",
+      "sha256": "a38e8774b1110bfa555d4c580e7d4ea8d4c92241d588310059ef9fe4064206f2"
+    },
+    {
+      "source": "/home/abc/my_unilab/scripts/analyze_rma_damping.py",
+      "archived": "source_at_archive/scripts/analyze_rma_damping.py",
+      "sha256": "e46aef49d9533a78621e1ad95aa7d0e4b1d1033cf636ba3570eaa4454add7479"
+    }
+  ],
+  "checkpoint": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/student_wide_speed.pt",
+  "checkpoint_sha256": "28785b298e5071d109ace124dc1c3388e2324fb8c5fda29087cfb829049ce5c5",
+  "original_run": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304",
+  "original_analysis": "/home/abc/my_unilab/runs/rma/EXP-012/damping_screen_20261027_2304/analysis_if5x808c",
+  "scope": "One deterministic seed, two active derivative gains, zero load, frozen policies. No new training or robustness certification.",
+  "note": "Source_at_evaluation hashes were recorded by the runner; orchestration source_at_archive is labeled separately."
+}

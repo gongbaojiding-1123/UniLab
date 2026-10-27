@@ -12,8 +12,15 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-def main():
-    parser = argparse.ArgumentParser(description=__doc__)
+def main(
+    *,
+    experiment="EXP-011",
+    cases=(("nominal", 0.0, 0.0), ("payload_2p5", 2.5, 0.0), ("payload_5", 5.0, 0.0)),
+    figure_name="payload_velocity.png",
+):
+    parser = argparse.ArgumentParser(
+        description=f"{experiment}: recompute controlled evaluation metrics"
+    )
     parser.add_argument("--input-dir", type=Path, required=True)
     args = parser.parse_args()
     root = args.input_dir.resolve()
@@ -23,10 +30,10 @@ def main():
 
     out = Path(tempfile.mkdtemp(prefix="analysis_", dir=root))
     metrics = []
-    fig, axes = plt.subplots(3, 1, figsize=(12, 9), sharex=True)
-    for ax, (condition, mass) in zip(
-        axes, (("nominal", 0.0), ("payload_2p5", 2.5), ("payload_5", 5.0))
-    ):
+    assert protocol["experiment"] == experiment
+    assert protocol["cases"] == [case[0] for case in cases]
+    fig, axes = plt.subplots(len(cases), 1, figsize=(12, 3 * len(cases)), sharex=True)
+    for ax, (condition, mass, kd) in zip(np.atleast_1d(axes), cases):
         for policy, color in (("teacher", "#2563eb"), ("student", "#d97706")):
             paths = list((root / f"{condition}_{policy}").glob("eval_*/summary.json"))
             if len(paths) != 1:
@@ -37,6 +44,8 @@ def main():
             assert metadata["checkpoint_sha256"] == protocol["checkpoint_sha256"]
             assert metadata["arguments"]["eval_condition"] == condition
             assert report["policy"] == policy
+            assert report["controlled_parameters"]["actuator_kd"] == kd
+            assert metadata["control_period_s"] == 0.02
             with (path.parent / "transitions.csv").open() as stream:
                 rows = list(csv.DictReader(stream))
             assert len(rows) == protocol["steps"]
@@ -59,6 +68,7 @@ def main():
             result = dict(
                 condition=condition,
                 payload_kg=mass,
+                actuator_kd=kd,
                 policy=policy,
                 steps=len(rows),
                 mean_vx=float(vx.mean()),
@@ -83,16 +93,16 @@ def main():
             if ended.any():
                 ax.scatter(times[ended], vx[ended], color=color, marker="x", s=50)
         ax.axhline(0.7, color="black", linestyle="--", label="command 0.7 m/s")
-        ax.set_ylabel(f"+{mass} kg\nvx (m/s)")
+        ax.set_ylabel((f"+{mass} kg" if experiment == "EXP-011" else f"kd={kd}") + "\nvx (m/s)")
         ax.grid(alpha=0.2)
         ax.legend(loc="upper right", ncol=3)
     axes[-1].set_xlabel("Global evaluation time (s), across resets")
     fig.suptitle(
-        "EXP-011: fixed payload; same frozen teacher/student pair, seed 123\n"
+        f"{experiment}: same frozen teacher/student pair, seed {protocol['seed']}\n"
         "Home reset, friction 1, no observation noise; x = termination"
     )
     fig.tight_layout(rect=(0, 0, 1, 0.94))
-    fig.savefig(out / "payload_velocity.png", dpi=150)
+    fig.savefig(out / figure_name, dpi=150)
     plt.close(fig)
     with (out / "metrics.csv").open("w", newline="") as stream:
         writer = csv.DictWriter(stream, fieldnames=list(metrics[0]))
@@ -103,7 +113,7 @@ def main():
             dict(
                 protocol=protocol,
                 metrics=metrics,
-                limits="Deterministic one-seed load screen, not a robustness or causal mechanism proof; action bounds are not measured torque limits",
+                limits="Deterministic one-seed condition screen, not a robustness or causal mechanism proof; action bounds are not measured torque limits",
             ),
             indent=2,
         )

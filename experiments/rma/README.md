@@ -17,6 +17,7 @@
 | [EXP-009](EXP-009_speed_generalization.md) | 旧策略 0.3 / 0.5 / 0.7 m/s 扫描 | 高速异常也出现在 MuJoCo 教师，不能仅归因于跨引擎 |
 | [EXP-010](EXP-010_forward_speed_coverage.md) | 训练指令范围 [0.3, 0.6] → [0.3, 0.8] | 一训练种子下教师改善；学生、跨引擎、导出和 mock 均有记录 |
 | [EXP-011](EXP-011_payload_diagnosis.md) | 冻结 teacher/student，固定负载 0 / 2.5 / 5 kg | 仅评估负载敏感性，不扩大训练速度范围；指标与结论见记录 |
+| [EXP-012](EXP-012_damping_diagnosis.md) | 冻结模型，主动 kd 0 → 0.5 | 零负载下学生超调与平面 RMSE 降低；一个确定性条件筛查 |
 
 ## 当前完成到哪里
 
@@ -26,7 +27,9 @@ EXP-010 已完成本轮归档，见 [结果入口](../../results/rma/EXP-010/REA
 
 当前结果只支持已测试的名义条件和少量随机化样本，不能声称多训练种子复现、真机部署或硬实时通过。
 EXP-011 已选择固定负载诊断，先定位随机化高速欠速；训练速度范围保持 `[0.3, 0.8]`。
-六组回放现已完成；5 kg 时 teacher/student 都欠速，见 [证据入口](../../results/rma/EXP-011/README.md)。后续优先检查 PD 增益条件，不直接开始更宽速度长训。
+六组回放现已完成；5 kg 时 teacher/student 都欠速，见 [证据入口](../../results/rma/EXP-011/README.md)。
+EXP-012 的四组阻尼回放也已完成，见 [曲线与逐步证据](../../results/rma/EXP-012/README.md)。先完成解释与复盘，再考虑固定 kd=0.5 的负载对照，不直接开始更宽速度长训。
+学习目标和验收方式见 [从运行到理解](../../docs/rma/LEARNING_GOALS.md)。
 操作顺序见 [项目工作流](../../docs/rma/PROJECT_WORKFLOW.md)。
 
 ## 如何在 GitHub 找到记录
