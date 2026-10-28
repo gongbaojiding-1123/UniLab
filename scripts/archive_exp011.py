@@ -40,7 +40,7 @@ def main(
         destination = out / relative
         destination.parent.mkdir(parents=True, exist_ok=True)
         data = source.read_bytes()
-        if source.suffix == ".csv" and source.name == "transitions.csv":
+        if source.suffix == ".csv" and source.name in ("transitions.csv", "control_signals.csv"):
             destination = destination.with_name(destination.name + ".gz")
             data = gzip.compress(data, mtime=0)
         destination.write_bytes(data)
@@ -56,7 +56,7 @@ def main(
     for path in summaries:
         label = path.parent.parent.name
         for source in sorted(path.parent.rglob("*")):
-            if source.is_file() and source.suffix in (".csv", ".json", ".yaml"):
+            if source.is_file() and source.suffix in (".csv", ".json", ".yaml", ".png"):
                 relative = Path("evaluations") / label / source.relative_to(path.parent)
                 if relative.name == "run_config.json":
                     relative = relative.with_name("run_configuration.json")

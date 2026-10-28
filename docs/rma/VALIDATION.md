@@ -1,5 +1,21 @@
 # RMA 分支验证记录
 
+## 2026-10-28：EXP-014 配对关节诊断
+
+诊断 CLI 新增 `--eval-condition`、与评估器一致的 episode counter/reset 标签语义，并将动作前 privileged 标签写入 trace。
+最初增加的“公共增益等于配置”检查在真实环境冒烟中失败；核实为基础模型读数，已改为分开标记配置/参考来源，保留原读数。
+没有改后端实现、虚拟环境、训练默认或权重。
+
+- RMA 62 项 unittest 通过；增益来源解释修正后，又单独运行 `test_control_diagnostics.py` 6 项通过，未把两次合并成一次最终全套计数。
+- 修改的 Python 文件 Ruff 通过。10 步成功冒烟，四组 1000 步记录与分析完成。
+- 48000 行关节记录、4000 行 transition；transitions 与 EXP-013 CSV 全字段逐行完全一致；全部映射残差为 0。
+- 103 份归档输入哈希，含原始逐步 CSV/JSON/YAML、四组图、协议/源码与分析图；相关文档链接核对，图片已查看。
+- 全仓门禁在临时副本 `/tmp/exp014-validation-vlLMao` 执行，复用现有 venv、禁止依赖同步。Ruff 在副本修正已有文件后通过，Mypy 通过；`make check` 仍有既有 Pyright 10 错误/1 警告；`make test` 仍被 UniSim 缺失 `TensorResetRandomizationPayload` 阻塞。日志 `outputs/exp014_make_check.log`、`outputs/exp014_make_test.log`。
+- 按文件增量同步前核对父提交 AST；备份 `runs/rma/EXP-014/code_sync_20261028_130415`。源码哈希以正式运行 protocol 为准，备份清单不冒充最终实现哈希。
+
+命令：`uv run --active --no-sync python scripts/run_exp014_control.py --checkpoint runs/rma/EXP-010/20261027_160750/student_wide_speed.pt --output-dir runs/rma/EXP-014/joint_tracking_20261028_1310`（先设置现有 UniLab 的 VIRTUAL_ENV）。
+见 [EXP-014](../../experiments/rma/EXP-014_joint_tracking.md)。本轮未创建/更新 PR，无真机或实测扭矩验证。
+
 ## 2026-10-28：EXP-013 固定 kd 的负载对照
 
 新增负载配置继承 `kd_0p5`，完整 Hydra 解析测试要求只改变附加质量分布；参数报告与实际 reset 标签校验同步。

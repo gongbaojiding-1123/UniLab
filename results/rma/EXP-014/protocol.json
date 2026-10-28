@@ -1,0 +1,32 @@
+{
+  "experiment": "EXP-014",
+  "cases": [
+    "kd_0p5",
+    "kd_0p5_payload_5"
+  ],
+  "seed": 123,
+  "steps": 1000,
+  "command": [
+    0.7,
+    0,
+    0
+  ],
+  "checkpoint": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/student_wide_speed.pt",
+  "checkpoint_sha256": "28785b298e5071d109ace124dc1c3388e2324fb8c5fda29087cfb829049ce5c5",
+  "source_sha256": {
+    "scripts/run_exp014_control.py": "9fe326a125cf2b32f28ec45da88a4d875ba055c22eab33a15360bbd65171ff28",
+    "scripts/analyze_rma_joint_tracking.py": "5136df9899a21b1e3ba1cc6ed7cbc73e74b2e638b54bdc1f9d1100fda979fe9d",
+    "scripts/diagnose_rma_control.py": "3b9e5392ac3c66948fed7573437ff5816c6992103e403330d83ec18533b00161",
+    "scripts/train_rma.py": "00a125e96ef526c611999ab094beeaa6d143352f151813405f3d748926d8a667",
+    "rsl_rl/unilab_rma/control_diagnostics.py": "35e65f78f0cca510290f5ce9977ffdc4281bb663f393d4721333c36dbdadbb2d",
+    "rsl_rl/unilab_rma/evaluation_conditions.py": "f6084c901a82f6365ba51441da99c8d1141ec1255794372a560dbed7d4b49d99",
+    "rsl_rl/unilab_rma/evaluation_trace.py": "479544ab9542f071a72cd359595f13865fc5e1d52c5665177262edccbae147ab",
+    "rsl_rl/unilab_rma/env_adapter.py": "3b29df75056b3303162020b64b037b100f45597de072339909cd3f72e1f831fc",
+    "src/unilab/conf/ppo/rma_eval/kd_0p5.yaml": "a36ba63d44416cb54bcc8cca284d67f206744e04683f9e37840de84a0b1a69b9",
+    "src/unilab/conf/ppo/rma_eval/kd_0p5_payload_5.yaml": "4b92e559c0bd4ee5552f80febdcd5741b4de9acd88806a6e6f832b6850274e0c",
+    "src/unilab/conf/ppo/rma_eval/nominal.yaml": "ec421fae9d01a5c1376e9a5687995bb1abf8e50f1a18fe9a16da408a72c9b136",
+    "src/unilab/conf/ppo/rma_eval/payload_2p5.yaml": "9425212d53e5ee778ccc2ee2145bfe3bb2fae05daef783739b923373c12813b9",
+    "src/unilab/conf/ppo/rma_eval/payload_5.yaml": "99b128fe5fddbf78364aeee3e55abe7a42feac6568faea420496fec1904e3e7b"
+  },
+  "note": "Evaluation-only telemetry; compare transitions with EXP-013 before interpreting joint errors. One deterministic seed, no causal mechanism proof."
+}

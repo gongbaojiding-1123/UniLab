@@ -4,7 +4,7 @@
 `/home/abc/my_unilab`；不要覆盖虚拟环境或全部同步 fork。
 训练/评估显式使用现有 UniLab 环境；Genesis 使用独立环境的 `scripts/run_genesis_go2.sh`。
 
-## 当前步骤：读 EXP-013 受载结果，再定位执行跟踪
+## 当前步骤：读 EXP-014 关节目标/实际角度图
 
 1. 已完成 EXP-010 两组教师、学生、ONNX、Genesis 回放、TensorRT 与 C++ mock；无需重复长训。
 2. 从 [实验索引](../../experiments/rma/README.md) 查看全部编号；从 [EXP-010 归档](../../results/rma/EXP-010/README.md) 看曲线和逐步数据。
@@ -13,7 +13,7 @@
 5. [EXP-011](../../experiments/rma/EXP-011_payload_diagnosis.md) 已比较同一 checkpoint 的 teacher/student，在 0 / 2.5 / 5 kg 下各回放一次。六次无异常终止，5 kg 时两者均欠速；先看已生成图表，再独立检查 PD 增益条件，暂不扩大训练区间。
 6. [EXP-012](../../experiments/rma/EXP-012_damping_diagnosis.md) 现已完成零负载下 kd=0/0.5 的四组回放：[看曲线与指标](../../results/rma/EXP-012/README.md)。学生全程平面 RMSE 从 0.14149 降到 0.09611，尚不能据此直接选择真机参数。
 7. [EXP-013](../../experiments/rma/EXP-013_payload_at_fixed_kd.md) 已固定 kd=0.5，对比 0/5 kg：负载组 teacher/student 全程平均 vx=0.60930/0.61697，均无异常终止，均比零负载欠速更明显。
-8. 当前先读 [本轮图表](../../results/rma/EXP-013/README.md)，自己写三句话复盘：改变什么、测到什么、不能断言什么。下一项应对齐受控条件的关节执行诊断入口，再记录目标/实际角度与接触；入口尚未接入，当前不要运行不配对的诊断或重复长训。参照 [学习验收](LEARNING_GOALS.md)。
+8. [EXP-014](../../experiments/rma/EXP-014_joint_tracking.md) 已对齐关节诊断入口的条件/reset，并完成四组记录。直接打开 [目标与实际图](../../results/rma/EXP-014/README.md)，四组轨迹与 EXP-013 全字段逐行一致。先看 RR_calf、明确角度差距不是扭矩饱和证明，再决定后续验证。参照 [学习验收](LEARNING_GOALS.md)。
 
 EXP-010 只有训练 seed 42；nominal eval seed 不等于独立训练或独立物理条件。
 没有真机或硬实时验证；完整门禁的已知阻塞见 [验证记录](VALIDATION.md)。

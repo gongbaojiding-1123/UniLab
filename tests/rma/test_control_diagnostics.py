@@ -92,6 +92,23 @@ class ControlDiagnosticsTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory, self.assertRaises(ValueError):
             ControlDiagnostics(raw, directory)
 
+    def test_configured_and_reference_gains_are_not_conflated(self):
+        raw, action, _ = fixture()
+        with tempfile.TemporaryDirectory() as directory:
+            recorder = ControlDiagnostics(raw, directory, expected_gains=(35.0, 0.0))
+            recorder.record(recorder.before(), action, False, False)
+            row = recorder.rows[0]
+            self.assertEqual(row["kd"], 0.0)
+            self.assertEqual(row["backend_reference_kd"], 0.5)
+            self.assertEqual(row["gain_source"], "configured_evaluation_condition")
+
+    def test_controlled_gains_match_public_backend_values(self):
+        raw, action, _ = fixture()
+        with tempfile.TemporaryDirectory() as directory:
+            recorder = ControlDiagnostics(raw, directory, expected_gains=(35.0, 0.5))
+            recorder.record(recorder.before(), action, False, False)
+            self.assertEqual(len(recorder.rows), 12)
+
 
 if __name__ == "__main__":
     unittest.main()

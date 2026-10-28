@@ -19,6 +19,7 @@
 | [EXP-011](EXP-011_payload_diagnosis.md) | 冻结 teacher/student，固定负载 0 / 2.5 / 5 kg | 仅评估负载敏感性，不扩大训练速度范围；指标与结论见记录 |
 | [EXP-012](EXP-012_damping_diagnosis.md) | 冻结模型，主动 kd 0 → 0.5 | 零负载下学生超调与平面 RMSE 降低；一个确定性条件筛查 |
 | [EXP-013](EXP-013_payload_at_fixed_kd.md) | 固定 kd=0.5，附加质量 0 → 5 kg | 教师和学生均欠速加重；四组无异常终止，需继续诊断执行跟踪 |
+| [EXP-014](EXP-014_joint_tracking.md) | 同 EXP-013 四组，新增关节目标/实际记录 | 48000 行关节信号；负载后角度差距增大，尚未证明唯一机制 |
 
 ## 当前完成到哪里
 
@@ -32,6 +33,7 @@ EXP-011 已选择固定负载诊断，先定位随机化高速欠速；训练速
 EXP-012 的四组阻尼回放已完成，见 [曲线与逐步证据](../../results/rma/EXP-012/README.md)。
 EXP-013 的固定 kd 负载对照也已完成，见 [本轮证据](../../results/rma/EXP-013/README.md)。5 kg 时两策略仍欠速，先复盘并诊断受载执行跟踪，不直接开始更宽速度长训。
 学习目标和验收方式见 [从运行到理解](../../docs/rma/LEARNING_GOALS.md)。
+EXP-014 的配对关节诊断已完成，直接打开 [目标/实际角度图](../../results/rma/EXP-014/README.md)，无需再跑一次生成图片。
 操作顺序见 [项目工作流](../../docs/rma/PROJECT_WORKFLOW.md)。
 
 ## 如何在 GitHub 找到记录

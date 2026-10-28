@@ -15,7 +15,7 @@ def array(value):
 
 
 class ControlDiagnostics:
-    def __init__(self, raw, directory):
+    def __init__(self, raw, directory, *, expected_gains=None):
         if raw.num_envs != 1:
             raise ValueError("Control diagnostics require exactly one environment")
         self.raw = raw
@@ -33,6 +33,7 @@ class ControlDiagnostics:
         if len(self.names) != 12 or len(set(self.actuator_ids)) != 12:
             raise ValueError("Requires 12 distinct single-joint position actuators")
         self.rows = []
+        self.expected_gains = expected_gains
         self.step = self.episode = self.age = 0
         self.metadata = {
             "joint_names": self.names,
@@ -43,7 +44,8 @@ class ControlDiagnostics:
             "mapping_residual": "written target - (processed_action - encoder_bias), in joint order",
             "pd_demand_estimate": "kp*(written_target-q_before)-kd*dq_before; an algebraic estimate at the control boundary, NOT measured torque or a physics-substep sample.",
             "torque_measurement": "unavailable through the current public backend API; no torque saturation claim",
-            "gains_scope": "public get_actuator_gains, refreshed each step; one environment only",
+            "gains_scope": "Configured gains are used when supplied; backend getter reads a reference model and is NOT proof of per-environment reset gains. Both are recorded separately.",
+            "expected_active_gains": expected_gains,
         }
         (self.directory / "control_metadata.json").write_text(
             json.dumps(self.metadata, indent=2), encoding="utf-8"
@@ -61,8 +63,14 @@ class ControlDiagnostics:
         written = array(self.robot.data.control_buffer)[0, self.actuator_ids]
         processed = array(self.term.processed_action)[0]
         bias = array(self.robot.data.encoder_bias)[0, self.joint_ids]
-        kp, kd = self.raw.backend.get_actuator_gains()
-        kp, kd = array(kp).reshape(-1)[self.actuator_ids], array(kd).reshape(-1)[self.actuator_ids]
+        reference_kp, reference_kd = self.raw.backend.get_actuator_gains()
+        reference_kp = array(reference_kp).reshape(-1)[self.actuator_ids]
+        reference_kd = array(reference_kd).reshape(-1)[self.actuator_ids]
+        if self.expected_gains is not None:
+            kp = np.full(12, self.expected_gains[0])
+            kd = np.full(12, self.expected_gains[1])
+        else:
+            kp, kd = reference_kp, reference_kd
         a = array(action)[0]
         self.age += 1
         for i, name in enumerate(self.names):
@@ -83,6 +91,11 @@ class ControlDiagnostics:
                     mapping_residual_rad=written[i] - (processed[i] - bias[i]),
                     kp=kp[i],
                     kd=kd[i],
+                    gain_source="configured_evaluation_condition"
+                    if self.expected_gains
+                    else "backend_reference_model",
+                    backend_reference_kp=reference_kp[i],
+                    backend_reference_kd=reference_kd[i],
                     pd_demand_estimate_nm=kp[i] * (written[i] - q[i]) - kd[i] * dq[i],
                     terminated=int(terminated),
                     truncated=int(truncated),

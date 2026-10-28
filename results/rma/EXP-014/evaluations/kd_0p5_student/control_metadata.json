@@ -1,0 +1,54 @@
+{
+  "joint_names": [
+    "FL_hip_joint",
+    "FL_thigh_joint",
+    "FL_calf_joint",
+    "FR_hip_joint",
+    "FR_thigh_joint",
+    "FR_calf_joint",
+    "RL_hip_joint",
+    "RL_thigh_joint",
+    "RL_calf_joint",
+    "RR_hip_joint",
+    "RR_thigh_joint",
+    "RR_calf_joint"
+  ],
+  "actuator_names": [
+    "FR_hip",
+    "FR_thigh",
+    "FR_calf",
+    "FL_hip",
+    "FL_thigh",
+    "FL_calf",
+    "RR_hip",
+    "RR_thigh",
+    "RR_calf",
+    "RL_hip",
+    "RL_thigh",
+    "RL_calf"
+  ],
+  "action_to_actuator_indices": [
+    3,
+    4,
+    5,
+    0,
+    1,
+    2,
+    9,
+    10,
+    11,
+    6,
+    7,
+    8
+  ],
+  "control_period_s": 0.02,
+  "alignment": "q_before/dq_before precede action; target is the authoritative control buffer after step; q_after precedes reset. No cross-reset rows.",
+  "mapping_residual": "written target - (processed_action - encoder_bias), in joint order",
+  "pd_demand_estimate": "kp*(written_target-q_before)-kd*dq_before; an algebraic estimate at the control boundary, NOT measured torque or a physics-substep sample.",
+  "torque_measurement": "unavailable through the current public backend API; no torque saturation claim",
+  "gains_scope": "Configured gains are used when supplied; backend getter reads a reference model and is NOT proof of per-environment reset gains. Both are recorded separately.",
+  "expected_active_gains": [
+    35.0,
+    0.5
+  ]
+}

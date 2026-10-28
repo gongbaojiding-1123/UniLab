@@ -1,0 +1,525 @@
+{
+  "inputs": [
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/protocol.json",
+      "archived": "protocol.json",
+      "sha256": "b061cc32a1a7e4625326d57cd7568007232720fe72cd763e2748c53ae6eb476f"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_student/eval_o_9gqfbt/control_metadata.json",
+      "archived": "evaluations/kd_0p5_payload_5_student/control_metadata.json",
+      "sha256": "cd424a20028f0ec1f9ae5f046c212293362e5b3e4f341d761a02db2c8f8d6d65"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_student/eval_o_9gqfbt/control_signals.csv",
+      "archived": "evaluations/kd_0p5_payload_5_student/control_signals.csv.gz",
+      "sha256": "b196dd3ee24ef0c88b8793351c87b7997ac3fb87d2bd731b417ecaff01438750"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_student/eval_o_9gqfbt/control_summary.json",
+      "archived": "evaluations/kd_0p5_payload_5_student/control_summary.json",
+      "sha256": "2e981f1d210a823c343db8003d5ba2971efa1685c60264be1093a56adeff51f3"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_student/eval_o_9gqfbt/control_tracking.png",
+      "archived": "evaluations/kd_0p5_payload_5_student/control_tracking.png",
+      "sha256": "92c6ff4c1d5d6dbbf64f760442a8bedca5f13f7fdb04e61214a457e5344b09d5"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_student/eval_o_9gqfbt/diagnostic_summary.json",
+      "archived": "evaluations/kd_0p5_payload_5_student/diagnostic_summary.json",
+      "sha256": "286f33fa364f590644f02d4239eb4c62d5c41f67407313ebc442a9fc033a5417"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_student/eval_o_9gqfbt/run_config.json",
+      "archived": "evaluations/kd_0p5_payload_5_student/run_configuration.json",
+      "sha256": "27779c53803d5fd918fa8c3367ab5a25a424aea3cb5b79910e2131a882dcd9da"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_student/eval_o_9gqfbt/summary.json",
+      "archived": "evaluations/kd_0p5_payload_5_student/summary.json",
+      "sha256": "c2a97b7c72ec28d158174d9f58b3b957d6ccedc368f635a1cc363257d97d2907"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_student/eval_o_9gqfbt/task_source_snapshot/base.yaml",
+      "archived": "evaluations/kd_0p5_payload_5_student/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_student/eval_o_9gqfbt/task_source_snapshot/kd_0p5.yaml",
+      "archived": "evaluations/kd_0p5_payload_5_student/task_source_snapshot/kd_0p5.yaml",
+      "sha256": "a36ba63d44416cb54bcc8cca284d67f206744e04683f9e37840de84a0b1a69b9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_student/eval_o_9gqfbt/task_source_snapshot/kd_0p5_payload_5.yaml",
+      "archived": "evaluations/kd_0p5_payload_5_student/task_source_snapshot/kd_0p5_payload_5.yaml",
+      "sha256": "4b92e559c0bd4ee5552f80febdcd5741b4de9acd88806a6e6f832b6850274e0c"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_student/eval_o_9gqfbt/task_source_snapshot/mujoco.yaml",
+      "archived": "evaluations/kd_0p5_payload_5_student/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_student/eval_o_9gqfbt/task_source_snapshot/nominal.yaml",
+      "archived": "evaluations/kd_0p5_payload_5_student/task_source_snapshot/nominal.yaml",
+      "sha256": "ec421fae9d01a5c1376e9a5687995bb1abf8e50f1a18fe9a16da408a72c9b136"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_student/eval_o_9gqfbt/task_source_snapshot/payload_2p5.yaml",
+      "archived": "evaluations/kd_0p5_payload_5_student/task_source_snapshot/payload_2p5.yaml",
+      "sha256": "9425212d53e5ee778ccc2ee2145bfe3bb2fae05daef783739b923373c12813b9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_student/eval_o_9gqfbt/task_source_snapshot/payload_5.yaml",
+      "archived": "evaluations/kd_0p5_payload_5_student/task_source_snapshot/payload_5.yaml",
+      "sha256": "99b128fe5fddbf78364aeee3e55abe7a42feac6568faea420496fec1904e3e7b"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_student/eval_o_9gqfbt/task_source_snapshot/rma.yaml",
+      "archived": "evaluations/kd_0p5_payload_5_student/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_student/eval_o_9gqfbt/task_source_snapshot/rma_forward.yaml",
+      "archived": "evaluations/kd_0p5_payload_5_student/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_student/eval_o_9gqfbt/task_source_snapshot/rma_forward_no_pose.yaml",
+      "archived": "evaluations/kd_0p5_payload_5_student/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_student/eval_o_9gqfbt/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "archived": "evaluations/kd_0p5_payload_5_student/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_student/eval_o_9gqfbt/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "archived": "evaluations/kd_0p5_payload_5_student/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_student/eval_o_9gqfbt/transitions.csv",
+      "archived": "evaluations/kd_0p5_payload_5_student/transitions.csv.gz",
+      "sha256": "2c4758542be35ac4d8a5c888e5ed6aa1a1272819d9c291883b9b125056d76e4a"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_student.log",
+      "archived": "evaluations/kd_0p5_payload_5_student/output.txt",
+      "sha256": "ce4c22518722c16bae22fb5e83379198f45b350005edd793d89c432110b71414"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_teacher/eval_5nz1f7z5/control_metadata.json",
+      "archived": "evaluations/kd_0p5_payload_5_teacher/control_metadata.json",
+      "sha256": "cd424a20028f0ec1f9ae5f046c212293362e5b3e4f341d761a02db2c8f8d6d65"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_teacher/eval_5nz1f7z5/control_signals.csv",
+      "archived": "evaluations/kd_0p5_payload_5_teacher/control_signals.csv.gz",
+      "sha256": "2b6b42621ccbb47cbb15a6e2e0306ec1ab11cf246e678ac72b1f7b1c887a5aa2"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_teacher/eval_5nz1f7z5/control_summary.json",
+      "archived": "evaluations/kd_0p5_payload_5_teacher/control_summary.json",
+      "sha256": "32f15423924d468985b1811822e8c292d3519bcc2f4af2a37c165fb699e70db7"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_teacher/eval_5nz1f7z5/control_tracking.png",
+      "archived": "evaluations/kd_0p5_payload_5_teacher/control_tracking.png",
+      "sha256": "ff2065379f60961ebc5ab769d27d045558a18ff8bcb65beecae3b848154f3f7a"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_teacher/eval_5nz1f7z5/diagnostic_summary.json",
+      "archived": "evaluations/kd_0p5_payload_5_teacher/diagnostic_summary.json",
+      "sha256": "10b7ba437176b2da55633bac09af3f9bc195383c4142d8e7ff6a36df336d9d57"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_teacher/eval_5nz1f7z5/run_config.json",
+      "archived": "evaluations/kd_0p5_payload_5_teacher/run_configuration.json",
+      "sha256": "98331c4100bf3de39548384cc15cfadf5e2ca8e7ed9674f4e883d07499170349"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_teacher/eval_5nz1f7z5/summary.json",
+      "archived": "evaluations/kd_0p5_payload_5_teacher/summary.json",
+      "sha256": "3497e95b610f152319a4ee86d16f5c0c91b5c67592f03fa9abfc661a26f96c0e"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_teacher/eval_5nz1f7z5/task_source_snapshot/base.yaml",
+      "archived": "evaluations/kd_0p5_payload_5_teacher/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_teacher/eval_5nz1f7z5/task_source_snapshot/kd_0p5.yaml",
+      "archived": "evaluations/kd_0p5_payload_5_teacher/task_source_snapshot/kd_0p5.yaml",
+      "sha256": "a36ba63d44416cb54bcc8cca284d67f206744e04683f9e37840de84a0b1a69b9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_teacher/eval_5nz1f7z5/task_source_snapshot/kd_0p5_payload_5.yaml",
+      "archived": "evaluations/kd_0p5_payload_5_teacher/task_source_snapshot/kd_0p5_payload_5.yaml",
+      "sha256": "4b92e559c0bd4ee5552f80febdcd5741b4de9acd88806a6e6f832b6850274e0c"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_teacher/eval_5nz1f7z5/task_source_snapshot/mujoco.yaml",
+      "archived": "evaluations/kd_0p5_payload_5_teacher/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_teacher/eval_5nz1f7z5/task_source_snapshot/nominal.yaml",
+      "archived": "evaluations/kd_0p5_payload_5_teacher/task_source_snapshot/nominal.yaml",
+      "sha256": "ec421fae9d01a5c1376e9a5687995bb1abf8e50f1a18fe9a16da408a72c9b136"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_teacher/eval_5nz1f7z5/task_source_snapshot/payload_2p5.yaml",
+      "archived": "evaluations/kd_0p5_payload_5_teacher/task_source_snapshot/payload_2p5.yaml",
+      "sha256": "9425212d53e5ee778ccc2ee2145bfe3bb2fae05daef783739b923373c12813b9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_teacher/eval_5nz1f7z5/task_source_snapshot/payload_5.yaml",
+      "archived": "evaluations/kd_0p5_payload_5_teacher/task_source_snapshot/payload_5.yaml",
+      "sha256": "99b128fe5fddbf78364aeee3e55abe7a42feac6568faea420496fec1904e3e7b"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_teacher/eval_5nz1f7z5/task_source_snapshot/rma.yaml",
+      "archived": "evaluations/kd_0p5_payload_5_teacher/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_teacher/eval_5nz1f7z5/task_source_snapshot/rma_forward.yaml",
+      "archived": "evaluations/kd_0p5_payload_5_teacher/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_teacher/eval_5nz1f7z5/task_source_snapshot/rma_forward_no_pose.yaml",
+      "archived": "evaluations/kd_0p5_payload_5_teacher/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_teacher/eval_5nz1f7z5/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "archived": "evaluations/kd_0p5_payload_5_teacher/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_teacher/eval_5nz1f7z5/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "archived": "evaluations/kd_0p5_payload_5_teacher/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_teacher/eval_5nz1f7z5/transitions.csv",
+      "archived": "evaluations/kd_0p5_payload_5_teacher/transitions.csv.gz",
+      "sha256": "7470f5caca1db8637bfb209bd371aeb5c1f304c294c214c435419578fa42a292"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_teacher.log",
+      "archived": "evaluations/kd_0p5_payload_5_teacher/output.txt",
+      "sha256": "b6018f005662c485bce78ab569367b7cf60da29cff421050a7d7ab678773bbd0"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_student/eval_f3st4oob/control_metadata.json",
+      "archived": "evaluations/kd_0p5_student/control_metadata.json",
+      "sha256": "cd424a20028f0ec1f9ae5f046c212293362e5b3e4f341d761a02db2c8f8d6d65"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_student/eval_f3st4oob/control_signals.csv",
+      "archived": "evaluations/kd_0p5_student/control_signals.csv.gz",
+      "sha256": "d90a74e5203fd20e050f75e742632473372bfe127cc14d4270c0e0e214b47e3a"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_student/eval_f3st4oob/control_summary.json",
+      "archived": "evaluations/kd_0p5_student/control_summary.json",
+      "sha256": "fb87a09d4c323978dee11f73315f017722f69135a1683ba8c9bed9a2644029ff"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_student/eval_f3st4oob/control_tracking.png",
+      "archived": "evaluations/kd_0p5_student/control_tracking.png",
+      "sha256": "42f5e9d835bd48dcd1ca684063fbe497fe619764cbb635fd6b87a3f091ad8e21"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_student/eval_f3st4oob/diagnostic_summary.json",
+      "archived": "evaluations/kd_0p5_student/diagnostic_summary.json",
+      "sha256": "d08261fb97f788a1a486035caf64d09afd67c96bdfbdc17366de686a2ff47b83"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_student/eval_f3st4oob/run_config.json",
+      "archived": "evaluations/kd_0p5_student/run_configuration.json",
+      "sha256": "aaf072b3a319396e40e8e447601132ccf3188b2884ac14d875ad6d96dfc9b614"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_student/eval_f3st4oob/summary.json",
+      "archived": "evaluations/kd_0p5_student/summary.json",
+      "sha256": "fbb9027181c37447ed54c0c6586fb4e20a2efa1e3ddc6ad6cd35f8854a7aa823"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_student/eval_f3st4oob/task_source_snapshot/base.yaml",
+      "archived": "evaluations/kd_0p5_student/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_student/eval_f3st4oob/task_source_snapshot/kd_0p5.yaml",
+      "archived": "evaluations/kd_0p5_student/task_source_snapshot/kd_0p5.yaml",
+      "sha256": "a36ba63d44416cb54bcc8cca284d67f206744e04683f9e37840de84a0b1a69b9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_student/eval_f3st4oob/task_source_snapshot/kd_0p5_payload_5.yaml",
+      "archived": "evaluations/kd_0p5_student/task_source_snapshot/kd_0p5_payload_5.yaml",
+      "sha256": "4b92e559c0bd4ee5552f80febdcd5741b4de9acd88806a6e6f832b6850274e0c"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_student/eval_f3st4oob/task_source_snapshot/mujoco.yaml",
+      "archived": "evaluations/kd_0p5_student/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_student/eval_f3st4oob/task_source_snapshot/nominal.yaml",
+      "archived": "evaluations/kd_0p5_student/task_source_snapshot/nominal.yaml",
+      "sha256": "ec421fae9d01a5c1376e9a5687995bb1abf8e50f1a18fe9a16da408a72c9b136"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_student/eval_f3st4oob/task_source_snapshot/payload_2p5.yaml",
+      "archived": "evaluations/kd_0p5_student/task_source_snapshot/payload_2p5.yaml",
+      "sha256": "9425212d53e5ee778ccc2ee2145bfe3bb2fae05daef783739b923373c12813b9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_student/eval_f3st4oob/task_source_snapshot/payload_5.yaml",
+      "archived": "evaluations/kd_0p5_student/task_source_snapshot/payload_5.yaml",
+      "sha256": "99b128fe5fddbf78364aeee3e55abe7a42feac6568faea420496fec1904e3e7b"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_student/eval_f3st4oob/task_source_snapshot/rma.yaml",
+      "archived": "evaluations/kd_0p5_student/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_student/eval_f3st4oob/task_source_snapshot/rma_forward.yaml",
+      "archived": "evaluations/kd_0p5_student/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_student/eval_f3st4oob/task_source_snapshot/rma_forward_no_pose.yaml",
+      "archived": "evaluations/kd_0p5_student/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_student/eval_f3st4oob/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "archived": "evaluations/kd_0p5_student/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_student/eval_f3st4oob/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "archived": "evaluations/kd_0p5_student/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_student/eval_f3st4oob/transitions.csv",
+      "archived": "evaluations/kd_0p5_student/transitions.csv.gz",
+      "sha256": "0a069996a48a49d35721fcd317f5fc7db9ab0fb1cba135842da8a4cc07207144"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_student.log",
+      "archived": "evaluations/kd_0p5_student/output.txt",
+      "sha256": "fed966064627750342d4b2d67c29120105991b6dd5379d9471265a756f66cbee"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_teacher/eval_rxx7hdds/control_metadata.json",
+      "archived": "evaluations/kd_0p5_teacher/control_metadata.json",
+      "sha256": "cd424a20028f0ec1f9ae5f046c212293362e5b3e4f341d761a02db2c8f8d6d65"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_teacher/eval_rxx7hdds/control_signals.csv",
+      "archived": "evaluations/kd_0p5_teacher/control_signals.csv.gz",
+      "sha256": "4f6876f96cd260beb52f8eee8ef7b5347fe3827a3dc88f0648eda8dd73f876b5"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_teacher/eval_rxx7hdds/control_summary.json",
+      "archived": "evaluations/kd_0p5_teacher/control_summary.json",
+      "sha256": "1a2873a437d1fcc971fe971e0fc9f231b7ee3831318f2fe5ebb02036481bdb39"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_teacher/eval_rxx7hdds/control_tracking.png",
+      "archived": "evaluations/kd_0p5_teacher/control_tracking.png",
+      "sha256": "52a76961d7d4d00abe169cf07505ec36b4c39814c62c24938afb460e7e3043c3"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_teacher/eval_rxx7hdds/diagnostic_summary.json",
+      "archived": "evaluations/kd_0p5_teacher/diagnostic_summary.json",
+      "sha256": "d549e7fa54d0a8d34a013122bc31075c5b133e3beef310474ed5f6a5bbe8097d"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_teacher/eval_rxx7hdds/run_config.json",
+      "archived": "evaluations/kd_0p5_teacher/run_configuration.json",
+      "sha256": "76a724a9c463e93b2b8da89fe8e37fd48bb7bf319cdb8a6c29c35ea5a8e8de3f"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_teacher/eval_rxx7hdds/summary.json",
+      "archived": "evaluations/kd_0p5_teacher/summary.json",
+      "sha256": "cd6fd4c198ce628459882a240ffb46017663bc70bacfd5639ba407523495767f"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_teacher/eval_rxx7hdds/task_source_snapshot/base.yaml",
+      "archived": "evaluations/kd_0p5_teacher/task_source_snapshot/base.yaml",
+      "sha256": "1f91628cc0201affda56c1b7363469224100ad5d59c2421826d44cc58d399dce"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_teacher/eval_rxx7hdds/task_source_snapshot/kd_0p5.yaml",
+      "archived": "evaluations/kd_0p5_teacher/task_source_snapshot/kd_0p5.yaml",
+      "sha256": "a36ba63d44416cb54bcc8cca284d67f206744e04683f9e37840de84a0b1a69b9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_teacher/eval_rxx7hdds/task_source_snapshot/kd_0p5_payload_5.yaml",
+      "archived": "evaluations/kd_0p5_teacher/task_source_snapshot/kd_0p5_payload_5.yaml",
+      "sha256": "4b92e559c0bd4ee5552f80febdcd5741b4de9acd88806a6e6f832b6850274e0c"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_teacher/eval_rxx7hdds/task_source_snapshot/mujoco.yaml",
+      "archived": "evaluations/kd_0p5_teacher/task_source_snapshot/mujoco.yaml",
+      "sha256": "57d4fa8552601cdc151f5dc3e9dee48dbb0281e25f6e4138225414ec9450ddc9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_teacher/eval_rxx7hdds/task_source_snapshot/nominal.yaml",
+      "archived": "evaluations/kd_0p5_teacher/task_source_snapshot/nominal.yaml",
+      "sha256": "ec421fae9d01a5c1376e9a5687995bb1abf8e50f1a18fe9a16da408a72c9b136"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_teacher/eval_rxx7hdds/task_source_snapshot/payload_2p5.yaml",
+      "archived": "evaluations/kd_0p5_teacher/task_source_snapshot/payload_2p5.yaml",
+      "sha256": "9425212d53e5ee778ccc2ee2145bfe3bb2fae05daef783739b923373c12813b9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_teacher/eval_rxx7hdds/task_source_snapshot/payload_5.yaml",
+      "archived": "evaluations/kd_0p5_teacher/task_source_snapshot/payload_5.yaml",
+      "sha256": "99b128fe5fddbf78364aeee3e55abe7a42feac6568faea420496fec1904e3e7b"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_teacher/eval_rxx7hdds/task_source_snapshot/rma.yaml",
+      "archived": "evaluations/kd_0p5_teacher/task_source_snapshot/rma.yaml",
+      "sha256": "f8fa2851e1ee6e0d4a078d5e027367244e245c5ec990d4d56b8da731143da3d1"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_teacher/eval_rxx7hdds/task_source_snapshot/rma_forward.yaml",
+      "archived": "evaluations/kd_0p5_teacher/task_source_snapshot/rma_forward.yaml",
+      "sha256": "ae040ad352f95f15e45fa100552a804e36dcf0ebd5e41fab4982dc385289450c"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_teacher/eval_rxx7hdds/task_source_snapshot/rma_forward_no_pose.yaml",
+      "archived": "evaluations/kd_0p5_teacher/task_source_snapshot/rma_forward_no_pose.yaml",
+      "sha256": "f542b8af288f7d7d045e3cadfa7674783978053329346b0569c744bcdea9af63"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_teacher/eval_rxx7hdds/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "archived": "evaluations/kd_0p5_teacher/task_source_snapshot/rma_forward_tight_tracking.yaml",
+      "sha256": "96cd8568c70a1b0fa1f31c645c3f17f47f2dc8d76d178ca4b9d4bc15e336ae89"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_teacher/eval_rxx7hdds/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "archived": "evaluations/kd_0p5_teacher/task_source_snapshot/rma_forward_wide_speed.yaml",
+      "sha256": "7abf75f6fa5516274839395b354856f500310489b0d047784a5d2ffff34e6d96"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_teacher/eval_rxx7hdds/transitions.csv",
+      "archived": "evaluations/kd_0p5_teacher/transitions.csv.gz",
+      "sha256": "8beacece967897b8c222c98167a744295eb59a9bcc126f12e85f2186fbaee8a9"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_teacher.log",
+      "archived": "evaluations/kd_0p5_teacher/output.txt",
+      "sha256": "7d4f3b929cc80ecff525a6f2abc4e8a85894f8008510e6db8c93f4875f4b1749"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/analysis__m5bnvwe/metrics.csv",
+      "archived": "metrics.csv",
+      "sha256": "abe5767ec9d764b8947810055c53db6df1abbe0b06c2eaae406f58a57d5dc39f"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/analysis__m5bnvwe/summary.json",
+      "archived": "summary.json",
+      "sha256": "5fdd7bf36641083961722279ff169e37ed3b9a9b52c573dcd62f7235f3b164ec"
+    },
+    {
+      "source": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/analysis__m5bnvwe/joint_tracking_rmse.png",
+      "archived": "joint_tracking_rmse.png",
+      "sha256": "7143c9389b5648390e37c1ce2d570fbb0346c2442f5ad1515a86a11939f38929"
+    },
+    {
+      "source": "/home/abc/my_unilab/scripts/run_exp014_control.py",
+      "archived": "source_at_evaluation/scripts/run_exp014_control.py",
+      "sha256": "9fe326a125cf2b32f28ec45da88a4d875ba055c22eab33a15360bbd65171ff28"
+    },
+    {
+      "source": "/home/abc/my_unilab/scripts/analyze_rma_joint_tracking.py",
+      "archived": "source_at_evaluation/scripts/analyze_rma_joint_tracking.py",
+      "sha256": "5136df9899a21b1e3ba1cc6ed7cbc73e74b2e638b54bdc1f9d1100fda979fe9d"
+    },
+    {
+      "source": "/home/abc/my_unilab/scripts/diagnose_rma_control.py",
+      "archived": "source_at_evaluation/scripts/diagnose_rma_control.py",
+      "sha256": "3b9e5392ac3c66948fed7573437ff5816c6992103e403330d83ec18533b00161"
+    },
+    {
+      "source": "/home/abc/my_unilab/scripts/train_rma.py",
+      "archived": "source_at_evaluation/scripts/train_rma.py",
+      "sha256": "00a125e96ef526c611999ab094beeaa6d143352f151813405f3d748926d8a667"
+    },
+    {
+      "source": "/home/abc/my_unilab/rsl_rl/unilab_rma/control_diagnostics.py",
+      "archived": "source_at_evaluation/rsl_rl/unilab_rma/control_diagnostics.py",
+      "sha256": "35e65f78f0cca510290f5ce9977ffdc4281bb663f393d4721333c36dbdadbb2d"
+    },
+    {
+      "source": "/home/abc/my_unilab/rsl_rl/unilab_rma/evaluation_conditions.py",
+      "archived": "source_at_evaluation/rsl_rl/unilab_rma/evaluation_conditions.py",
+      "sha256": "f6084c901a82f6365ba51441da99c8d1141ec1255794372a560dbed7d4b49d99"
+    },
+    {
+      "source": "/home/abc/my_unilab/rsl_rl/unilab_rma/evaluation_trace.py",
+      "archived": "source_at_evaluation/rsl_rl/unilab_rma/evaluation_trace.py",
+      "sha256": "479544ab9542f071a72cd359595f13865fc5e1d52c5665177262edccbae147ab"
+    },
+    {
+      "source": "/home/abc/my_unilab/rsl_rl/unilab_rma/env_adapter.py",
+      "archived": "source_at_evaluation/rsl_rl/unilab_rma/env_adapter.py",
+      "sha256": "3b29df75056b3303162020b64b037b100f45597de072339909cd3f72e1f831fc"
+    },
+    {
+      "source": "/home/abc/my_unilab/src/unilab/conf/ppo/rma_eval/kd_0p5.yaml",
+      "archived": "source_at_evaluation/src/unilab/conf/ppo/rma_eval/kd_0p5.yaml",
+      "sha256": "a36ba63d44416cb54bcc8cca284d67f206744e04683f9e37840de84a0b1a69b9"
+    },
+    {
+      "source": "/home/abc/my_unilab/src/unilab/conf/ppo/rma_eval/kd_0p5_payload_5.yaml",
+      "archived": "source_at_evaluation/src/unilab/conf/ppo/rma_eval/kd_0p5_payload_5.yaml",
+      "sha256": "4b92e559c0bd4ee5552f80febdcd5741b4de9acd88806a6e6f832b6850274e0c"
+    },
+    {
+      "source": "/home/abc/my_unilab/src/unilab/conf/ppo/rma_eval/nominal.yaml",
+      "archived": "source_at_evaluation/src/unilab/conf/ppo/rma_eval/nominal.yaml",
+      "sha256": "ec421fae9d01a5c1376e9a5687995bb1abf8e50f1a18fe9a16da408a72c9b136"
+    },
+    {
+      "source": "/home/abc/my_unilab/src/unilab/conf/ppo/rma_eval/payload_2p5.yaml",
+      "archived": "source_at_evaluation/src/unilab/conf/ppo/rma_eval/payload_2p5.yaml",
+      "sha256": "9425212d53e5ee778ccc2ee2145bfe3bb2fae05daef783739b923373c12813b9"
+    },
+    {
+      "source": "/home/abc/my_unilab/src/unilab/conf/ppo/rma_eval/payload_5.yaml",
+      "archived": "source_at_evaluation/src/unilab/conf/ppo/rma_eval/payload_5.yaml",
+      "sha256": "99b128fe5fddbf78364aeee3e55abe7a42feac6568faea420496fec1904e3e7b"
+    },
+    {
+      "source": "/home/abc/my_unilab/scripts/run_exp014_control.py",
+      "archived": "source_at_archive/scripts/run_exp014_control.py",
+      "sha256": "9fe326a125cf2b32f28ec45da88a4d875ba055c22eab33a15360bbd65171ff28"
+    },
+    {
+      "source": "/home/abc/my_unilab/scripts/analyze_rma_joint_tracking.py",
+      "archived": "source_at_archive/scripts/analyze_rma_joint_tracking.py",
+      "sha256": "5136df9899a21b1e3ba1cc6ed7cbc73e74b2e638b54bdc1f9d1100fda979fe9d"
+    }
+  ],
+  "checkpoint": "/home/abc/my_unilab/runs/rma/EXP-010/20261027_160750/student_wide_speed.pt",
+  "checkpoint_sha256": "28785b298e5071d109ace124dc1c3388e2324fb8c5fda29087cfb829049ce5c5",
+  "original_run": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310",
+  "original_analysis": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/analysis__m5bnvwe",
+  "scope": "One frozen teacher/student pair, kd=0.5, added mass 0/5 kg; descriptive joint telemetry, no torque saturation or causal mechanism proof.",
+  "note": "Source_at_evaluation hashes were recorded by the runner; orchestration source_at_archive is labeled separately."
+}

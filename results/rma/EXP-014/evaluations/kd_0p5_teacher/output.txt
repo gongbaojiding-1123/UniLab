@@ -1,0 +1,58 @@
+RMA friction geom selection from XML: ['base1', 'base2', 'base3', 'FL_hip_geom', 'FL_thigh_geom', 'FL_calf_geom1', 'FL_calf_geom2', 'FL', 'FR_hip_geom', 'FR_thigh_geom', 'FR_calf_geom1', 'FR_calf_geom2', 'FR', 'RL_hip_geom', 'RL_thigh_geom', 'RL_calf_geom1', 'RL_calf_geom2', 'RL', 'RR_hip_geom', 'RR_thigh_geom', 'RR_calf_geom1', 'RR_calf_geom2', 'RR']
+term: randomize_leg_mass set to None, skipping...
+{
+  "directory": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_teacher/eval_rxx7hdds",
+  "max_abs_mapping_residual_rad": 0.0,
+  "torque_measurement": "unavailable through the current public backend API; no torque saturation claim",
+  "samples": 12000,
+  "joints_after_first_100_steps_per_episode": {
+    "FL_hip_joint": {
+      "samples": 900,
+      "position_error_rmse_rad": 0.07931018550067859
+    },
+    "FL_thigh_joint": {
+      "samples": 900,
+      "position_error_rmse_rad": 0.21392116165913824
+    },
+    "FL_calf_joint": {
+      "samples": 900,
+      "position_error_rmse_rad": 0.1918131518448244
+    },
+    "FR_hip_joint": {
+      "samples": 900,
+      "position_error_rmse_rad": 0.16124739715153477
+    },
+    "FR_thigh_joint": {
+      "samples": 900,
+      "position_error_rmse_rad": 0.19975317884399965
+    },
+    "FR_calf_joint": {
+      "samples": 900,
+      "position_error_rmse_rad": 0.22914564252592348
+    },
+    "RL_hip_joint": {
+      "samples": 900,
+      "position_error_rmse_rad": 0.14279728036422687
+    },
+    "RL_thigh_joint": {
+      "samples": 900,
+      "position_error_rmse_rad": 0.20844478726822663
+    },
+    "RL_calf_joint": {
+      "samples": 900,
+      "position_error_rmse_rad": 0.17205871605917147
+    },
+    "RR_hip_joint": {
+      "samples": 900,
+      "position_error_rmse_rad": 0.06245288427736659
+    },
+    "RR_thigh_joint": {
+      "samples": 900,
+      "position_error_rmse_rad": 0.17953247832788416
+    },
+    "RR_calf_joint": {
+      "samples": 900,
+      "position_error_rmse_rad": 0.27665832167873533
+    }
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "policy": "teacher",
+  "seed": 123,
+  "task": "go2_joystick_flat/rma_forward",
+  "total_transitions": 1000,
+  "evaluation_condition": "kd_0p5_payload_5",
+  "controlled_parameters": {
+    "actuator_kp": 35.0,
+    "actuator_kd": 0.5,
+    "robot_sliding_friction": 1.0,
+    "added_base_mass_kg": 5.0,
+    "initial_episode_counter": 0,
+    "observation_noise": false,
+    "note": "Configured gains; friction/payload reset labels checked separately. Not measured torque."
+  },
+  "diagnostics": {
+    "velocity_axes": [
+      "vx_m_per_s",
+      "vy_m_per_s",
+      "yaw_rate_rad_per_s"
+    ],
+    "velocity_frame": "robot body; clean critic local_linvel xy and gyro z",
+    "initial_command_env0": [
+      0.699999988079071,
+      0.0,
+      0.0
+    ],
+    "mean_command": [
+      0.699999988079071,
+      0.0,
+      0.0
+    ],
+    "mean_measured_velocity": [
+      0.6093020059093833,
+      0.012218539561624312,
+      -0.008579460814362392
+    ],
+    "tracking_rmse_by_axis": [
+      0.12538196076946032,
+      0.05852215631073519,
+      0.14070333061837592
+    ],
+    "mean_absolute_yaw_rate_rad_per_s": 0.11341013890947216,
+    "weighted_reward_terms_before_dt": {
+      "tracking_lin_vel": 1.8816776674687863,
+      "tracking_ang_vel": 0.18432620052993298,
+      "lin_vel_z": -0.010362374695396593,
+      "ang_vel_xy": -0.026548953283167066,
+      "base_height": -0.0028683834778910045,
+      "action_rate": -0.015071356823045789,
+      "similar_to_default": -0.14830299147590995,
+      "contact": 0.139379995431751,
+      "swing_feet_z": 0.0557629200220108
+    },
+    "reward_terms_note": "weighted terms BEFORE control-dt scaling; not per-step rewards"
+  },
+  "control": {
+    "max_abs_mapping_residual_rad": 0.0,
+    "torque_measurement": "unavailable through the current public backend API; no torque saturation claim",
+    "samples": 12000,
+    "joints_after_first_100_steps_per_episode": {
+      "FL_hip_joint": {
+        "samples": 900,
+        "position_error_rmse_rad": 0.08285741849918996
+      },
+      "FL_thigh_joint": {
+        "samples": 900,
+        "position_error_rmse_rad": 0.2605532472875035
+      },
+      "FL_calf_joint": {
+        "samples": 900,
+        "position_error_rmse_rad": 0.2657815186494802
+      },
+      "FR_hip_joint": {
+        "samples": 900,
+        "position_error_rmse_rad": 0.1910293884903926
+      },
+      "FR_thigh_joint": {
+        "samples": 900,
+        "position_error_rmse_rad": 0.22428662370422114
+      },
+      "FR_calf_joint": {
+        "samples": 900,
+        "position_error_rmse_rad": 0.28412372752520243
+      },
+      "RL_hip_joint": {
+        "samples": 900,
+        "position_error_rmse_rad": 0.17744460783552413
+      },
+      "RL_thigh_joint": {
+        "samples": 900,
+        "position_error_rmse_rad": 0.2267065052284191
+      },
+      "RL_calf_joint": {
+        "samples": 900,
+        "position_error_rmse_rad": 0.20354141544498572
+      },
+      "RR_hip_joint": {
+        "samples": 900,
+        "position_error_rmse_rad": 0.10020078278344158
+      },
+      "RR_thigh_joint": {
+        "samples": 900,
+        "position_error_rmse_rad": 0.20338123479438627
+      },
+      "RR_calf_joint": {
+        "samples": 900,
+        "position_error_rmse_rad": 0.3602116869787287
+      }
+    }
+  },
+  "trace": {
+    "directory": "/home/abc/my_unilab/runs/rma/EXP-014/joint_tracking_20261028_1310/kd_0p5_payload_5_teacher/eval_5nz1f7z5",
+    "full": {
+      "transitions": 1000,
+      "mean_measured_velocity": [
+        0.6093020059093833,
+        0.012218539561624312,
+        -0.008579460814362392
+      ],
+      "tracking_rmse_by_axis": [
+        0.12538196076946032,
+        0.05852215631073519,
+        0.14070333061837592
+      ]
+    },
+    "after_startup_window": {
+      "transitions": 900,
+      "mean_measured_velocity": [
+        0.6143813034229808,
+        0.011265476061533062,
+        -0.015873599839138074
+      ],
+      "tracking_rmse_by_axis": [
+        0.11160119476145319,
+        0.05699563673971873,
+        0.13708232097277442
+      ]
+    },
+    "action_target_joint_order": [
+      "FL_hip_joint",
+      "FL_thigh_joint",
+      "FL_calf_joint",
+      "FR_hip_joint",
+      "FR_thigh_joint",
+      "FR_calf_joint",
+      "RL_hip_joint",
+      "RL_thigh_joint",
+      "RL_calf_joint",
+      "RR_hip_joint",
+      "RR_thigh_joint",
+      "RR_calf_joint"
+    ],
+    "normalized_action_min": [
+      -0.9922472834587097,
+      -0.992469072341919,
+      -0.9998102784156799,
+      -0.990738570690155,
+      -0.9991965293884277,
+      -0.9999749064445496,
+      -0.9162279963493347,
+      -0.9973025918006897,
+      -0.9999762773513794,
+      -0.985085666179657,
+      -0.998893141746521,
+      -0.9999967813491821
+    ],
+    "normalized_action_max": [
+      0.7634496688842773,
+      0.9984629154205322,
+      0.9999991655349731,
+      0.983754575252533,
+      0.9987666606903076,
+      0.9999977350234985,
+      0.8062779903411865,
+      0.9830501675605774,
+      0.9991511702537537,
+      0.7286392450332642,
+      0.9982870817184448,
+      0.9996264576911926
+    ],
+    "normalized_action_rms": [
+      0.68843316931352,
+      0.764319400870428,
+      0.9108067780529802,
+      0.7718215378947617,
+      0.7858484950643181,
+      0.9307489045318158,
+      0.5915361403778073,
+      0.6761022407498082,
+      0.8679937250757535,
+      0.7348686941757321,
+      0.7938091302561291,
+      0.9396793179572678
+    ],
+    "normalized_action_near_bound_fraction": [
+      0.114,
+      0.25,
+      0.655,
+      0.229,
+      0.315,
+      0.689,
+      0.0,
+      0.234,
+      0.604,
+      0.053,
+      0.155,
+      0.689
+    ],
+    "mean_weighted_reward_rates_before_dt": {
+      "tracking_lin_vel": 1.8816776674687863,
+      "tracking_ang_vel": 0.18432620052993298,
+      "lin_vel_z": -0.010362374695396593,
+      "ang_vel_xy": -0.026548953283167066,
+      "base_height": -0.0028683834778910045,
+      "action_rate": -0.015071356823045789,
+      "similar_to_default": -0.14830299147590995,
+      "contact": 0.139379995431751,
+      "swing_feet_z": 0.0557629200220108
+    }
+  },
+  "diagnostic_source_sha256": "3b9e5392ac3c66948fed7573437ff5816c6992103e403330d83ec18533b00161",
+  "control_recorder_source_sha256": "35e65f78f0cca510290f5ce9977ffdc4281bb663f393d4721333c36dbdadbb2d"
+}
