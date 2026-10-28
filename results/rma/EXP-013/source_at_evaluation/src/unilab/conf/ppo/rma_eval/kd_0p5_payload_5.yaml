@@ -1,0 +1,11 @@
+# @package _global_
+# EXP-013: only added base mass differs from kd_0p5.
+defaults:
+  - /rma_eval/kd_0p5
+  - _self_
+
+env:
+  events:
+    rma_base_load:
+      params:
+        mass_distribution_params: [5.0, 5.0]

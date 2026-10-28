@@ -8,6 +8,7 @@ CONDITIONS = {
     "payload_2p5": (2.5, 0.0),
     "payload_5": (5.0, 0.0),
     "kd_0p5": (0.0, 0.5),
+    "kd_0p5_payload_5": (5.0, 0.5),
 }
 
 

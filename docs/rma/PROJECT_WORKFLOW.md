@@ -1,10 +1,10 @@
 # 项目导航：现在做什么，完成后做什么
 
-更新日期：2026-10-27。所有 shell 命令在 WSL Ubuntu 执行，运行工作目录为
+更新日期：2026-10-28。所有 shell 命令在 WSL Ubuntu 执行，运行工作目录为
 `/home/abc/my_unilab`；不要覆盖虚拟环境或全部同步 fork。
 训练/评估显式使用现有 UniLab 环境；Genesis 使用独立环境的 `scripts/run_genesis_go2.sh`。
 
-## 当前步骤：读 EXP-012 阻尼对照，自己解释数据
+## 当前步骤：读 EXP-013 受载结果，再定位执行跟踪
 
 1. 已完成 EXP-010 两组教师、学生、ONNX、Genesis 回放、TensorRT 与 C++ mock；无需重复长训。
 2. 从 [实验索引](../../experiments/rma/README.md) 查看全部编号；从 [EXP-010 归档](../../results/rma/EXP-010/README.md) 看曲线和逐步数据。
@@ -12,7 +12,8 @@
 4. 保留 scale=0.25、Genesis substeps=2、当前模型和原始运行目录。
 5. [EXP-011](../../experiments/rma/EXP-011_payload_diagnosis.md) 已比较同一 checkpoint 的 teacher/student，在 0 / 2.5 / 5 kg 下各回放一次。六次无异常终止，5 kg 时两者均欠速；先看已生成图表，再独立检查 PD 增益条件，暂不扩大训练区间。
 6. [EXP-012](../../experiments/rma/EXP-012_damping_diagnosis.md) 现已完成零负载下 kd=0/0.5 的四组回放：[看曲线与指标](../../results/rma/EXP-012/README.md)。学生全程平面 RMSE 从 0.14149 降到 0.09611，尚不能据此直接选择真机参数。
-7. 当前学习任务：打开单变量 YAML，解释一个关节上的阻尼力矩方向，再用图表写自己的三句话复盘，参照 [学习验收](LEARNING_GOALS.md)。后续候选 EXP-013 固定 kd=0.5 对比 0/5 kg；本轮尚未执行。
+7. [EXP-013](../../experiments/rma/EXP-013_payload_at_fixed_kd.md) 已固定 kd=0.5，对比 0/5 kg：负载组 teacher/student 全程平均 vx=0.60930/0.61697，均无异常终止，均比零负载欠速更明显。
+8. 当前先读 [本轮图表](../../results/rma/EXP-013/README.md)，自己写三句话复盘：改变什么、测到什么、不能断言什么。下一项应对齐受控条件的关节执行诊断入口，再记录目标/实际角度与接触；入口尚未接入，当前不要运行不配对的诊断或重复长训。参照 [学习验收](LEARNING_GOALS.md)。
 
 EXP-010 只有训练 seed 42；nominal eval seed 不等于独立训练或独立物理条件。
 没有真机或硬实时验证；完整门禁的已知阻塞见 [验证记录](VALIDATION.md)。

@@ -1,0 +1,11 @@
+# @package _global_
+# EXP-012: only active joint damping gain differs from nominal.
+defaults:
+  - /rma_eval/nominal
+  - _self_
+
+env:
+  events:
+    pd_gains:
+      params:
+        kd_range: [0.5, 0.5]

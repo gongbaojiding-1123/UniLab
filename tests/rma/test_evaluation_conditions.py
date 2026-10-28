@@ -89,6 +89,24 @@ class EvaluationConditionTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             condition_overrides("arbitrary")
 
+    def test_payload_at_fixed_derivative_gain_changes_only_mass(self):
+        self.assertEqual(
+            differences(resolved("kd_0p5"), resolved("kd_0p5_payload_5")),
+            [
+                dict(
+                    path="env.events.rma_base_load.params.mass_distribution_params",
+                    before=[0.0, 0.0],
+                    after=[5.0, 5.0],
+                )
+            ],
+        )
+        parameters = condition_parameters("kd_0p5_payload_5")
+        self.assertEqual(parameters["actuator_kd"], 0.5)
+        self.assertEqual(parameters["added_base_mass_kg"], 5.0)
+        validate_labels(torch.tensor([[1.0, 5.0]]), "kd_0p5_payload_5")
+        with self.assertRaises(ValueError):
+            validate_labels(torch.tensor([[1.0, 0.0]]), "kd_0p5_payload_5")
+
     def test_actual_labels_reject_wrong_or_nonfinite_reset_values(self):
         validate_labels(torch.tensor([[1.0, 5.0], [1.0, 5.0]]), "payload_5")
         for labels in (

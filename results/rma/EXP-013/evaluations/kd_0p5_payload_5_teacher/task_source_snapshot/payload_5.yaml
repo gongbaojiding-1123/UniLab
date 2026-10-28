@@ -1,0 +1,10 @@
+# @package _global_
+defaults:
+  - /rma_eval/nominal
+  - _self_
+
+env:
+  events:
+    rma_base_load:
+      params:
+        mass_distribution_params: [5.0, 5.0]

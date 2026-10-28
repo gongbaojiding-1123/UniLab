@@ -1,5 +1,28 @@
 # RMA 分支验证记录
 
+## 2026-10-28：EXP-013 固定 kd 的负载对照
+
+新增负载配置继承 `kd_0p5`，完整 Hydra 解析测试要求只改变附加质量分布；参数报告与实际 reset 标签校验同步。
+新增薄 runner/analyzer/archive 入口；曲线共享纵轴，标签同时显示质量与 kd。没有改训练默认、模型、动作缩放或虚拟环境。
+
+```bash
+env VIRTUAL_ENV=/home/abc/unilab--/.venv uv run --active --no-sync python \
+  -m unittest discover -s tests/rma -p 'test_*.py'
+env VIRTUAL_ENV=/home/abc/unilab--/.venv uv run --active --no-sync python \
+  scripts/run_exp013_payload.py \
+  --checkpoint runs/rma/EXP-010/20261027_160750/student_wide_speed.pt \
+  --output-dir runs/rma/EXP-013/payload_at_kd_20261028_1235
+```
+
+- 60 项 RMA unittest 一次运行通过（143.923 s），本轮 Python 文件 Ruff 格式/检查通过。
+- 原 1.3.3 环境中，5 kg 新条件 10 步冒烟与四组 1000 步回放通过。4000 行质量/摩擦标签及逐步 RMSE 核对通过。
+- 两组零负载重现 EXP-012，同一模型 SHA256 保持不变，四组后段各 900 行、无异常终止、一次超时；均符合预先沿用的筛查阈值。
+- 按文件增量同步，修改前核对父提交 AST 并备份至 `runs/rma/EXP-013/code_sync_20261028_123349`；81 份归档输入哈希与相关链接核对，曲线已查看。
+- 全仓门禁在 `/tmp/exp013-validation-yVP0qt` 源码副本复用现有 venv，禁止依赖同步。Ruff 在副本修正 6 个已有文件和 3 项后通过、Mypy 通过；没有回写无关更改。`make check` 仍被既有 Pyright 10 错误/1 警告阻塞；`make test` 仍因 UniSim 缺少 `TensorResetRandomizationPayload` 在收集时失败。
+- 日志在工作区 `outputs/exp013_make_check.log` 和 `outputs/exp013_make_test.log`。未创建/更新或合并 PR，不宣称全仓、跨引擎或真机通过。
+
+见 [实验记录](../../experiments/rma/EXP-013_payload_at_fixed_kd.md) 和 [证据](../../results/rma/EXP-013/README.md)。
+
 ## 2026-10-27：EXP-012 主动阻尼单变量诊断
 
 新增 `rma_eval/kd_0p5.yaml` 与三个薄入口，复用 EXP-011 的串行评估、分析和归档逻辑。

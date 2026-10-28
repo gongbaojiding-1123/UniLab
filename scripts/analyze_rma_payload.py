@@ -32,7 +32,7 @@ def main(
     metrics = []
     assert protocol["experiment"] == experiment
     assert protocol["cases"] == [case[0] for case in cases]
-    fig, axes = plt.subplots(len(cases), 1, figsize=(12, 3 * len(cases)), sharex=True)
+    fig, axes = plt.subplots(len(cases), 1, figsize=(12, 3 * len(cases)), sharex=True, sharey=True)
     for ax, (condition, mass, kd) in zip(np.atleast_1d(axes), cases):
         for policy, color in (("teacher", "#2563eb"), ("student", "#d97706")):
             paths = list((root / f"{condition}_{policy}").glob("eval_*/summary.json"))
@@ -93,7 +93,7 @@ def main(
             if ended.any():
                 ax.scatter(times[ended], vx[ended], color=color, marker="x", s=50)
         ax.axhline(0.7, color="black", linestyle="--", label="command 0.7 m/s")
-        ax.set_ylabel((f"+{mass} kg" if experiment == "EXP-011" else f"kd={kd}") + "\nvx (m/s)")
+        ax.set_ylabel(f"+{mass} kg, kd={kd}\nvx (m/s)")
         ax.grid(alpha=0.2)
         ax.legend(loc="upper right", ncol=3)
     axes[-1].set_xlabel("Global evaluation time (s), across resets")
